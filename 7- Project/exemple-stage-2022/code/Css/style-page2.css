@@ -1,0 +1,2071 @@
+
+
+html *          {margin-top: 0rem;}   
+body *          {box-sizing: border-box;
+                }
+
+header          {position: fixed; 
+                width: 100%;
+                background-color: 
+                rgb(42, 57, 80); }
+
+img             {max-width: 100%; width: auto; height: auto;}
+
+body            {background-color:
+                rgb(42, 57, 80);}
+
+/*.nav            {position: sticky;}*/ 
+
+
+
+.pictogrammes   {background: 
+                url("../pictures/Backgroud-Pied-de-page.png") 
+                no-repeat center center; 
+                background-size: cover;
+                display: flex;
+                flex-direction: row;
+                align-items: center; 
+                /*align-self: flex-start;*/
+                justify-content: space-between;
+                padding-left: 1rem; 
+                padding-right: 1rem;
+                padding-top: 1rem;
+                padding-bottom: 0rem;}
+
+
+
+.logo-Pacifa    {padding-left: 0.5rem;
+                padding-right: 1rem;} 
+
+.Linkedin       {padding-left: 1.5rem; padding-right: 1rem;}
+
+.Tweeter        {padding-right: 1rem;}
+
+.Facebook       {padding-right: 1rem;}
+
+.Boite-mail     {padding-right: 1rem;}
+
+.langue-accueil {display: flex;
+                flex-direction: row;
+                justify-content: start;
+                flex-wrap: nowrap;
+                align-items: center; 
+                padding-left: 0rem;
+                padding-right: 0rem;
+                color:whitesmoke;
+                text-align: center;}
+
+.picto-langue   {padding-left: 0rem;
+                padding-right: 0.2rem;}
+
+.sigle-langue   {color: whitesmoke;
+                font-size: 0.8rem;
+                padding-right: 0.8rem;}
+.picto-accueil  {padding-right: 0.5rem;}
+
+
+
+.barre-de-menu  {display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center; 
+                justify-content: center;
+                text-align: center;
+                padding-top: 1.5rem;}
+
+.format-du-sous-menu 
+                {list-style-type: none;
+                text-decoration: none;
+                font-size: 1.3rem;
+                color: whitesmoke;
+                padding-left: 0.5rem; 
+                padding-right: 0.5rem; } 
+
+.rubriques-du-sous-menu
+                {list-style-type: none;}  
+                
+.format-des-rubriques-du-sous-menu
+                {text-decoration: none;
+                font-size: 1.1rem;
+                color: whitesmoke;
+                padding-left: 0rem; 
+                padding-right: 0rem; }
+   
+.clarete        {font-size: 1.1rem;
+                color: whitesmoke;
+                padding-left: 0.5rem; 
+                padding-right: 0.5rem;
+                text-decoration: none;}
+
+.groupe1-des-choix-des-rubriques-du-sous-menu
+                {list-style-type: none;}
+
+.format-des-choix-des-rubriques-du-groupe1-du-sous-menu
+                {text-decoration: none;
+                font-size: 1.1rem;
+                color: whitesmoke;
+                padding-left: 0.5rem; 
+                padding-right: 0.5rem; }                
+
+/*.choisir-un-article-clarete*/
+
+.choix-des-rubriques-du-groupe1-du-sous-menu
+                {list-style-type: none;} 
+
+
+
+
+    
+.securite       {font-size: 1.1rem;
+                color: whitesmoke;
+                padding-left: 0.5rem; 
+                padding-right: 0.5rem;
+                text-decoration: none;}
+
+.groupe2-des-choix-des-rubriques-du-sous-menu
+                {list-style-type: none;}
+
+.format-des-choix-des-rubriques-du-groupe2-du-sous-menu
+                {text-decoration: none;
+                font-size: 1.1rem;
+                color: whitesmoke;
+                padding-left: 0.5rem; 
+                padding-right: 0.5rem; }
+
+.choix-des-rubriques-du-groupe2-du-sous-menu
+                {list-style-type: none;} 
+
+
+.partenariat    {font-size: 1.1rem;
+                color: whitesmoke;
+                padding-left: 0.5rem; 
+                padding-right: 0.5rem;
+                text-decoration: none;}
+
+.groupe3-des-choix-des-rubriques-du-sous-menu
+                {list-style-type: none;}
+
+.choix-des-rubriques-du-groupe3-du-sous-menu
+                {list-style-type: none;} 
+
+.format-des-choix-des-rubriques-du-groupe3-du-sous-menu
+                {text-decoration: none;
+                font-size: 1.1rem;
+                color: whitesmoke;
+                padding-left: 0.5rem; 
+                padding-right: 0.5rem; }
+
+
+
+.fleches-de-navigation
+                {display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 1rem;
+                color: whitesmoke;
+                padding-top: 1.5rem;}
+
+.fleches-de-navigation-en-arriere /* penser aux pseudo-class dont ":visited"*/
+                {padding-left: 2rem;
+                padding-right: 0rem;}
+
+.bouton-fleches-de-navigation
+                {max-width: 2rem;}
+
+
+.fleches-de-navigation-en-avant /* penser aux pseudo-class dont ":visited"*/
+                {padding-left: 0rem;
+                padding-right: 2.5rem;}
+
+/*.bouton-fleches-en-avant*/
+button          {background-color: 
+                rgb(48, 72, 110);}
+
+button:hover    {background-color: 
+                rgb(40, 77, 155);}
+
+button:active   {background-color: 
+                rgb(3, 81, 250);}
+
+
+
+
+.contenu-principal
+                {background-color:
+                rgb(53, 71, 99); 
+                padding-top: 14rem;}
+
+
+
+
+.votre-billetterie  
+                {display: flex;
+                flex-direction: row;
+                align-items: start; 
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                padding-top: 1rem;
+                padding-bottom: 0rem;
+                padding-left: 1rem;
+                padding-right: 1rem;}                
+    
+                
+.evenements-physiques  
+                {max-width: 44.5rem;
+                max-height: 42.5rem;
+                background-color:
+                rgb(41, 59, 97);
+                display: flex;
+                flex-direction: column;
+                align-items: start; 
+                justify-content: start;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                padding-top: 2rem;
+                padding-bottom: 0rem;
+                margin-top: 1rem;
+                margin-bottom: 0rem;
+                margin-right: 0.5rem;
+                margin-left: 0.5rem;
+                font-size: 0rem;}
+
+/*.titres-de-gauche 
+                {font-size: 0rem;}*/
+    
+
+.menu1          {font-size: 0rem;}
+
+.nos-tickets-gauche    
+                {display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                text-decoration: none;
+                color: whitesmoke;}
+
+.tickets-gauche {font-size: 1rem;}
+
+.evenent-phys   {font-size: 1rem;}
+
+.tickets-e-phys {font-size: 1rem;}
+
+.menu2          {color: whitesmoke;
+                font-size: 0rem;}
+
+.billets        {display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;}
+
+.billets-grand-public
+                {font-size: 0.9rem;}
+                
+
+.en-3-étapes    {font-size: 0.9rem;}
+
+.achat-billets-en-ligne 
+                {background-color:
+                rgb(50, 69, 110);
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                justify-content: center;
+                flex-wrap: nowrap;
+                font-size: 0.7rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                padding-left: 0rem;
+                padding-right: 0rem;
+                color: whitesmoke;}
+
+.vue            {padding-left: 0.4rem;
+                padding-right: 0rem;}   
+
+/*.vue-aerienne*/       
+
+/*.stade-de-haut*/
+
+.gradins        {padding-left: 0.3rem;
+                padding-right: 0.3rem;}   
+
+/*.stade-gradins*/
+
+.vue-perspective 
+                {padding-left: 0rem;
+                padding-right: 0.4rem;}   
+
+/*.stade-perspective*/
+
+.premiere-qualite   {background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    margin-top: 1.5rem;
+                    margin-bottom: 1rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    padding-left: 0rem;
+                    padding-right: 0rem;
+                    }
+
+.B-to-B             {padding-left: 0.4rem;
+                    padding-right: 1.1rem;
+                    
+                    color: whitesmoke}
+
+.text-titre-B-to-B  {display: flex;
+                    flex-direction: row;
+                    align-items: start; 
+                    justify-content: start;
+                    font-size: 0.7rem;}
+
+/*.utilisez*/           
+
+/*.mot-B-to-B*/         
+
+/*.hospitalite*/        
+
+.texte-image-B-to-B {font-size: 0.7rem;}
+
+.V-I-P              {padding-left: 1rem;
+                    padding-right: 0.5rem;
+                    font-size: 0.7rem;
+                    color: whitesmoke}
+
+.texte-titre-V-I-P
+                    {display: flex;
+                    flex-direction: row;
+                    align-items: start; 
+                    justify-content: start;}
+
+/*.intnimite*/          
+
+/*.mot-V-I-P*/          
+
+/*.salon-V-I-P*/        
+
+/*.texte-image-V-I-P*/ 
+
+
+
+
+.separation-article-billeterie-E-Phys
+                    {display: block;
+                    margin: auto;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    background-color: 
+                    rgb(69, 90, 126);
+                    height: 1.5rem;}
+
+
+/*.separation-E-Phys*/
+
+
+
+
+
+.evenements-virtuels
+                    {max-width: 44.5rem;
+                    max-height: 42.5rem;
+                    background-color:
+                    rgb(41, 59, 97);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start; 
+                    justify-content: start;
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                    margin-top: 1rem;
+                    margin-bottom: 0rem;}
+                    
+/*.titre-de-droite    {font-size: 0rem;}*/
+
+.menu3              {font-size: 0rem;}
+
+.nos-tickets-droite {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    color: whitesmoke ;
+                    text-decoration: none;}
+
+.tickets-droite     {font-size: 1rem;}
+
+.evenent-virt       {font-size: 1rem;}
+
+.tickets-e-virt     {font-size: 1rem;}
+
+.menu4              {padding-bottom: 0rem;
+                    font-size: 0rem;
+                    color: whitesmoke ;}
+
+.accompagnement     {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    text-decoration: none;}                                  
+        
+.envie              {font-size: 0.9rem;}  
+
+.consultez          {font-size: 0.9rem;} 
+
+.cuisine            {/*max-height: 12rem;*/
+                    background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: row;
+                    align-items: start;
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    color: whitesmoke;}
+
+.recette            {font-size: 0.7rem;
+                    padding-right: 1.3rem;}
+
+/*.vos-projets*/       
+
+/*.pate-a-tarte*/
+
+.texte-recette      {max-width: 21.7rem;
+                    padding-left: 1.3rem;
+                    align-items: center;
+                    color: whitesmoke;}
+
+.nos-conseillés     {font-size: 0.7rem;}     
+
+.prenez-le-temps    {font-size: 0.8rem;}
+
+.vouloir-quelque-chose
+                    {font-size: 0.8rem;}
+                  
+                   
+.partage            {/*height: 12rem;*/
+                    background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: row;
+                    align-items: start; 
+                    justify-content: center;
+                    margin-top: 1.5rem;
+                    margin-bottom: 1rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;}
+
+.echange-ticketswap {padding-right: 1.3rem;
+                    font-size: 0.7rem;
+                    color: whitesmoke}
+
+.titre-ticketswap   {display: flex;
+                    flex-direction: row;
+                    align-items: start; 
+                    justify-content: start;}
+
+/*.echange-et-revente*/ 
+/*.mot-ticketswap*/      
+
+/*.image-swap*/
+
+/*.texte-image-ticketswap*/   
+                    
+
+.bourse-relaxtickets 
+                    {padding-left: 1.3rem;
+                    font-size: 0.7rem;
+                    color: whitesmoke}
+
+.titre-relaxtickets {display: flex;
+                    flex-direction: row;
+                    align-items: start; 
+                    justify-content: start;}
+
+/*.texte-titre-relaxtickets*/
+                   
+/*.mot-relaxtickets*/  
+
+/*.image-relaxtickets*/
+
+/*.texte-image-relaxtickets*/ 
+
+
+
+
+.separation-article-billeterie-E-Virt
+                    {display: block;
+                    margin: auto;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    background-color: 
+                    rgb(69, 90, 126);
+                    height: 1.5rem;}
+
+
+/*.separation-E-Virt*/
+                    
+
+
+
+
+.vos-outils-marketing   
+                    {display: flex;
+                    flex-direction: row;
+                    align-items: start; 
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;}  
+
+.application-B-to-B
+                    {max-width: 44.5rem;
+                    max-height: 38.5rem;
+                    background-color:
+                    rgb(41, 59, 97);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start; 
+                    justify-content: start;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    margin-top: 1rem;
+                    margin-bottom: 0rem;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                    font-size: 0rem;}
+
+/*.titres-de-gauche-marketing 
+                {font-size: 0rem;}*/
+
+.menu1-marketing    {font-size: 0rem;}
+
+.nos-outils-makéting-gauche
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    text-decoration: none;
+                    color: whitesmoke;}
+
+.outils-makéting-gauche
+                    {font-size: 1rem;}
+
+.nos-applications-gauche
+                    {font-size: 1rem;}
+
+.B-to-B             {font-size: 1rem;}
+
+.menu2-marketing    {color: whitesmoke;
+                    font-size: 0rem;}
+
+.modelisation-d-installations
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;}
+
+.naviguez-en-3D     {font-size: 0.9rem;}
+
+.dans-vos-installations
+                    {font-size: 0.9rem;}
+
+.support-B-to-B     {background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: row;
+                    align-items: start;
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0rem;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    color: whitesmoke;}
+
+.exemple-tablette-B-to-B
+                    {font-size: 0.7rem;
+                    padding-right: 1.3rem;}
+
+/*.des-supports-digitaux*/
+
+.images-application-B-to-B
+                    {display: flex;
+                    flex-direction: column;
+                    align-items: center;}
+
+/*.tablette-B-to-B*/
+
+.picto-tablette-B-to-B {padding-top: 0.25rem;}
+
+/*.picto-OS-Win-Andro1*/
+
+.texte-tablette-B-to-B  
+                    {max-width: 20rem;
+                    padding-left: 1.3rem;
+                    padding-right: 1.3rem;
+                    align-items: center;
+                    text-align: justify;
+                    color: whitesmoke;}
+
+.Cliquez-sur-la-tablette 
+                    {font-size: 0.7rem;} 
+
+.Dans-cet-exemple   {font-size: 0.8rem;}
+
+.Nous-réaliserons-pour-vous 
+                    {font-size: 0.8rem;}
+
+
+
+
+.separation-article-B-to-B
+                    {display: block;
+                    margin: auto;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    background-color: 
+                    rgb(69, 90, 126);
+                    height: 1.5rem;}
+
+
+/*.separation-B-to-B*/
+
+
+
+
+.application-hospitalite
+                    {max-width: 44.5rem;
+                    max-height: 38.5rem;
+                    background-color:
+                    rgb(41, 59, 97);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start; 
+                    justify-content: start;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    margin-top: 1rem;
+                    margin-bottom: 0rem;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                    font-size: 0rem;}
+
+/*.titres-de-droite-marketing 
+{font-size: 0rem;}*/
+
+.nos-outils-makéting-droite
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    text-decoration: none;
+                    color: whitesmoke;}
+
+.outils-makéting-droite
+                    {font-size: 1rem;}
+
+.nos-applications-droite
+                    {font-size: 1rem;}
+
+.hospitalite        {font-size: 1rem;}
+
+.supports-numeriques-de-vente
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;}
+
+.entrez-dans-les-details    
+                    {font-size: 0.9rem;}
+
+.de-la-vente        {font-size: 0.9rem;}
+
+.support-Hospitalite
+                    {background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                    flex-wrap: nowrap;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0rem;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    color: whitesmoke;}
+
+.exemple-loge-brasserie
+                    {font-size: 0.7rem;
+                    align-items: center;}
+
+/*.logiciels-de-persuasion*/
+
+.photo-brasserie    {align-items: center;}
+
+.texte-application-Hospitalite 
+                    {max-width: 44.5rem;
+                    padding-top: 1rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    align-items: center;
+                    color: whitesmoke;}
+
+.grâce-à-notre-application   
+                    {font-size: 0.8rem;}
+
+.tout-est-déjà-pret
+                    {font-size: 0.8rem;}
+
+.même-si-vous-n-avez-pas
+                    {font-size: 0.8rem;}
+
+
+
+
+.separation-article-hospitalite
+                    {display: block;
+                    margin: auto;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    background-color: 
+                    rgb(69, 90, 126);
+                    height: 1.5rem;}
+
+
+/*.separation-hospitalite*/
+
+
+
+
+
+
+.vos-formation  
+                    {display: flex;
+                    flex-direction: row;
+                    align-items: start; 
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;}  
+
+.application-Pacifa-Manager
+                    {max-width: 44.5rem;
+                    max-height: 38.5rem;
+                    background-color:
+                    rgb(41, 59, 97);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start; 
+                    justify-content: start;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    margin-top: 1rem;
+                    margin-bottom: 0rem;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                    font-size: 0rem;}
+
+/*.titres-de-gauche-formation 
+                {font-size: 0rem;}*/
+
+.menu1-formation    {font-size: 0rem;}
+
+.nos-outils-formation-gauche
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    text-decoration: none;
+                    color: whitesmoke;}
+
+.outils-formation-gauche
+                    {font-size: 1rem;}
+
+.nos-formations-gauche
+                    {font-size: 1rem;}
+
+.Pacifa-Manager     {font-size: 1rem;}
+
+.menu2-formation    {color: whitesmoke;
+                    font-size: 0rem;}
+
+.Gestion-comptable-RH-et-flux-circulation
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;}
+
+.Formez-vous     {font-size: 0.9rem;}
+
+.sur-notre-logiciel
+                    {font-size: 0.9rem;}
+
+.support-Pacifa-Manager
+                    {background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: row;
+                    align-items: start;
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0rem;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    color: whitesmoke;}
+
+.exemple-tablette-Pacifa-Manager
+                    {font-size: 0.7rem;
+                    padding-right: 1.3rem;}
+
+.Maîtrisez-vos-dépenses
+                    {padding-top: 0.5rem;
+                    padding-bottom: 0.5rem ;}
+
+.images-application-Pacifa-Manager
+                    {display: flex;
+                    flex-direction: column;
+                    align-items: center;}
+
+/*.tablette-Pacifa-Manager*/
+
+.picto-tablette-Pacifa-Manager 
+                    {padding-top: 0.25rem;}
+
+.picto-OS-Win-Andro2
+                    {padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;}
+
+.texte-a-cote-tablette-Pacifa-Manager
+                    {max-width: 20rem;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    align-items: center;
+                    color: whitesmoke;}
+
+.optimisez-vos-ressources
+                    {padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    font-size: 0.7rem;} 
+
+.En-structurant     {font-size: 0.8rem;}
+
+.Grâce-à-son-algorythme
+                    {font-size: 0.8rem;}
+
+.Combien-de-personne
+                    {font-size: 0.8rem;}
+
+.Vous-pouvez-faire 
+                    {font-size: 0.8rem;}
+
+
+
+
+
+.separation-article-Pacifa-manager
+                    {display: block;
+                    margin: auto;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    background-color: 
+                    rgb(69, 90, 126);
+                    height: 1.5rem;}
+
+
+/*.separation-Pacifa-manager*/
+
+
+
+                    
+
+.processus-global-de-formation
+                    {max-width: 44.5rem;
+                    max-height: 40.5rem;
+                    background-color:
+                    rgb(41, 59, 97);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start; 
+                    justify-content: start;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    margin-top: 1rem;
+                    margin-bottom: 0rem;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                    font-size: 0rem;}
+
+/*.titres-de-droite-formation 
+{font-size: 0rem;}*/
+
+.menu3-formation    {font-size: 0rem;}
+
+.nos-outils-formation-droite
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    text-decoration: none;
+                    color: whitesmoke;}
+
+.outils-formation-droite
+                    {font-size: 1rem;}
+
+.nos-formation-droite
+                    {font-size: 1rem;}
+
+.le-processus-global 
+                    {font-size: 1rem;}
+
+.menu4-formation    {color: whitesmoke;
+                    font-size: 0rem;}
+
+.les-produits-du-processus
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;}
+
+.cinq-produits-generiques    
+                    {font-size: 0.9rem;}
+
+.pour-un-processus   {font-size: 0.9rem;}
+
+.support-flêche-du-processus
+                    {background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                    flex-wrap: nowrap;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0rem;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    color: whitesmoke;}
+
+.exemple-produits-de-3D-Design-a-support
+                    {font-size: 0.7rem;
+                    align-items: center;}
+
+/*.besoins-d-organisation*/
+
+/*.image-fleche-formation*/    
+                    
+
+.texte-processus-global-de-formation
+                    {max-width: 44.5rem;
+                    padding-top: 1rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    font-size: 0.8rem;
+                    color: whitesmoke;}
+
+
+.div-trois-D-Design {display: flex; 
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                    flex-wrap: wrap;}  
+
+.titre-trois-D-Design  
+                    {color: whitesmoke;}
+
+.trois-D-Design     {font-size: 0.8rem;}
+.texte-trois-D-Design  
+                    {font-size: 0.8rem;}
+
+.div-audit-expertise
+                    {display: flex; 
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                    flex-wrap: wrap;}
+
+.titre-audit-expertise
+                    {color: whitesmoke;}
+.audit-expertise    {font-size: 0.8rem;}
+.texte-audit-expertise
+                    {font-size: 0.8rem;}
+
+.div-setup          {display: flex; 
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                    flex-wrap: wrap;}
+
+.titre-setup        {color: whitesmoke;}
+.Setup              {font-size: 0.8rem;}
+.texte-Setup        {font-size: 0.8rem;}
+
+.div-database       {display: inline-flex; 
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                    flex-wrap: nowrap;}
+
+.titre-database     {color: whitesmoke;}
+.database           {font-size: 0.8rem;}
+.texte-database
+                    {font-size: 0.8rem;}
+
+.div-assistance     {display: flex; 
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                    flex-wrap: wrap;}
+
+.titre-assistance   {color: whitesmoke;}
+.assistance         {font-size: 0.8rem;}
+.texte-assistance   {font-size: 0.8rem;}
+
+
+
+
+
+
+.separation-article-processus-global
+                    {display: block;
+                    margin: auto;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    background-color: 
+                    rgb(69, 90, 126);
+                    height: 1.5rem;}
+
+
+/*.separation-processus-global*/
+
+
+
+
+
+
+.notre-vigilence-1  
+                    {display: flex;
+                    flex-direction: row;
+                    align-items: start; 
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;}  
+
+.vigilence-hotline
+                    {max-width: 44.5rem;
+                    max-height: 38.5rem;
+                    background-color:
+                    rgb(41, 59, 97);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start; 
+                    justify-content: start;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    margin-top: 1rem;
+                    margin-bottom: 0rem;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                    font-size: 0rem;}
+
+/*.titres-de-gauche-vigilence 
+                {font-size: 0rem;}*/
+
+.menu1-vigilence    {font-size: 0rem;}
+
+.nos-outils-vigilence-gauche
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    text-decoration: none;
+                    color: whitesmoke;}
+
+.outils-vigilence-gauche
+                    {font-size: 1rem;}
+
+.vigilence-gauche
+                    {font-size: 1rem;}
+
+.Hotline            {font-size: 1rem;}
+
+.menu2-vigilence    {color: whitesmoke;
+                    font-size: 0rem;}
+
+.Assistance-telephonique
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;}
+
+.une-assistance    {font-size: 0.9rem;}
+
+.sept-jours-sur-sept
+                    {font-size: 0.9rem;}
+
+.support-Hotline
+                    {background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                    flex-wrap: nowrap;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0rem;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    color: whitesmoke;}
+
+.exemple-photo-salries-hotline
+                    {font-size: 0.7rem;
+                    padding-right: 1.3rem;}
+
+/*.Nous-restons-à-votre-écoute*/
+                    
+/*.photo-salaries-hotline*/
+
+.texte-en-dessous-images-photo-salaries-hotline
+                    {max-width: 44.5rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    color: whitesmoke;}
+
+.etre-efficace-ensemble
+                    {font-size: 0.8rem; padding-top: 0.5rem;} 
+
+.Avec-nos-logiciels {font-size: 0.8rem;}
+
+
+
+
+
+.separation-article-hotline
+                    {display: block;
+                    margin: auto;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    background-color: 
+                    rgb(69, 90, 126);
+                    height: 1.5rem;}
+
+
+/*.separation-processus-hotline*/
+
+
+
+
+
+.vigilence-target-consulting
+                    {max-width: 44.5rem;
+                    max-height: 38.5rem;
+                    background-color:
+                    rgb(41, 59, 97);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start; 
+                    justify-content: start;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    margin-top: 1rem;
+                    margin-bottom: 0rem;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                    font-size: 0rem;}
+
+/*.titres-de-droite-vigilence*/
+
+.menu3-vigilence    {font-size: 0rem;}
+
+.nos-outils-vigilence-droite
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    text-decoration: none;
+                    color: whitesmoke;}
+
+.outils-vigilence-droite
+                    {font-size: 1rem;}
+
+.vigilence-droite
+                    {font-size: 1rem;}
+
+.Target-Consulting 
+                    {font-size: 1rem;}
+
+.menu4-vigilence    {color: whitesmoke;
+                    font-size: 0rem;}
+
+.Assistance-Target-Consulting
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;}
+
+.Calibrez-les-objectifs    
+                    {font-size: 0.9rem;}
+
+.d-un-nouveau-terrain   {font-size: 0.9rem;}
+
+.support-Target-Consulting
+                    {background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                    flex-wrap: nowrap;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0rem;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    color: whitesmoke;}
+
+.exemple-photo-salries-Target-Consulting
+                    {font-size: 0.7rem;
+                    align-items: center;}
+
+/*.Nous-accompagnons*/
+
+/*.images-photo-salaries-Target-Consulting*/    
+
+/*.photo-salaries-Target-Consulting*/
+                    
+
+.texte-en-dessous-images-photo-salaries-Target-Consulting
+                    {max-width: 44.5rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    font-size: 0.8rem;
+                    color: whitesmoke;}
+
+
+.En-poursuivant-de-nouveaux-objectifs
+                    {font-size: 0.8rem;}
+.Fort-de-nos-nombreuses-années  
+                    {font-size: 0.8rem;}
+
+
+
+
+
+.separation-article-target-consulting
+                    {display: block;
+                    margin: auto;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    background-color: 
+                    rgb(69, 90, 126);
+                    height: 1.5rem;}
+
+
+/*.separation-target-consulting*/
+
+
+
+
+
+
+.notre-vigilence-2  
+                    {display: flex;
+                    flex-direction: row;
+                    align-items: start; 
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;}  
+
+.vigilence-plateforme-3D
+                    {max-width: 44.5rem;
+                    max-height: 38.5rem;
+                    background-color:
+                    rgb(41, 59, 97);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start; 
+                    justify-content: start;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    margin-top: 1rem;
+                    margin-bottom: 0rem;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                    font-size: 0rem;}
+
+/*.titres-de-gauche-plateforme-3D 
+                {font-size: 0rem;}*/
+
+.menu1-plateforme-3D    {font-size: 0rem;}
+
+.nos-outils-plateforme-3D-gauche
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    text-decoration: none;
+                    color: whitesmoke;}
+
+.outils-plateforme-3D-gauche
+                    {font-size: 1rem;}
+
+.plateforme-3D-gauche
+                    {font-size: 1rem;}
+
+.plateforme-3D            {font-size: 1rem;}
+
+.menu2-plateforme-3D    {color: whitesmoke;
+                    font-size: 0rem;}
+
+.tout-en-un
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;}
+
+.Renforcez-l-accès  {font-size: 0.9rem;}
+
+.aux-solutions
+                    {font-size: 0.9rem;}
+
+.support-plateforme-3D
+                    {background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: start;
+                    flex-wrap: nowrap;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0rem;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    color: whitesmoke;}
+
+.exemple-photo-plateforme-3D
+                    {font-size: 0.7rem;
+                    padding-right: 1.3rem;}
+
+/*.une-seule-interface*/
+                    
+/*.photo-plateforme-3D*/
+
+.texte-en-dessous-photo-plateforme-3D
+                    {max-width: 44.5rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    color: whitesmoke;}
+
+.Y-compris-grace
+                    {font-size: 0.8rem; padding-top: 0.5rem;} 
+
+.Gestion-du-personnel {font-size: 0.8rem;}
+
+
+
+
+
+.separation-article-une-seule-plateforme
+                    {display: block;
+                    margin: auto;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    background-color: 
+                    rgb(69, 90, 126);
+                    height: 1.5rem;}
+
+
+/*.separation-une-seule-plateforme*/
+
+
+
+
+
+.vigilence-mobilité-wifi
+                    {max-width: 44.5rem;
+                    max-height: 38.5rem;
+                    background-color:
+                    rgb(41, 59, 97);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start; 
+                    justify-content: start;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    margin-top: 1rem;
+                    margin-bottom: 0rem;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                    font-size: 0rem;}
+
+/*.titres-de-droite-mobilité-wifi*/
+
+.menu3-mobilité-wifi    {font-size: 0rem;}
+
+.nos-outils-mobilité-wifi-droite
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    text-decoration: none;
+                    color: whitesmoke;}
+
+.outils-mobilité-wifi-droite
+                    {font-size: 1rem;}
+
+.mobilité-wifi-droite
+                    {font-size: 1rem;}
+
+.mobilité-wifi
+                    {font-size: 1rem;}
+
+.menu4-mobilité-wifi    {color: whitesmoke;
+                    font-size: 0rem;}
+
+.manager-agent-securite
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;}
+
+.Restez-unis   
+                    {font-size: 0.9rem;}
+
+.au-coeur-de-l-action   {font-size: 0.9rem;}
+
+.support-mobilité-wifi
+                    {background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                    flex-wrap: nowrap;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0rem;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    color: whitesmoke;}
+
+.exemple-photo-mobilité-wifi
+                    {font-size: 0.7rem;
+                    align-items: center;}
+
+/*.Voir-partout*/
+
+/*.images-mobilité-wifi*/    
+
+.div-photo-mobilité-wifi
+                    {display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;}
+
+/*.photo-agent-securite-mobilite-wifi*/
+
+/*.photo-camera-mobilité-wifi*/
+                    
+
+.texte-en-dessous-photo-mobilite-wifi
+                    {max-width: 44.5rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    font-size: 0.8rem;
+                    color: whitesmoke;}
+
+
+.En-utilisant-la-technologie-Wi-fi
+                    {font-size: 0.8rem;}
+.En-cas-d-urgence  
+                    {font-size: 0.8rem;}
+
+
+                    
+
+.separation-article-mobilite-wi-fi
+                    {display: block;
+                    margin: auto;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    background-color: 
+                    rgb(69, 90, 126);
+                    height: 1.5rem;}
+
+
+/*.separation-mobilite-wi-fi*/
+
+
+
+
+
+.notre-vision 
+                    {display: flex;
+                    flex-direction: row;
+                    align-items: start; 
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;}  
+
+.notre-vision-l-excélence-avant-tout
+                    {max-width: 44.5rem;
+                    max-height: 38.5rem;
+                    background-color:
+                    rgb(41, 59, 97);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start; 
+                    justify-content: start;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    margin-top: 1rem;
+                    margin-bottom: 0rem;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                    font-size: 0rem;}
+
+/*.titres-de-gauche-notre-vision
+                {font-size: 0rem;}*/
+
+.menu1-notre-vision    {font-size: 0rem;}
+
+.notre-vision-un-reseau-de-partenaires-gauche
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    text-decoration: none;
+                    color: whitesmoke;}
+
+.vision-un-reseau-de-partenaires-gauche
+                    {font-size: 1rem;}
+
+.un-reseau-de-partenaires-gauche
+                    {font-size: 1rem;}
+
+.un-reseau-de-partenaires
+                    {font-size: 1rem;}
+
+
+.menu2-notre-vision  {color: whitesmoke;
+                    font-size: 0rem;}
+
+.l-excellence-avant-tout
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;}
+
+.de-grandes-institutions {font-size: 0.9rem;}
+
+.nous-font-confiance
+                    {font-size: 0.9rem;}
+
+.support-l-excellence-avant-tout
+                    {background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: start;
+                    flex-wrap: nowrap;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0rem;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    color: whitesmoke;}
+
+.exemple-image-l-excellence-avant-tout
+                    {font-size: 0.7rem;
+                    padding-right: 1.3rem;}
+
+/*.notre-reference*/
+                    
+/*.photo-l-excellence-avant-tout*/
+
+.texte-en-dessous-photo-l-excellence-avant-tout
+                    {max-width: 44.5rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    color: whitesmoke;}
+
+.La-securité-est-un-immense-travail-d-equipe
+                    {font-size: 0.8rem; padding-top: 0rem;} 
+
+.Avec-vous-et-pour-vous
+                    {font-size: 0.8rem;}
+
+
+
+
+
+.separation-article-l-exelence-avant-tout
+                    {display: block;
+                    margin: auto;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    background-color: 
+                    rgb(69, 90, 126);
+                    height: 1.5rem;}
+
+
+/*.separation-l-exelence-avant-tout*/
+
+
+
+
+
+.notre-vision-de-la-France-a-l-etranger
+                    {max-width: 44.5rem;
+                    max-height: 38.5rem;
+                    background-color:
+                    rgb(41, 59, 97);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start; 
+                    justify-content: start;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    margin-top: 1rem;
+                    margin-bottom: 0rem;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                    font-size: 0rem;}
+
+/*.titres-de-droite-notre-vision
+                {font-size: 0rem;}*/
+
+.menu3-notre-vision    {font-size: 0rem;}
+
+.notre-vision-nos-bureaux-droite
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    text-decoration: none;
+                    color: whitesmoke;}
+
+.vision-nos-bureaux-droite
+                    {font-size: 1rem;}
+
+.nos-bureaux-droite
+                    {font-size: 1rem;}
+
+.nos-bureaux        {font-size: 1rem;}
+
+.menu4-notre-vision    
+                    {color: whitesmoke;
+                    font-size: 0rem;}
+
+.des-bureaux-en-France-et-a-l-etranger
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;}
+
+.un-ancrage-territoriale
+                    {font-size: 0.9rem;}
+
+.pour-atout
+                    {font-size: 0.9rem;}
+
+.support-nos-bureaux
+                    {background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: row;
+                    align-items: start;
+                    justify-content: start;
+                    flex-wrap: nowrap;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0rem;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    color: whitesmoke;}
+
+.exemple-image-nos-bureaux
+                    {font-size: 0.7rem;
+                    padding-right: 1rem;}
+
+.Nous-restons-présents
+                    {padding-top: 0.5rem;
+                    padding-bottom: 0.5rem ;}
+
+.image-nos-bureaux
+                    {display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;}
+
+/*.nos-bureaux*/
+
+.Rendes-vous-sur-la-page-Adresses
+                    {padding-top: 0.25rem;}
+
+.texte-a-cote-image-nos-bureaux
+                    {max-width: 20rem;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    align-items: center;
+                    color: whitesmoke;}
+
+.un-réseau-solide
+                    {padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    font-size: 0.7rem;} 
+
+.Nous-travaillons
+                    {font-size: 0.8rem;}
+
+.Nous-ne-sommes-jamais-seuls
+                    {font-size: 0.8rem;}
+
+.Consultez-les-pages-suivantes
+                    {font-size: 0.8rem;}
+
+
+
+                    
+
+.separation-article-nos-bureaux
+                    {display: block;
+                    margin: auto;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    background-color: 
+                    rgb(69, 90, 126);
+                    height: 1.5rem;}
+
+
+/*.separation-nos-bureaux*/
+
+
+
+
+
+
+.nos-partenaires 
+                    {display: flex;
+                    flex-direction: row;
+                    align-items: start; 
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;}  
+
+.nos-partenaires-clients
+                    {max-width: 44.5rem;
+                    max-height: 59.5rem;
+                    background-color:
+                    rgb(41, 59, 97);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start; 
+                    justify-content: start;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    margin-top: 1rem;
+                    margin-bottom: 0rem;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                    font-size: 0rem;}
+
+/*.titres-de-gauche-nos-partenaires
+                {font-size: 0rem;}*/
+
+.menu1-nos-partenaires-clients
+                    {font-size: 0rem;}
+
+.nos-partenaires-clients-gauche
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    text-decoration: none;
+                    color: whitesmoke;}
+
+.clients-gauche
+                    {font-size: 1rem;}
+
+.clients
+                    {font-size: 1rem;}
+
+.sports-arts-et-culture
+                    {font-size: 1rem;}
+
+
+.menu2-nos-partenaires  {color: whitesmoke;
+                    font-size: 0rem;}
+
+.le-client-pour-partenaire
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;}
+
+.etre-un-bon-partenaire {font-size: 0.9rem;}
+
+.c-est-l-experience-due
+                    {font-size: 0.9rem;}
+
+.support-l-experience-due
+                    {background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: start;
+                    flex-wrap: nowrap;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0rem;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    color: whitesmoke;}
+
+
+.exemple-image-l-experience-due
+                    {font-size: 0.7rem;}
+
+.images-l-experience-due
+                    {font-size: 0.7rem;}
+
+/*.cliquez-sur-un-de-nos-clients*/   
+
+/*.photo-tableau-clients*/
+
+.federations-clientes
+                    {display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: nowrap;}
+
+/*.images-federations-clientes1*/
+
+/*.images-federations-clientes2*/
+
+
+.ces-fédérations-nous-font-confiance
+                    {font-size: 0.7rem;
+                    padding-top: 1rem; 
+                    text-align: center;}
+
+
+
+
+
+
+.separation-article-l-exelence-avant-tout
+                    {display: block;
+                    margin: auto;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    background-color: 
+                    rgb(69, 90, 126);
+                    height: 1.5rem;}
+
+
+/*.separation-l-exelence-avant-tout*/
+
+
+
+
+
+.nos-partenaires-logique-metier
+                    {max-width: 44.5rem;
+                    max-height: 59.5rem;
+                    background-color:
+                    rgb(41, 59, 97);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start; 
+                    justify-content: start;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                    margin-top: 1rem;
+                    margin-bottom: 0rem;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                    font-size: 0rem;}
+
+/*.titres-de-droite-logique-metier
+                {font-size: 0rem;}*/
+
+.menu3-logique-metier   {font-size: 0rem;}
+
+.logique-metier-technologie-droite
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    text-decoration: none;
+                    color: whitesmoke;}
+
+.technologie-droite
+                    {font-size: 1rem;}
+
+.technologie
+                    {font-size: 1rem;}
+
+.logique-metier       {font-size: 1rem;}
+
+
+.menu4-logique-metier    
+                    {color: whitesmoke;
+                    font-size: 0rem;}
+
+.liens-vers-les-partenaires
+                    {display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;}
+
+.restez-a-la-pointe
+                    {font-size: 0.9rem;}
+
+.de-l-inovation
+                    {font-size: 0.9rem;}
+
+.support-logique-metier
+                    {background-color:
+                    rgb(50, 69, 110);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: start;
+                    flex-wrap: nowrap;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0rem;
+                    padding-top: 1rem;
+                    padding-bottom: 0rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    color: whitesmoke;}
+
+            
+/*.exemple-image-l-experience-due
+                    {font-size: 0.7rem;}*/
+
+/*.images-l-experience-due
+                    {font-size: 0.7rem;}*/
+
+/*.cliquez-sur-un-de-nos-clients*/   
+
+/*.photo-ecran*/
+
+.exemple-image-logique-metier
+                    {display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                    font-size: 0.7rem;
+                    padding-right: 0rem;}
+
+.image-logique-metier
+                    {display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                    font-size: 0.7rem;}
+
+
+.image-logique-metier-ligne1
+                    {display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: nowrap;}
+
+
+/*.logique-metier1*/
+
+/*.logique-metier2*/
+
+/*.logique-metier3*/
+
+.image-logique-metier-ligne2
+                    {display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: nowrap;}
+
+
+/*.logique-metier4*/
+
+/*.logique-metier5*/
+
+/*.logique-metier6*/
+
+.texte-en-bas-logique-metier
+                    {padding-top: 0.25rem;
+                    align-self: center;}
+
+
+
+                                        
+
+.separation-article-fiabilité
+                    {display: block;
+                    margin: auto;
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    background-color: 
+                    rgb(69, 90, 126);
+                    height: 1.5rem;}
+
+
+/*.separation-fiabilité*/
+
+
+
+
+
