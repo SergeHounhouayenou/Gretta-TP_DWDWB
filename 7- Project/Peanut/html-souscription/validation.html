@@ -66,394 +66,155 @@
 
             <h2> Remplir le formulaire d'inscription </h2>
 
-            <section class="etape-1">
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th scope="row" id=”col2-etape1-inscription”>Etape 1</th>
-                            <th></th>
-                            <th scope="row" id=”col4-etape1-inscription”> <div>X</div> </th>
-                        </tr>
-                    </thead>
+            <form class="" aria-label="user-ident-validation" action="user-ident-validation-abonnement.php" id="identIsValid" name="identIsValid" method="">
+<!-- Ne pas oublier les boutons de type submit. On préfèrera le code html <button type="submit"> enoyer </button> au code <input type="submit" value="envoyer"> car plus simple à traiter en design -->
+                <div class="userIdent-checkbox">
+                    <label class="" for="user-ident-validation-confirmation"> Etape 1 </label>
+                    <input class="" type="radio" id="user-ident-validation-confirmation" name="user-ident-validation-confirmation">
+                <div>
                 
-                    <tbody>
-                        
-                        <tr>
-                            <td> Nom
-                            </td>
-                            
-                            <td colspan="3"> 
-                                <form class="" action=""> 
-                                    <label for="nom" class="" > : </label> 
-                                    <input type="text" id="nom" name="nom"> 
-                                </form>
+                <div class="">
+                    <label class="" for="user-firsNme-filUp"> Nom : </label>
+                    <input class=""type="text" id="user-firsNme-filUp" name="user-firsNme-filUp" required>
+                </div>
 
-                            </td>
-                        </tr>
+                <div class="">
+                    <label class="" for="user-lastName-filUp"> Prénom : </label>
+                    <input class="" type="text" id="user-lastName-filUp" name="user-lastName-filUp" required>
+                </div>
 
-                        <tr>
-                            <td>  Prénom
-                            </td>
+                <div class="">
+                    <label class="" for="user-pseudo-filUp"> Pseudo : </label>
+                    <input class="" type="text" id="user-pseudo-filUp" name="user-pseudo-filUp" required>
+                </div>
 
-                            <td colspan="3"> 
-                                <form class="" action=""> 
-                                    <label for="prenom"> : </label> 
-                                    <input type="text" id="prenom" name="prenom"> 
-                                </form>
-
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> Pseudo
-                            </td>
-                            <td colspan="3"> 
-                                <form class="" action=""> 
-                                    <label for="pseudo"> :  </label> 
-                                    <input type="text" id="pseudo" name="pseudo"> 
-                                </form>
-
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> E-mail
-                            </td>
-
-                            <td colspan="3"> 
-                                <form class="" action=""> 
-                                    <label for="mail"> :  </label> 
-                                    <input type="text" id="mail" name="mail"> 
-                                </form>
-
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> Adresse
-                            </td>
-
-                            <td colspan="3">
-                                <form class="" action=""> 
-                                    <label for="adresse"> :  </label> 
-                                    <input type="text" id="adresse" name="adresse"> 
-                                </form>
-
-                            </td>
-                        </tr>
-
-
-
-                        <tr>
-                            <td>  Code postal
-                            </td>
-
-                            <td colspan="3">
-                                <form class="" action=""> 
-                                    <label for="motSecret"> : </label> 
-                                    <input type="text" id="motSecret" name="motSecret"> 
-                                </form>
-
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>  Tel fixe
-                            </td>
-
-                            <td colspan="3">
-                                <form class="" action=""> 
-                                    <label for="telFixe"> : </label> 
-                                    <input type="text" id="telFixe" name="telfixe"> 
-                                </form>
-
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> Portable
-                            </td>
-
-                            <td colspan="3"> 
-                                <form class="" action=""> 
-                                    <label for="portable"> :  </label> 
-                                    <input type="text" id="portable" name="portabe"> 
-                                </form>
-
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td colspan="4"> 
-                                <div class=""> 
-                                    <button class="" type="button"> Valider </button>
-                                </div>
-                            </td>
-                        </tr>
-
-                 
+                <div class="">
+                    <label class="" for="user-mail-filUp"> E-mail : </label>
+                    <input class="" type="email" id="user-mail-filUp" name="user-mail-filUp" required>
+                </div>
                 
-                      
-            </section>
+                <div class="">
+                    <label class="" for="user-address-filUp"> Adresse : </label>
+                    <input class="" type="text" id="user-address-filUp" name="user-address-filUp" placeholder="cliquez ici pour commencer" required>
+                </div>
 
-            <section class="etape-2">
+                <div class="">
+                    <label class="" for="user-telFixe-filUp"> N° de téléphone fixe : </label>
+                    <input class="" type="tel" id="user-telFixe-filUp" name="user-telFixe-filUp" required>
+                </div>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th scope="row" id=”col2-etape2-motSecret”>Etape 2</th>
-                            <th></th>
-                            <th scope="row" id=”col4-etape2-motSecret”> <div>X</div> </th>
-                        </tr>
-                    </thead>
+                <div class="">
+                    <label class="" for="user-telPortable-filUp"> N° de téléphone portable : </label>
+                    <input class="" type="tel" id="user-telPortable-filUp" name="user-telPortable-filUp" required>
+                </div>
+
+                <button class="button-abonnement" type="submit"> valider </button>
+
+            </form>
+
+            <form class="" aria-label="user-password-createChange" action="user-password-createChange.php" id="passwordIsSecured" name="passwordIsSecured" method="">
                 
-                    <tbody>
-                        <tr>
-                            <td colspan="3">  mot de passe actuel
-                            </td>
-                            
-                            <td> 
-                                <form class="" action=""> 
-                                    <label for="ancienCode" class="" > : </label> 
-                                    <input type="password" id="ancienCode" name="ancienCode"> 
-                                </form>
+                <fieldset class="password-createChange-byUser">
+                    <div class="">
+                        <label class="" for="userPassword-validation-confirmation-byUs"> Etape 2 : </label>
+                        <input class="" type="radio" id="userPassword-validation-confirmation-byUs" name="userPassword-validation-confirmation-byUs"> 
+                    </div>
 
-                            </td>
-                        </tr>
+                    <div class="">
+                        <label class="" for="oldPassword-filup-byUser"> Le mot de pass actuel : </label>
+                        <input class="" type="password" id="oldPassword-filup-byUser" name="oldPassword-filup-byUser" 
+                                        minlength="10" maxlength="30" placeholder="entre 10 et 30 caractères" required>
+                    </div>
 
-                        <tr>
-                            <td colspan="3">  Nouveau mot de passe
-                            </td>
+                    <div class="">
+                        <label class="" for="newPassword-filup-byUser"> Nouveau mot de passe : </label>
+                        <input class="" type="password" id="newPassword-filup-byUser" name="newPassword-filup-byUser" 
+                                        minlength="10" maxlength="30" placeholder="entre 10 et 30 caractères" required>
+                    </div>
 
-                            <td> 
-                                <form class="" action=""> 
-                                    <label for="nouveauCode"> : </label> 
-                                    <input type="password" id="nouveauCode" name="nouveauCode"> 
-                                </form>
+                    <div class="">
+                        <label class="" for="newPassword-confirmation-byUser"> Confirmez le nouveau : </label>
+                        <input class="" type="password" id="newPassword-confirmation-byUser" name="newPassword-confirmation-byUser" 
+                                        minlength="10" maxlength="30" placeholder="entre 10 et 30 caractères" required>
+                    </div>
+                </fieldset>
 
-                            </td>
-                        </tr>
+                <fieldset class="infoToUser-profile">
+                    <div class="infoToUser-userChoice-entete">
+                        <p> Cochez une case par ligne </p> 
+                        <p> oui </p> 
+                        <p> non </p> 
+                    <div>
 
-                        <tr>
-                            <td colspan="3"> Confirmez le nouveau
-                            </td>
-                            <td> 
-                                <form class="" action=""> 
-                                    <label for="confrmeCode"> : </label> 
-                                    <input type="password" id="confrmeCode" name="confrmeCode"> 
-                                </form>
+                    <div class="infoToUser-userChoice">
+                        <label class="" for="infoToUser-userChoice-gift"> Recevoir des cadeaux Peanut ? </label>
+                        <input class="" type="radio" id="infoToUser-userChoice-gift" name="infoToUser-userChoice-gift-yes" required> 
+                        <input class="" type="radio" id="infoToUser-userChoice-gift" name="infoToUser-userChoice-gift-no" required>
+                    </div>
 
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>   
+                    <div class="infoToUser-userChoice">
+                        <label class="" for="infoToUser-userChoice-offers"> Être informé des offres Peanut ? </label>
+                        <input class="" type="radio" id="infoToUser-userChoice-offers" name="infoToUser-userChoice-offers-yes" required> 
+                        <input class="" type="radio" id="infoToUser-userChoice-offers" name="infoToUser-userChoice-offers-no" required>
+                    </div>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th></th> <th></th> <th></th> <th></th> <th></th> <th></th>
-                            <th scope="row" id=”col7-etape2-consentement> Oui </th>
-                            <th scope="row" id=”col8-etape2-consentement> Non </th>
-                        </tr>
-                    </thead>
+                    <div class="infoToUser-userChoice">
+                        <label class="" for="infoToUser-userChoice-lives"> Être informé des Lives-Peanut ? </label>
+                        <input class="" type="radio" id="infoToUser-userChoice-lives" name="infoToUser-userChoice-lives-yes" required> 
+                        <input class="" type="radio" id="infoToUser-userChoice-lives" name="infoToUser-userChoice-lives-no" required>
+                    </div>
+
+                    <div class="infoToUser-userChoice">
+                        <label class="" for="infoToUser-userChoice-cookies"> Navigation + rapide et + fluide ? </label>
+                        <input class="" type="radio" id="infoToUser-userChoice-cookies" name="infoToUser-userChoice-cookies-yes" required> 
+                        <input class="" type="radio" id="infoToUser-userChoice-cookies" name="infoToUser-userChoice-cookies-no" required>
+                    </div>
+                </fieldset>
+
+                <button class="button-validatePassword" type="submit"> valider </button>
+            </form>
+
+
+            <form class="user-abonnement-payment" aria-label="user-abonnement-payment" action="user-abonnement-payment.php" id="user-abonnement-payment" name="user-abonnement-payment" method="">
                 
-                    <tbody>
-                        <tr>
-                            <td colspan="6"> Recevoir des cadeaux Peanut
-                            </td>
-                            
-                            <td> 
-                                <form class="" action=""> 
-                                    <label for="cadeaux" class="" > ? </label> 
-                                    <input type="checkbox" id="cadeaux" name="cadeaux"> 
-                                </form>
-                            </td>
+                <fieldset class="user-payment-legacy">
+                    <div class="user-payment-legalNotices">
+                        <label class="" for="user-payment-legalNotices"> <a class="" rel="" href=""> Lire et valider les mentions légales : </a> </label>
+                        <input class="" type="radio" id="user-payment-legalNotices" name="user-payment-legalNotices"> 
+                    </div>
 
-                            <td> 
-                                <form class="" action=""> 
-                                    <label for="cadeaux" class="" > - </label> 
-                                    <input type="checkbox" id="cadeaux" name="cadeaux"> 
-                                </form>
+                    <div class="user-payment-byVisa">
+                        <div class="user-visaData-empty">
+                            <label class="" for="user-visaNumber-empty"> N° de carte bancaire </label>
+                            <input class="" type="number" id="user-visaNumber-empty" name="user-visaNumber-empty" required> 
+                        </div>
 
-                            </td>
-                        </tr>
+                        <div class="user-visaData-empty">
+                            <label class="" for="user-visaLastName-empty"> Prénom </label>
+                            <input class="" type="text" id="user-visaLastName-empty" name="user-visaLastName-empty" required> 
+                        </div>
 
-                        <tr>
-                            <td colspan="6">  Être informaé des offres du site
-                            </td>
+                        <div class="user-visaData-empty">
+                            <label class="" for="user-visaFirstName-empty"> Nom </label>
+                            <input class="" type="text" id="user-visaFirstName-empty" name="user-visaFirstName-empty" required> 
+                        </div>
 
-                            <td> 
-                                <form class="" action=""> 
-                                    <label for="offres"> ? </label> 
-                                    <input type="checkbox" id="offres" name="offres"> 
-                                </form>
+                        <div class="user-visaData-empty">
+                            <label class="" for="user-visaExpireDate-empty"> Date d'expiraation </label>
+                            <input class="" type="date" id="user-visaExpireDate-empty" name="user-visaExpireDate-empty" required> 
+                        </div>
 
-                            </td>
+                        <div class="user-visaData-empty">
+                            <label class="" for="user-visaSecurityKey-empty"> Clé de sécurité </label>
+                            <input class="" type="number" id="user-visaSecurityKey-empty" name="user-visaSecurityKey-empty" 
+                                            placeholder="code à 3 chiffres" minlength="3" maxlength="3" required> 
+                        </div>
+                    </div>
+                </fieldset>
+                <button class="button-payment" type="submit"> valider </button>
+            </form>
+           
 
-                            <td> 
-                                <form class="" action=""> 
-                                    <label for="offres"> - </label> 
-                                    <input type="checkbox" id="offres" name="offres"> 
-                                </form>
-
-                            </td>
-
-                        </tr>
-
-                        <tr>
-                            <td colspan="6"> Être informé des lives Peanut
-                            </td>
-                            <td> 
-                                <form class="" action=""> 
-                                    <label for="live"> ? </label> 
-                                    <input type="checkbox" id="live" name="live"> 
-                                </form>
-
-                            </td>
-
-                            <td> 
-                                <form class="" action=""> 
-                                    <label for="live"> - </label> 
-                                    <input type="checkbox" id="live" name="live"> 
-                                </form>
-
-                            </td>
-
-                        </tr>
-
-                        <tr>
-                            <td colspan="6"> Navigation rapide et fluide ?
-                            </td>
-                            <td> 
-                                <form class="" action=""> 
-                                    <label for="cookies"> ? </label> 
-                                    <input type="checkbox" id="cookies" name="cookies"> 
-                                </form>
-
-                            </td>
-                            <td> 
-                                <form class="" action=""> 
-                                    <label for="cookies"> - </label> 
-                                    <input type="checkbox" id="cookies" name="cookies"> 
-                                </form>
-
-                            </td>
-
-                            <tr>
-                                <td colspan="8"> 
-                                    <div class=""> 
-                                        <button class="" type="button"> Valider </button>
-                                    </div>
-                                </td>
-                            </tr>
-    
-
-                        </tr>
-                    </tbody>
-                </table>   
-                      
-            </section>
-
-            <section class="etape-3">
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th></th> <th></th> 
-                            <th scope="row" colspan="2" id=”col3-etape3-inscription”>Etape 3</th>
-                            <th></th> <th></th>
-                            <th colspan="2" id=”col7-etape3-motSecret”> <div>X</div> </th>
-                        </tr>
-                    </thead>
-                
-                    <tbody>
-                        <tr scope="row">
-                            <td colspan="7"> Lire et valider les mentions légales
-                            </td>
-                            
-                            <td> 
-                                <form class="" action=""> 
-                                    <label for="mentionLegales" class="" > : </label> 
-                                    <input type="checkbox" id="mentionLegales" name="mentionLegales"> 
-                                </form>
-                            </td>
-                        </tr>
-
-                        <tr scope="row">
-                            <td colspan="7">  Payer avec ma carte visa
-                            </td>
-
-                            <td> 
-                                <form class="" action=""> 
-                                    <label for="accepterPaiment"> : </label> 
-                                    <input type="checkbox" id="accepterPaiment" name="accepterPaiment"> 
-                                </form>
-                            </td>
-                        </tr>
-                       
-                        <tr scope="row">
-                            <td colspan="8"> 
-                                <form class="" action=""> 
-                                    <label for="numéroCarte"> Numéro de carte bancaire : </label> <br/>
-                                    <input type="text" id="numéroCarte" name="numéroCarte"> 
-                                </form>
-                            </td>
-                        </tr>
-
-                        <tr scope="row">
-                            <td class="" colspan="8"> Prénom puis nom du propriétaire
-                            </td>
-                        </tr> 
-
-                        <tr scope="col"> 
-                            <td  colspan="3">  
-                                <form class="" action=""> 
-                                    <label for="prenomCarte"> Prénom : </label> <br/>
-                                    <input type="text" id="prenomCarte" name="prenomCarte"> 
-                                 </form>
-                            </td>
-                            <td colspan="5"> 
-                                <form class="" action=""> 
-                                    <label for="nomCarte"> Nom : </label> <br/>
-                                    <input type="text" id="nomCarte" name="nomCarte"> 
-                                </form>
-                            </td>
-                        </tr>
-
-                        <tr scope="row">
-                            <td class="">
-                                <form class="" action=""> 
-                                    <span colspan="6"> <label for="dateExpiration"> Date d'expiraton : </label> </span>
-                                    <span colspan="2"> <input type="text" id="dateExpiration" name="dateExpiration"/> </span>
-                                 </form>
-                            </td>
-                        </tr>
-
-                        <tr scope="row">
-                            <td class="">
-                                <form class="" action=""> 
-                                    <span colspan="6"> <label for="cléSecurCard"> Clé de sécurité : </label> </span>
-                                    <span colspan="2"> <input type="text" id="cléSecurCard" name="cléSecurCard"/> </span>
-                                 </form>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td colspan="8"> 
-                                <div class=""> 
-                                    <button class="" type="button"> Valider </button>
-                                </div>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>   
-                
-                      
-            </section>
 
 
         </article>
