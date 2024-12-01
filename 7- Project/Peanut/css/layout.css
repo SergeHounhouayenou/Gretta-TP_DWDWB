@@ -1,6 +1,8 @@
 .classical-layout
 {
 border: solid, rgba(30, 30, 30, 1);
+padding: 1rem 1rem 1rem 1rem;
+margin: 0rem 0rem 1rem 0rem;
 }
 /*
 .forms-baseLayout

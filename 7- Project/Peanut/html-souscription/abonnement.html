@@ -41,10 +41,13 @@
                     </div>
                 </div>
 
-                <div>
-                    <p>Chercher</p>
-                    <img class="loupe" src="../images/Icons/button/loupe.svg" alt="une loupe pour activer le moteur de recherche"/>
-                </div>
+                <form class="searchEngin" aria-label="searchEngin" id="searchEngin" name="searchEngin" 
+                            action="searchEngin.php" methode="post">
+                    <input  type="text" id="searchEngin" name="searchEngin" placeholder="Chercher dans tout le site"></input>
+                    <label  for="searchEngin"><img class="loupe" src="../images/Icons/button/loupe.svg" 
+                            alt="une loupe pour activer le moteur de recherche"/>
+                    </label>
+                </form>
 
                     
             </section>
@@ -61,20 +64,24 @@
     <main>
         <h1> Choisir son abonnement </h1>
         <article class="choix-abonnement">
-
+            <div>
             <h2> Visitez gratuitement le catalogue </h2>
-
-            <section class="abonnement-classique">
-
+            <a class="" href="../html-ressources/catalogue.html"> <button type="button">J'y vais !</button> </a>
+            </div>
+            
+            <form class="SubscriptionOffer-classic" aria-label="SubscriptionOffer-classic" 
+                  action="userChose-Subscription.php" id="SubscriptionOffer-classic" 
+                  name="SubscriptionOffer-classic" method="post">
+                
                 <div class="ligne-titre-abonnement">
-                    <h3 class="titre-abonnement-classique"> Abonnement Classic </h3>
-                    <p class="croix-selection-abonnement"> X </p>
+                    <label  for="userSubscription-choice-1">Abonnement Classic</label>
+                    <input  type="checkbox" id="userSubscription-choice-1" 
+                            name="userSubscription-choice-1">
                 </div>
 
-                <article class="affiche-abonnement-classique">
-                    <section>
+                <article class="classicSubscription-poster">
                         <h4> du streaming pour tous... </h4>
-
+                    <section>
                         <div>
                             <p>
                             Pour un accès illimité aux films, aux séries et aux documentaires
@@ -83,34 +90,35 @@
                     </section>
 
                     <section>
-                        <p> 4,99 euros </p>
-                        <p> 
+                        <div> 
                             <img class="logo-affiche" 
-                                src="../images/Icons/logo/logo-Vector.svg" 
+                                src="../images/Icons/logo/logo-affiches-classic.jpg" 
                                 alt="un kangourou en trait doré sur fond noir"/> 
-                        </p>
-                        <p> Classic </p>
+                        </div>
                     </section>
                 </article>
 
                 <div> 
-                    <a class="" href="../html-souscription/validation.html"> <button type="button" class="" > Choisir </button> </a> 
+                    <a class="" href="../html-souscription/validation.html"> 
+                        <button type="submit" class="" > Choisir </button> 
+                    </a> 
                 </div>
                       
-            </section>
+            </form>
 
-
-            <section class="abonnement-premium">
+            <form class="SubscriptionOffer-premium" aria-label="SubscriptionOffer-premium" 
+                  action="userChose-Subscription.php" id="SubscriptionOffer-premium" 
+                  name="SubscriptionOffer-premium" method="post">
 
                 <div class="ligne-titre-abonnement">
-                    <h3 class="titre-abonnement-premium"> Abonnement Premium </h3>
-                    <p class="croix-selection-abonnement"> X </p>
+                    <label  for="userSubscription-choice-2">Abonnement Premium</label>
+                    <input  type="checkbox" id="userSubscription-choice-2" 
+                            name="userSubscription-choice-2">
                 </div>
 
                 <article class="affiche-abonnement-premium">
-                    <section>
                         <h4> Peanut en full access </h4>
-
+                    <section>
                         <div>
                             <p>
                             Videos et salons lives en illimité pour vous et un invité par séance
@@ -119,21 +127,21 @@
                     </section>
 
                     <section>
-                        <p> 12,99 euros </p>
-                        <p> 
+                        <div> 
                             <img class="logo-affiche" 
-                                src="../images/Icons/logo/logo-Vector.svg" 
+                                src="../images/Icons/logo/logo-affiches-premium.jpg" 
                                 alt="un kangourou en trait doré sur fond noir"/> 
-                        </p>
-                        <p> Premium </p>
+                        </div>
                     </section>
                 </article>
 
                 <div> 
-                    <a class="" href="../html-souscription/validation.html"> <button type="button" class="" > Choisir </button> </a> 
+                    <a class="" href="../html-souscription/validation.html"> 
+                        <button type="submit" class="" > Choisir </button> 
+                    </a> 
                 </div>
 
-            </section>
+            </form>
         </article>
     </main>
 

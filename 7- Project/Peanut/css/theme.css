@@ -1,0 +1,21 @@
+.classical-layout section article
+    {
+    background-color: rgba(142, 185, 178, 0.53);
+    border: solid ;
+    border-width: thin ;
+    border-radius: 1rem;
+    margin: 0rem 0rem 1rem 0rem;
+    width: 16rem;
+    text-align: center;
+    }
+.classical-layout section img
+        {
+        width: 14rem;
+        border-radius: 1rem;
+        box-shadow: 0.5em 0.5em 0.3em ;
+        box-shadow: -0.5em -0.5em 0.3em ;
+        }
+.classical-layout section article section
+        {
+        padding-left: 0.5em;  
+        }
