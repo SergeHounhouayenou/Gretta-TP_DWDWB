@@ -17,4 +17,19 @@ footer {
         background-color: rgba(15, 15, 15, 0.95);  
         color: rgb(213, 208, 200) ;
         }
+h1, h2, h5  {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        }  
+h1      {
+        font-size: 1.8rem;
+        }   
+h3      {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        font-weight:900;
+        }
+h4      {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        font-style: italic;
+        font-weight:900;
+        }
  
