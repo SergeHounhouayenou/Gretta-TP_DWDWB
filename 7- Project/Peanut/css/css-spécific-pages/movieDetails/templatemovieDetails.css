@@ -1,0 +1,50 @@
+.main-templateDetails 
+{
+    display: grid;
+    grid-template-areas:
+"section-templateDetails section-templateDetails section-templateDetails section-templateDetails section-templateDetails section-templateDetails"
+"article-templateDetails article-templateDetails article-templateDetails article-templateDetails article-templateDetails article-templateDetails "
+"mainView mainView mainView mainView mainView mainView"
+"poster poster movieDetails movieDetails movieDetails movieDetails"
+"recomandation recomandation recomandation recomandation recomandation recomandation";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0% 0% 0% 1fr 0.5r ;
+}
+
+.section-templateDetails
+{
+    grid-area: section-templateDetails;
+}
+.article-templateDetails
+{
+    grid-area: article-templateDetails;
+}
+.mainView 
+{
+    grid-area: mainView;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    width: 100%;
+}
+
+.poster 
+{
+    grid-area: poster;
+    width: 200%;
+}
+
+.poster img
+{
+    border-radius: 1rem;
+}
+
+.movieDetails {
+    grid-area: movieDetails;
+    width: 400%;
+}
+ 
+.recomandation {
+    grid-area: recomandation;
+}
