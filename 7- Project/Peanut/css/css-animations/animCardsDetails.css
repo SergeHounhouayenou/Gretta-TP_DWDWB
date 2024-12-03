@@ -5,6 +5,63 @@
 animation: cardsOnHover 2s ;
 }
 
+
+@keyframes cardsOnHover
+{
+from  {
+      transform: translateY(0px);
+      transform: translateX(0px);
+      }
+
+25%  {
+      scale: 0.9;
+      transform: translateY(2px);
+      transform: translateX(0px);
+     }
+
+40%  {
+      transform: translateY(1px);
+      transform: translateX(2px);
+     }
+
+85%  {
+      transform: translateY(-1px);
+      transform: translateX(0px);
+     }
+
+to {
+      transform-origin: bottom right;
+      transform: translateY(-2px);
+      transform: translateX(0px);
+     }
+}
+
+
+.cardsOnBoot
+{
+animation: cardsOnBoot 0.5s ;
+}
+
+
+@keyframes cardsOnBoot
+{
+from  {
+      scale: 1;
+      }
+
+50%  {
+      scale: 1.1;
+     }
+
+to {
+      scale: 1;
+     }
+}
+
+
+
+
+/*
 @keyframes cardsOnHover
 {
 from  {
@@ -12,7 +69,7 @@ from  {
    /*   transform: translateY(0px);
       transform: translateX(0px);
       transform: skewX(0);*/
-      transform: skewY(10);
+    /*  transform: skewY(10);
       }
 
 25%  {
@@ -21,7 +78,7 @@ from  {
       transform: translateY(2px);
       transform: translateX(0px);
       transform: skewX(0deg);
-      transform: skewY(10deg);      */                    
+      transform: skewY(10deg);                         
      }
 
 40%  {
@@ -29,7 +86,7 @@ from  {
     /*  transform: translateY(1px);
       transform: translateX(2px);
       transform: skewX(0deg); */
-      transform: skewY(0eg);                         
+   /*   transform: skewY(0eg);                         
      }
 
 85%  {
@@ -38,7 +95,7 @@ from  {
    /*   transform: translateY(-1px);
       transform: translateX(-2px);
       transform: skewX(0deg); */
-      transform: skewY(0deg);                         
+  /*    transform: skewY(0deg);                         
      }
 
 to {
@@ -50,99 +107,3 @@ to {
       transform: skewY(-10deg);                         
      }
 }
-
-
-/*
-
-@keyframes cardsOnHover
-{
-from  {
-     
-      transform: translateY(0px);
-      transform: translateX(0px);
-      transform: skewX(0);
-      transform: skewY(0);
-      }
-
-25%  {
-      scale: 0.9;
-      opacity: 1;
-      transform: translateY(2px);
-      transform: translateX(0px);
-      transform: skewX(0deg);
-      transform: skewY(0deg);                          
-     }
-
-40%  {
-      opacity: 1;
-      transform: translateY(1px);
-      transform: translateX(2px);
-      transform: skewX(0deg);
-      transform: skewY(0eg);                         
-     }
-
-85%  {
-      opacity: 0.95;
-      transform: translateY(-1px);
-      transform: translateX(-2px);
-      transform: skewX(0deg);
-      transform: skewY(-0deg);                         
-     }
-
-to {
-      opacity: 1;
-      transform-origin: bottom right;
-      transform: translateY(-2px);
-      transform: translateX(0px);
-      transform: skewX(0deg);
-      transform: skewY(0deg);                         
-     }
-}
-     */
-
-     /*
-     
-@keyframes cardsOnHover
-{
-from  {
-     
-      transform: translateY(0px);
-      transform: translateX(0px);
-      transform: skewX(0);
-      transform: skewY(0);
-      }
-
-25%  {
-      scale: 0.9;
-      opacity: 1;
-      transform: translateY(2px);
-      transform: translateX(0px);
-      transform: skewX(0deg);
-      transform: skewY(0deg);                          
-     }
-
-40%  {
-      opacity: 1;
-      transform: translateY(1px);
-      transform: translateX(2px);
-      transform: skewX(0deg);
-      transform: skewY(0eg);                         
-     }
-
-85%  {
-      opacity: 0.95;
-      transform: translateY(-1px);
-      transform: translateX(-2px);
-      transform: skewX(0deg);
-      transform: skewY(-0deg);                         
-     }
-
-to {
-      opacity: 1;
-      transform-origin: bottom right;
-      transform: translateY(-2px);
-      transform: translateX(0px);
-      transform: skewX(0deg);
-      transform: skewY(0deg);                         
-     }
-}*/

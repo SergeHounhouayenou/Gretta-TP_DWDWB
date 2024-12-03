@@ -1,0 +1,40 @@
+
+
+
+
+
+.main-templateDetails	
+{
+grid-template-columns: repeat(2, 1fr); 
+/* 2 colonnes */
+}
+    
+
+
+/*
+@madia (max-width: 1024px) 
+{
+    .mainView 
+    {
+        grid-area: mainView;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        width: 100%;
+    }
+}
+*/
+
+
+/*Ecran de moins de 768px  (mobiles) */
+@media (max-width : 768px) 
+{
+    .mainView 
+    {
+        grid-area: mainView;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        width: 100%; 
+    }
+}
