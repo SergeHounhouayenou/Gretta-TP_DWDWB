@@ -1,5 +1,11 @@
 
 
+.headerRessources
+{
+    display: flex;
+    flex-direction: row;
+}
+
 .classical-layout
             {
             border: solid, rgba(30, 30, 30, 1);

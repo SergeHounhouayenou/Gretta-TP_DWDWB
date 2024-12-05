@@ -1,0 +1,219 @@
+
+html
+{
+  margin: 0 0 0 0;
+  background-color: rgb(243, 244,246);
+}
+
+header>div
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 1em 1em 1em;
+
+}
+
+header p
+{
+  color: rgb(29,78,216);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: bold;
+  font-size: larger;
+}
+
+header ul
+{ 
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+ 
+}
+
+header li
+{
+  text-decoration: none;
+  
+}
+
+header a
+{
+  text-decoration: none;
+  color: black;
+}
+
+header button
+{
+  background-color: rgb(147,78,216);
+  color: aliceblue;
+  width:  5rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+}
+
+.section1
+{
+  background-color: rgb(29,78,216);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  padding: 2rem 0rem 2rem 0rem;
+}
+
+.section1:first-child
+{
+  font-size: xx-large;
+}
+
+.section1 button
+{
+  background-color:aliceblue;
+  color: rgb(29,78,216);
+  width:  10rem;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
+
+.section2
+{
+  background-color: rgb(210, 213, 219);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  color: black;
+  padding: 2rem 0rem 2rem 0rem;
+}
+
+.section2 div
+{
+  background-color: ;
+  justify-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+ 
+}
+
+
+.section2 figure
+
+{
+  width: 320px;
+  height: 200px;
+  background-color:  rgb(160, 161, 165);
+  border-radius: 1rem 1rem 0rem 0rem;
+  text-align: center;
+  color: black;
+
+}
+
+
+
+.titre2
+{
+  text-align: center;
+}
+
+
+.section2 button
+{
+  background-color: rgb(147,78,216);
+  color: aliceblue;
+  width:  6rem;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+}
+
+.legend
+{
+  background-color: aliceblue;
+  width: 320px;
+  margin-top: -2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+
+
+
+.section3
+{
+ 
+  color: black;
+  padding: 2rem 0rem 2rem 0rem;
+}
+
+
+.section3 div
+{
+  background-color: ;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+ 
+}
+
+.section3 figure
+
+{
+  width: 320px;
+  height: 200px;
+  background-color:  rgb(160, 161, 165);
+  border-radius: 1rem 1rem 0rem 0rem;
+  text-align: center;
+  color: black;
+
+}
+
+
+
+.section3 button
+{
+  background-color: rgb(147,78,216);
+  color: aliceblue;
+  width:  6rem;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+}
+
+
+.legend2
+{
+  background-color: aliceblue;
+  width: 320px;
+  margin-top: -2rem;
+  margin-left: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.section4>h2
+{
+  text-align: center;
+}
+
+.section4>div
+{
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  background-color: rgb(240, 242, 244);
+  
+  height: 10rem;
+}
+
+.say
+{
+  background-color: aliceblue;
+  border-radius: 1rem;
+}
