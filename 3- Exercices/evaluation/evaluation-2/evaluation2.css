@@ -51,6 +51,13 @@ header a
   color: black;
 }
 
+header a:hover
+{
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(29,78,216);
+}
+
 header button
 {
   background-color: rgb(147,78,216);
@@ -59,7 +66,14 @@ header button
   height: 2rem;
   border-radius: 0.4rem;
 }
-
+header button:hover
+{
+  background-color: rgb(29,78,216);
+  color: aliceblue;
+  width:  5rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+}
 
 .section1
 {
@@ -87,6 +101,14 @@ header button
   border-radius: 0.4rem;
   font-size: 1rem;
 }
+
+.section1 button:hover
+{
+  background-color:rgb(199, 143, 46);
+ 
+ 
+}
+
 
 .Section2
 {
@@ -116,8 +138,12 @@ header button
   justify-items: center;
   font-size: 1.2rem;
   font-weight: 600;
+  
 }
-
+.articleSection2 div:hover
+{
+  transform: scale(1.1);
+}
 
 .articleSection2 figure
 
@@ -149,6 +175,11 @@ header button
   margin-top: 1rem;
 }
 
+.articleSection2 button:hover
+{
+  background-color: rgb(29,78,216);
+}
+
 .legend
 {
   background-color: white;
@@ -158,6 +189,10 @@ header button
   padding-bottom: 1rem;
   border-radius: 0rem 0rem 1rem 1rem;
   text-align: center;
+  border-bottom: solid;
+  border-right: solid;
+  border-width: 0.3rem;
+  border-color: rgb(182, 175, 175);
 }
 
 .section3
@@ -173,6 +208,7 @@ header button
 
 .produitSection3
 {
+  
   background-color: white;
   width: 150px;
   color: black;
@@ -181,6 +217,10 @@ header button
   flex-direction: column;
   align-items: center;
 }
+.produitSection3:hover
+{
+  transform: scale(1.1);
+  }
 
 .produitSection3:first-child
 {
@@ -193,6 +233,7 @@ header button
   font-weight: 600;
   width: 150px;
 }
+
 
 .produitSection3 span
 {
@@ -212,7 +253,6 @@ header button
 }
 
 
-
 .produitSection3 button
 {
   background-color: rgb(147,78,216);
@@ -221,6 +261,11 @@ header button
   height: 2.5rem;
   border-radius: 0.4rem;
   margin-top: 1rem;
+}
+
+.produitSection3 button:hover
+{
+  background-color: rgb(29,78,216);
 }
 
 
@@ -347,6 +392,11 @@ footer a
   text-decoration: none;
 }
 
+footer a:hover
+{
+  color: rgb(209, 198, 198);
+}
+
 footer input
 {
   width: 16em;
@@ -365,6 +415,10 @@ footer button
   height: 2.5rem;
   border-radius: 0.4rem;
   margin-top: 4px;
+}
+footer button:hover
+{
+  background-color: violet;
 }
 
 .espaceLienFooter
