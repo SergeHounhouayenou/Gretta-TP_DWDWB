@@ -3,7 +3,14 @@ html
 {
   margin: 0 0 0 0;
   background-color: rgb(243, 244,246);
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+body
+{
+  background-color: aliceblue;
+}
+
 
 header>div
 {
@@ -33,7 +40,7 @@ header ul
 
 header li
 {
-  text-decoration: none;
+  list-style-type: none;
   
 }
 
@@ -51,6 +58,7 @@ header button
   height: 2rem;
   border-radius: 0.4rem;
 }
+
 
 .section1
 {
@@ -78,33 +86,40 @@ header button
   font-size: 1rem;
 }
 
-.section2
+.Section2
 {
   background-color: rgb(210, 213, 219);
+}
+
+
+.articleSection2
+{
+ 
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
   align-items: center;
   color: black;
   padding: 2rem 0rem 2rem 0rem;
-}
+  margin-left: 4rem;
+  margin-right: 4rem;
 
-.section2 div
+}
+  
+
+.articleSection2 div
 {
-  background-color: ;
+  width: 300px;
   justify-items: center;
   font-size: 1.2rem;
   font-weight: 600;
-
- 
 }
 
 
-.section2 figure
+.articleSection2 figure
 
 {
-  width: 320px;
+  width: 300px;
   height: 200px;
   background-color:  rgb(160, 161, 165);
   border-radius: 1rem 1rem 0rem 0rem;
@@ -121,7 +136,7 @@ header button
 }
 
 
-.section2 button
+.articleSection2 button
 {
   background-color: rgb(147,78,216);
   color: aliceblue;
@@ -133,48 +148,69 @@ header button
 
 .legend
 {
-  background-color: aliceblue;
-  width: 320px;
+  background-color: white;
+  width: 300px;
   margin-top: -2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 0rem 0rem 1rem 1rem;
+  text-align: center;
 }
-
-
 
 .section3
 {
- 
-  color: black;
-  padding: 2rem 0rem 2rem 0rem;
+  margin-left: 4rem;
 }
-
-
-.section3 div
+.section3>h2
 {
-  background-color: ;
-  font-size: 1.2rem;
+  text-align: center;
+  font-size: 2rem;
   font-weight: 600;
-
- 
 }
 
-.section3 figure
+.produitSection3
+{
+  background-color: white;
+  width: 150px;
+  color: black;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produitSection3:first-child
+{
+  text-align: center;
+}
+
+.produitSection3 div
+{
+  font-size: 1em;
+  font-weight: 600;
+  width: 150px;
+}
+
+.produitSection3 span
+{
+  color: rgb(122, 119, 119);
+}
+
+.produitSection3 figure
 
 {
-  width: 320px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-color:  rgb(160, 161, 165);
-  border-radius: 1rem 1rem 0rem 0rem;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin-top: 0rem;
   text-align: center;
   color: black;
-
 }
 
 
 
-.section3 button
+.produitSection3 button
 {
   background-color: rgb(147,78,216);
   color: aliceblue;
@@ -187,33 +223,147 @@ header button
 
 .legend2
 {
-  background-color: aliceblue;
-  width: 320px;
-  margin-top: -2rem;
-  margin-left: 2.5rem;
+  width: 150px;
+  margin-top: 0rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-left: 2rem;
   border-radius: 0rem 0rem 1rem 1rem;
 }
 
-.section4>h2
+.gridTemplate
+{
+  display: grid;
+  grid-template-areas:  
+  "titre4 titre4 titre4"
+  "say";
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-row: 1fr 1fr;
+}
+
+.titre4
 {
   text-align: center;
+  width: 100%;
+  grid-area: titre4;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  
 }
 
 .section4>div
 {
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  background-color: rgb(240, 242, 244);
-  
-  height: 10rem;
+  height: 4rem;
 }
 
 .say
 {
-  background-color: aliceblue;
+  grid-area: say;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+}
+
+.say div 
+{
+  background-color: white;
   border-radius: 1rem;
+  width: 14em;
+  height: 5rem;
+  padding: 0rem 1rem 1rem 0rem;
+  
+}
+
+.say div blockquote
+{
+  width: 100%;
+  font-style: italic;
+  color: grey;
+  margin-left: 1rem;
+}
+
+.content figcaption
+{
+  font-style: normal;
+  text-align: right;
+  color: black;font-weight: 600;
+  padding-right: 1rem;
+  font-style:normal;
+  font-weight: 600;
+
+}
+
+footer
+{
+  background-color: rgb(24, 26, 36);
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+footer>div
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer>div>section
+{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+
+footer>div>section>div:nth-child(2)>div
+{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+footer p
+{
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+footer a
+{
+  color: grey;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer input
+{
+  width: 16rem;
+  color: grey;
+  font-weight: 600;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  padding-left: 10px;
+}
+
+footer button
+{
+  width: 6rem;
+  color: rgb(29,78,216);
+  font-weight: 600;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  margin-top: 4px;
+}
+
+.espaceLienFooter
+{
+  line-height: 2rem;
 }
