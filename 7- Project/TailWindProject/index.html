@@ -132,32 +132,34 @@
         </div>
     </section>
 
-    <footer class="bg-slate-950">
+    <footer class="bg-black py-8">
         <section class="container mx-auto px-4 py-0">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="">
-                    <p>E-shop</p>
-                    <div>
+                    <p class="footerTitle font-bold">E-shop</p>
+                    <div class="footerLiens">
                         <p><a href="">your go-to shop for amazing deals and products</a></p>   
                     </div>
                 </div>
-                <div>
-                    <p>Quick Links</p>
-                    <p><a href="">Home</a></p>
-                    <p><a href="">Shop</a></p>
-                    <p><a href="">Contact</a></p>
+                <div class="text-primary">
+                    <p id="quickLink" class="footerTitle font-bold">Quick Links</p>
+                    <div class="footerLiens">
+                        <p><a href="">Home</a></p>
+                        <p><a href="">Shop</a></p>
+                        <p><a href="">Contact</a></p>
+                    </div>
                 </div>
-                <div class="" >
-                    <p>Customer Service</p>
+                <div class="footerLiens" >
+                    <p id="customerService" class="footerTitle font-bold">Customer Service</p>
                     <P><a href="">Privacy Policy</a></P>   
                     <P><a href="">Terms of Service</a></P>   
                 </div>
-                <div>
-                    <p id="newsletter">Newsletter</p>
-                    <p><a href="">Subscrib to get the latest and updates.</a></p>  
+                <div class="footerLiens">
+                    <p id="newsletter" class="footerTitle font-bold">Newsletter</p>
+                    <p class=""><a href="">Subscrib to get the latest and updates.</a></p>  
                     <form class="" id="subscriptionToNewsletter-form" action="subscriptionToNewsletter.php" name="subscriptionToNewsletter-form" method="post">
-                    <input id="subscriptionToNewsletter-UserData" aria-label="subscriptionToNewsletter-form" name="subscribNewsletter" placeholder="Enter your email" enctype="multipart/form-data" requiered>   
-                    <p><button type="submit" aria-label="subscriptionToNewsletter-UserData">Subscribe</button></p> 
+                    <input class="rounded px-1" id="subscriptionToNewsletter-UserData" aria-label="subscriptionToNewsletter-form" name="subscribNewsletter" placeholder="Enter your email" enctype="multipart/form-data" requiered>   
+                    <p class="my-1"><button class="btn-secondary" type="submit" aria-label="subscriptionToNewsletter-UserData">Subscribe</button></p> 
                     </form>
                 </div>
             </div>

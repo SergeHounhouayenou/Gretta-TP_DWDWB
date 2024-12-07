@@ -8,12 +8,17 @@
 
 .btn-secondary
 {
-  @apply bg-secondary text-white px-6 py-2 rounded-md hover:bg-primary transition ;   
+@apply bg-secondary text-white px-6 py-2 rounded-md hover:bg-primary transition ;   
 }
 
 .btn-primary 
 {
 @apply bg-white text-primary px-6 py-3 rounded-md shadow-lg hover:bg-accent transition;
+}
+
+.btnThird 
+{
+@apply bg-third text-primary px-6 py-3 rounded-md shadow-lg hover:bg-accent transition;
 }
 
 .card
@@ -24,4 +29,14 @@
 .card-title
 {
 @apply text-lg font-semibold text-gray-800;
+}
+
+.footerLiens
+{
+@apply text-gray-500     
+}
+
+.footerTitle
+{
+@apply text-gray-300     
 }

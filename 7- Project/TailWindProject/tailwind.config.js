@@ -7,6 +7,7 @@ module.exports = {
               primary: '#1D4ED8', //bleu principal
               secondary: "#9333EA", //Violet secondaire
               accent: "#F59E0B",
+              third: "#0d0d0e",
           },
           fontFamily:{
             heading: ['Poppins', 'sans-serif'],
@@ -19,10 +20,8 @@ module.exports = {
               '0%': {opacity:0, transform:'translateY(20px)'},
             '100%': {opacity:1, transform: 'translateY(0)'},
                    },
-        },
-        
-      },
   },
   plugins: [],
 }
-
+  }
+}
