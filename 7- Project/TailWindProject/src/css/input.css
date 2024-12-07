@@ -18,21 +18,10 @@
 
 .card
 {
-    @apply bg-white rounded-lg shadow hover:scale-105 hover:shadow-xl transition-transform duration-300 animate-fadeIn;
+@apply bg-white rounded-lg shadow hover:scale-105 hover:shadow-xl transition-transform duration-300 animate-fadeIn;
 }
 
 .card-title
 {
-    @apply text-lg font-semibold text-gray-800;
-}
-
-.vignetteImg
-{
-    @apply w-16 h-10
-    absolute bg-secondary text-white text-center mx-2 my-2 px-2 py-1 rounded-md
-}
-
-.citeNotItalic
-{
-    @apply font-style:normal
+@apply text-lg font-semibold text-gray-800;
 }
