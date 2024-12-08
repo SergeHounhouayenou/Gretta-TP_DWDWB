@@ -123,6 +123,26 @@ font-weight: 650;
 text-align: center;
 }
 
+h2
+{
+font-size: 1.2rem;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+letter-spacing: 0.001rem;
+word-spacing: 0.001rem;
+font-weight: 650;
+}
+
+h3
+{
+font-size: 1rem;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+letter-spacing: 0.001rem;
+word-spacing: 0.001rem;
+font-weight: 650;
+}
+
+
+
 main>section
 {
 display: grid;
@@ -131,10 +151,10 @@ grid-template-areas:
 "div1 div2 div2 div2 div2 div3"
 "values values values values values values"
 "div4 div4 div4 div5 div5 div5";
-grid-template-columns: 15rem 1fr 1fr 1fr 1fr 15rem;
-grid-template-rows: 0% 40% 0% 70%;
+grid-template-columns: 10% 16%  16%  16%  16%  10rem;
+grid-template-rows: 0rem 10rem 0rem 30rem;
 gap: 2rem;
-margin: 0rem 0rem 0rem 0rem;
+margin: -1rem 0rem 0rem 0rem;
 padding: 2rem 2rem 2rem 2rem;
 }
 
@@ -145,20 +165,20 @@ width: 100%;
 
 .identity
 {
-width: 100%;
-height:100%;
+
+margin: -2rem 0rem 0rem 0rem;
 grid-area: identity;
-border: solid;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-border:solid;
+gap: 3rem;
 }
 
 .values
 {
-width: 100%;
+
 height:100%;
+margin: -2rem 0rem 0rem 0rem;
 grid-area: values;
 display: flex;
 flex-direction: row;
@@ -168,33 +188,42 @@ border:solid;
 
 .div1
 {
-width: 100%;
-height:100%;
+
 grid-area: div1;
-border-right :solid;
 }
+
 .div2
 {
-width: 100%;
-height:100%;
+
 grid-area: div2;    
 }
+
+.div2 p span
+{
+font-weight: 550;
+}
+
 .div3
 {
-width: 100%;
-height:100%;
+
 grid-area: div3;    
 }
+
+.photoSerge
+{
+width: auto;
+}
+
 .div4
 {
-width: 100%;
-height:100%;
+
+
 grid-area: div4;   
 }
 .div5
 {
-width: 100%;
-height:100%;
+
+
 grid-area: div5;   
 }
 
@@ -223,16 +252,16 @@ flex-direction: row;
 justify-content: start;
 align-items: start;
 gap: 2rem; 
-width: 100%;
-height: 100%;
+
+
 }
 
 
 .literaryLanguages
 {
 grid-area: literaryLanguages ;
-width: 1fr;
-height: 100%;
+
+
 
 
 }
@@ -244,7 +273,7 @@ flex-direction: row;
 justify-content: start;
 align-items: start;
 gap: 2rem; 
-width: 2fr;
+
 height: 100%;
 }
 
@@ -252,16 +281,14 @@ height: 100%;
 .code
 {
 grid-area: code ;
-width: 50%;
-height: 100%;
+
 
 
 }
 .frameworks
 {
 grid-area: frameworks ;
-width: 50%;
-height: 100%;
+
 }
 
 
@@ -274,32 +301,28 @@ flex-direction: row;
 justify-content: start;
 align-items: start;
 gap: 2rem; 
-width: 100%;
-height: 100%;
+
 }
 
 
 .selfTaught
 {
 grid-area: selfTaught ;
-width: 1fr;
-height: 100%;
+
 }
 
 
 .university
 {
 grid-area: university ;
-width: 1fr;
-height: 100%;
+
 }
 
 
 .technical
 {
 grid-area: technical ;
-width: 1fr;
-height: 100%;
+
 }
 
 
@@ -312,32 +335,28 @@ flex-direction: row;
 justify-content: start;
 align-items: start;
 gap: 2rem; 
-width: 100%;
-height: 100%;
+
 }
 
 
 .digitalBuisness
 {
 grid-area: digitalBuisness ;
-width: 1fr;
-height: 100%;
+
 }
 
 
 .artProduction
 {
 grid-area: artProduction ;
-width: 1fr;
-height: 100%;
+
 }
 
 
 .sport
 {
 grid-area: sport ;
-width: 1fr;
-height: 100%;
+
 }
 
 
@@ -365,32 +384,28 @@ flex-direction: row;
 justify-content: start;
 align-items: start;
 gap: 2rem; 
-width: 100%;
-height: 100%;
+
 }
 
 
 .production
 {
 grid-area: production ;
-width: 1fr;
-height: 100%;
+
 }
 
 
 .deploiement
 {
 grid-area: deploiement ;
-width: 1fr;
-height: 100%;
+
 }
 
 
 .administration
 {
 grid-area: administration ;
-width: 1fr;
-height: 100%;
+
 }
 
 
@@ -403,32 +418,28 @@ flex-direction: row;
 justify-content: start;
 align-items: start;
 gap: 2rem; 
-width: 100%;
-height: 100%;
+
 }
 
 
 .savoirs
 {
 grid-area:  savoirs ;
-width: 1fr;
-height: 100%;
+
 }
 
 
 .savoirFaire
 {
 grid-area: savoirFaire ;
-width: 1fr;
-height: 100%;
+
 }
 
 
 .savoirEtre
 {
 grid-area: savoirEtre ;
-width: 1fr;
-height: 100%;
+
 }
 
 
@@ -441,30 +452,26 @@ flex-direction: row;
 justify-content: start;
 align-items: start;
 gap: 2rem; 
-width: 100%;
-height: 100%;
+
 }
 
 
 .FaceToTime
 {
 grid-area: FaceToTime ;
-width: 1fr;
-height: 100%;
+
 }
 
 
 .FaceToWork
 {
 grid-area: FaceToWork ;
-width: 1fr;
-height: 100%;
+
 }
 
 
 .FaceToGroups
 {
 grid-area: FaceToGroups ;
-width: 1fr;
-height: 100%;
+
 }
