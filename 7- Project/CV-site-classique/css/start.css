@@ -112,6 +112,17 @@ color:rgb(253, 253, 253);
 transform: scale(1.2);
 }
 
+
+h1
+{
+font-size: 1.4rem;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+letter-spacing: 0.001rem;
+word-spacing: 0.001rem;
+font-weight: 650;
+text-align: center;
+}
+
 main>section
 {
 display: grid;
@@ -120,9 +131,10 @@ grid-template-areas:
 "div1 div2 div2 div2 div2 div3"
 "values values values values values values"
 "div4 div4 div4 div5 div5 div5";
-grid-template-columns: 20rem 1fr 1fr 1fr 1fr 20rem;
+grid-template-columns: 15rem 1fr 1fr 1fr 1fr 15rem;
 grid-template-rows: 0% 40% 0% 70%;
 gap: 2rem;
+margin: 0rem 0rem 0rem 0rem;
 padding: 2rem 2rem 2rem 2rem;
 }
 
@@ -184,4 +196,275 @@ grid-area: div4;
 width: 100%;
 height:100%;
 grid-area: div5;   
+}
+
+
+
+.cvFormationExperienceGrid
+{
+grid-template-areas:
+"div41 div41 div41"
+"literaryLanguages informatiqueLanguages informatiqueLanguages"
+"code frameworks"
+"div42 div42 div42"
+"selfTaught university technical"
+"div43 div43 div43"
+"digitalBuisness artProduction sport"
+;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.div41
+{
+grid-area: div41 ;
+display: flex;
+flex-direction: row;
+justify-content: start;
+align-items: start;
+gap: 2rem; 
+width: 100%;
+height: 100%;
+}
+
+
+.literaryLanguages
+{
+grid-area: literaryLanguages ;
+width: 1fr;
+height: 100%;
+
+
+}
+.informatiqueLanguages
+{
+grid-area: informatiqueLanguages ;
+display: flex;
+flex-direction: row;
+justify-content: start;
+align-items: start;
+gap: 2rem; 
+width: 2fr;
+height: 100%;
+}
+
+
+.code
+{
+grid-area: code ;
+width: 50%;
+height: 100%;
+
+
+}
+.frameworks
+{
+grid-area: frameworks ;
+width: 50%;
+height: 100%;
+}
+
+
+.div42
+{
+grid-area: div42 ;
+grid-area: informatiqueLanguages ;
+display: flex;
+flex-direction: row;
+justify-content: start;
+align-items: start;
+gap: 2rem; 
+width: 100%;
+height: 100%;
+}
+
+
+.selfTaught
+{
+grid-area: selfTaught ;
+width: 1fr;
+height: 100%;
+}
+
+
+.university
+{
+grid-area: university ;
+width: 1fr;
+height: 100%;
+}
+
+
+.technical
+{
+grid-area: technical ;
+width: 1fr;
+height: 100%;
+}
+
+
+.div43
+{
+grid-area: div43 ;
+grid-area: informatiqueLanguages ;
+display: flex;
+flex-direction: row;
+justify-content: start;
+align-items: start;
+gap: 2rem; 
+width: 100%;
+height: 100%;
+}
+
+
+.digitalBuisness
+{
+grid-area: digitalBuisness ;
+width: 1fr;
+height: 100%;
+}
+
+
+.artProduction
+{
+grid-area: artProduction ;
+width: 1fr;
+height: 100%;
+}
+
+
+.sport
+{
+grid-area: sport ;
+width: 1fr;
+height: 100%;
+}
+
+
+.cvConnaissancesGrid
+{
+grid-template-areas:
+"div51 div51 div51"
+"production deploiement administration"
+"div52 div52 div52"
+"savoirs savoirFaire savoirEtre"
+"div53 div53 div53"
+"FaceToTime FaceToWork FaceToGroups"
+;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.div51
+{
+grid-area: div51 ;
+grid-area: informatiqueLanguages ;
+display: flex;
+flex-direction: row;
+justify-content: start;
+align-items: start;
+gap: 2rem; 
+width: 100%;
+height: 100%;
+}
+
+
+.production
+{
+grid-area: production ;
+width: 1fr;
+height: 100%;
+}
+
+
+.deploiement
+{
+grid-area: deploiement ;
+width: 1fr;
+height: 100%;
+}
+
+
+.administration
+{
+grid-area: administration ;
+width: 1fr;
+height: 100%;
+}
+
+
+.div52
+{
+grid-area: div52 ;
+grid-area: informatiqueLanguages ;
+display: flex;
+flex-direction: row;
+justify-content: start;
+align-items: start;
+gap: 2rem; 
+width: 100%;
+height: 100%;
+}
+
+
+.savoirs
+{
+grid-area:  savoirs ;
+width: 1fr;
+height: 100%;
+}
+
+
+.savoirFaire
+{
+grid-area: savoirFaire ;
+width: 1fr;
+height: 100%;
+}
+
+
+.savoirEtre
+{
+grid-area: savoirEtre ;
+width: 1fr;
+height: 100%;
+}
+
+
+.div53
+{
+grid-area: div53 ;
+grid-area: informatiqueLanguages ;
+display: flex;
+flex-direction: row;
+justify-content: start;
+align-items: start;
+gap: 2rem; 
+width: 100%;
+height: 100%;
+}
+
+
+.FaceToTime
+{
+grid-area: FaceToTime ;
+width: 1fr;
+height: 100%;
+}
+
+
+.FaceToWork
+{
+grid-area: FaceToWork ;
+width: 1fr;
+height: 100%;
+}
+
+
+.FaceToGroups
+{
+grid-area: FaceToGroups ;
+width: 1fr;
+height: 100%;
 }
