@@ -141,6 +141,14 @@ word-spacing: 0.001rem;
 font-weight: 650;
 }
 
+h4
+{
+font-size: 0.8rem;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+letter-spacing: 0.001rem;
+word-spacing: 0.001rem;
+font-weight: 650;
+}
 
 
 main>section
@@ -176,14 +184,12 @@ gap: 3rem;
 
 .values
 {
-
-height:100%;
 margin: -2rem 0rem 0rem 0rem;
 grid-area: values;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-border:solid;
+border-top:solid;
 }
 
 .div1
@@ -233,15 +239,21 @@ grid-area: div5;
 {
 grid-template-areas:
 "div41 div41 div41"
-"literaryLanguages informatiqueLanguages informatiqueLanguages"
+"literaryLanguages block-informatiqueLanguages block-informatiqueLanguages"
+"titre-informatiqueLanguages titre-informatiqueLanguages"
+"informatiqueLanguages informatiqueLanguages"
 "code frameworks"
+"formation formation formation"
+"titreFormation titreFormation titreFormation"
 "div42 div42 div42"
 "selfTaught university technical"
+"experience experience experience"
+"titreExperience titreExperience titreExperience"
 "div43 div43 div43"
 "digitalBuisness artProduction sport"
 ;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .div41
@@ -260,11 +272,18 @@ gap: 2rem;
 .literaryLanguages
 {
 grid-area: literaryLanguages ;
-
-
-
-
 }
+
+.block-informatiqueLanguages
+{
+grid-area: block-informatiqueLanguages;
+}
+
+.titre-informatiqueLanguages
+{
+grid-area: titre-informatiqueLanguages;
+}
+
 .informatiqueLanguages
 {
 grid-area: informatiqueLanguages ;
@@ -291,6 +310,15 @@ grid-area: frameworks ;
 
 }
 
+.Formation
+{
+grid-area: Formation ;
+}
+
+.titreFormation
+{
+grid-area: titreFormation ;
+}
 
 .div42
 {
@@ -325,6 +353,15 @@ grid-area: technical ;
 
 }
 
+.experience
+{
+grid-area: experience ;
+}
+
+.titreExperience
+{
+grid-area: titreExperience ;
+}
 
 .div43
 {
