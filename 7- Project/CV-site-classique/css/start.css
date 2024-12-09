@@ -197,13 +197,13 @@ border-top:solid;
 
 .div1
 {
-
+width: 15%;
 grid-area: div1;
 }
 
 .div2
 {
-
+width: 60%;
 grid-area: div2;    
 }
 
