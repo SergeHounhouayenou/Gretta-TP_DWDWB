@@ -123,6 +123,9 @@ font-weight: 650;
 text-align: center;
 }
 
+h1 + p
+{text-align: center;}
+
 h2
 {
 font-size: 1.2rem;
@@ -159,7 +162,7 @@ grid-template-areas:
 "div1 div2 div2 div2 div2 div3"
 "values values values values values values"
 "div4 div4 div4 div5 div5 div5";
-grid-template-columns: 10% 16%  16%  16%  16%  10rem;
+grid-template-columns: 1fr 1fr  1fr  1fr  1fr 1fr;
 grid-template-rows: 0rem 10rem 0rem 30rem;
 gap: 2rem;
 margin: -1rem 0rem 0rem 0rem;
@@ -238,21 +241,15 @@ grid-area: div5;
 .cvFormationExperienceGrid
 {
 grid-template-areas:
-"langues langues langues"
-"titre-languages titre-languages titre-languages"
 "div41 div41 div41"
 "literaryLanguages code frameworks"
-"formation formation formation"
-"titreFormation titreFormation titreFormation"
 "div42 div42 div42"
 "selfTaught university technical"
-"experience experience experience"
-"titreExperience titreExperience titreExperience"
 "div43 div43 div43"
 "digitalBuisness artProduction sport"
 ;
-grid-template-columns: 10rem 10rem 10rem;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: 15rem 15rem 15rem;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .langues
@@ -281,7 +278,7 @@ display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
-width: 36rem;
+width: 45rem;
 gap: 2rem;
 }
 
@@ -347,7 +344,7 @@ display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
-width: 36rem;
+width: 45rem;
 gap: 2rem; 
 }
 
@@ -391,7 +388,7 @@ display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
-width: 36rem;
+width: 45rem;
 gap: 2rem; 
 }
 
@@ -424,11 +421,11 @@ grid-template-areas:
 "div51 div51 div51"
 "production deploiement administration"
 "div52 div52 div52"
-"savoirs savoirFaire savoirEtre"
+"savoirs1 savoirs2 savoirs3"
 "div53 div53 div53"
-"FaceToTime FaceToWork FaceToGroups"
+"time work group"
 ;
-grid-template-columns: 10rem 10rem 10rem;
+grid-template-columns: 15rem 15rem 15rem;
 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -441,7 +438,7 @@ display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
-width: 36rem;
+width: 45rem;
 gap: 2rem; 
 }
 
@@ -449,21 +446,21 @@ gap: 2rem;
 .production
 {
 grid-area: production ;
-
+width: 100%;
 }
 
 
 .deploiement
 {
 grid-area: deploiement ;
-
+width: 100%;
 }
 
 
 .administration
 {
 grid-area: administration ;
-
+width: 100%;
 }
 
 
@@ -474,30 +471,30 @@ display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
-width: 36rem;
+width: 45rem;
 gap: 2rem; 
 
 }
 
 
-.savoirs
+.savoirs1
 {
 grid-area:  savoirs ;
-
+width: 100%;
 }
 
 
-.savoirFaire
+.savoirs2
 {
 grid-area: savoirFaire ;
-
+width: 100%;
 }
 
 
-.savoirEtre
+.savoirs3
 {
 grid-area: savoirEtre ;
-
+width: 100%;
 }
 
 
@@ -508,28 +505,28 @@ display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
-width: 36rem;
+width: 45rem;
 gap: 2rem; 
 
 }
 
 
-.FaceToTime
+.time
 {
 grid-area: FaceToTime ;
-
+width: 100%;
 }
 
 
-.FaceToWork
+.work
 {
 grid-area: FaceToWork ;
-
+width: 100%;
 }
 
 
-.FaceToGroups
+.group
 {
 grid-area: FaceToGroups ;
-
+width: 100%;
 }
