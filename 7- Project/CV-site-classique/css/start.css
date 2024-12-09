@@ -238,11 +238,10 @@ grid-area: div5;
 .cvFormationExperienceGrid
 {
 grid-template-areas:
+"langues langues langues"
+"titre-languages titre-languages titre-languages"
 "div41 div41 div41"
-"literaryLanguages block-informatiqueLanguages block-informatiqueLanguages"
-"titre-informatiqueLanguages titre-informatiqueLanguages"
-"informatiqueLanguages informatiqueLanguages"
-"code frameworks"
+"literaryLanguages code frameworks"
 "formation formation formation"
 "titreFormation titreFormation titreFormation"
 "div42 div42 div42"
@@ -252,9 +251,28 @@ grid-template-areas:
 "div43 div43 div43"
 "digitalBuisness artProduction sport"
 ;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: 10rem 10rem 10rem;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
+.langues
+{
+grid-area: langues;
+width: 100%;
+} 
+
+.titre-languages
+{
+grid-area: titre-languages;
+width: 100%;
+
+} 
+
+.informatique
+{
+grid-area: informatique ;
+width: 100%;
+} 
 
 .div41
 {
@@ -263,122 +281,125 @@ display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
-gap: 2rem; 
-
-
+width: 36rem;
+gap: 2rem;
 }
 
+.block-literaryLanguages
+{
+grid-area: block-literaryLanguages ;
+width: 100%;
+} 
+
+.titre-literaryLanguages
+{
+grid-area: titre-literaryLanguages;
+width: 100%;
+} 
 
 .literaryLanguages
 {
 grid-area: literaryLanguages ;
+width: 100%;
 }
 
 .block-informatiqueLanguages
 {
 grid-area: block-informatiqueLanguages;
+width: 100%;
 }
 
 .titre-informatiqueLanguages
 {
 grid-area: titre-informatiqueLanguages;
-}
-
-.informatiqueLanguages
-{
-grid-area: informatiqueLanguages ;
-display: flex;
-flex-direction: row;
-justify-content: start;
-align-items: start;
-gap: 2rem; 
-
-height: 100%;
+width: 100%;
 }
 
 
 .code
 {
 grid-area: code ;
-
-
-
+width: 100%;
 }
+
 .frameworks
 {
 grid-area: frameworks ;
-
+width: 100%;
 }
 
 .Formation
 {
 grid-area: Formation ;
+width: 100%;
 }
 
 .titreFormation
 {
 grid-area: titreFormation ;
+width: 100%;
 }
 
 .div42
 {
 grid-area: div42 ;
-grid-area: informatiqueLanguages ;
 display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
+width: 36rem;
 gap: 2rem; 
-
 }
 
 
 .selfTaught
 {
 grid-area: selfTaught ;
-
+width: 100%;
 }
 
 
 .university
 {
 grid-area: university ;
-
+width: 100%;
 }
 
 
 .technical
 {
 grid-area: technical ;
-
+width: 100%;
 }
 
 .experience
 {
 grid-area: experience ;
+width: 100%;
 }
 
 .titreExperience
 {
 grid-area: titreExperience ;
+width: 100%;
 }
 
 .div43
 {
 grid-area: div43 ;
-grid-area: informatiqueLanguages ;
 display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
+width: 36rem;
 gap: 2rem; 
-
 }
 
 
 .digitalBuisness
 {
 grid-area: digitalBuisness ;
+width: 100%;
 
 }
 
@@ -386,14 +407,14 @@ grid-area: digitalBuisness ;
 .artProduction
 {
 grid-area: artProduction ;
-
+width: 100%;
 }
 
 
 .sport
 {
 grid-area: sport ;
-
+width: 100%;
 }
 
 
@@ -407,7 +428,7 @@ grid-template-areas:
 "div53 div53 div53"
 "FaceToTime FaceToWork FaceToGroups"
 ;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 10rem 10rem 10rem;
 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -420,8 +441,8 @@ display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
+width: 36rem;
 gap: 2rem; 
-
 }
 
 
@@ -449,11 +470,11 @@ grid-area: administration ;
 .div52
 {
 grid-area: div52 ;
-grid-area: informatiqueLanguages ;
 display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
+width: 36rem;
 gap: 2rem; 
 
 }
@@ -483,11 +504,11 @@ grid-area: savoirEtre ;
 .div53
 {
 grid-area: div53 ;
-grid-area: informatiqueLanguages ;
 display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
+width: 36rem;
 gap: 2rem; 
 
 }
