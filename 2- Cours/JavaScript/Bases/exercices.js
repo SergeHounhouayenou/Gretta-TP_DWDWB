@@ -70,84 +70,96 @@ while (validUserNumber == false) {m()} ;
 //Demandez à l’utilisateur de saisir un mot. Tant que le mot n’est pas stop, répétez la question et affichez « « Vous avez saisi : [mot] ».
 //Boucle while : tant que le mot saisi n'est pas stop
 
-const mysteryWord = "programmeur" ;
-const indices = ["p", "r", "o", "g", "r", "a", "m", "e", "u", "r"] ;
+const mysteryWord = "programmer" ;
+const indices = ["p", "r", "o", "g", "r", "a", "m", "m", "e", "r"] ;
 const myclues = [] ;
 let remainingTries = 10 ;
 let tries = "essais" ;
 let wonClues ;
+let winnerI ;
+let playerName ;
 
-let playerWord = prompt (`Devinez le mot mystérieux à 10 lettres. il vous reste ${remainingTries} ${tries}. ${wonClues}`)
-{
-    collectIndice = playerWord.toLowerCase() ;
-    console.log (playerWord) ;
-}
-console.log(`vérification de collectIndice : ${collectIndice}`) ;
-
-for ( let k = 0 ; k < collectIndice.length; k ++)
-    {
-      if (collectIndice.at(k) == indices.at(k)) 
-            { 
-                myclues.push( indices.at(k)) ;
-            }   
-        console.log(`vérification de myclues ${myclues}`) ;
-    }
-wonClues = `Vos indices sont : ${myclues}`;
-console.log(wonClues) ;
-myclues.length = 0 ;
-let checkmyCluesInit ;
-if (myclues.length === 0) {checkmyCluesInit = "oui" ;} else {checkmyCluesInit = "non" ;}
-console.log(`la variable "myClues" est-elle bien réinitialisée ? : ${checkmyCluesInit} `) ;
-
-*/
-/*
 function runningGame()
 {
     do 
         { playerWord = prompt (`Devinez le mot mystérieux à 10 lettres. il vous reste ${remainingTries} ${tries}. ${wonClues}`)
-                            {
-                                clues() 
-                                
-                                if (playerWord.toLowerCase !== mysteryWord)
-                                {
-                                    remainingTries -- ;
-                                    
-                                } ;
+                            
+            
+            if (playerWord.toLowerCase() == mysteryWord)
+                {
+                    playerName = prompt ("Féllicitation ! Vous avez trouvé le mot mystérieux. Saississez votre nom et votre prénom ou bien votre pseudo pour voir votre classement.") ;
+                    winnerI = playerName ;
+                    alert (`${winnerI}, vous faites partie des vaincqueurs mais le classement n'est pas encore prêt`) ;
+                     ;
+                } 
+                            
+            else
+                {
+                    if (playerWord.toLowerCase() !== mysteryWord)
+                        {
+                            remainingTries -- ;
+                        } ;
 
-                                
-                                if (remainingTries > 1)
-                                    {
-                                        tries = "essais" ;
-                                        console.log("Encore un petit effort")
-                                    }
+                    if (remainingTries > 1)
+                        {
+                            tries = "essais" ;
+                            console.log("Encore un petit effort")
+                        }
+                    if (remainingTries === 1)
+                        {
+                            tries = "essai" ;
+                            console.log("cest votre dernière chance... Réfléchissez bien !")
+                        }
+                    if (remainingTries === 0)
+                        {
+                            tries = "essai" ;
+                            alert ("Vous avez perdu une bataille mais pas la guerre. Faire une nouvelle partie ?")
+                        }
+                    if (remainingTries < 0 )
+                        {
+                            tries = 0 ;
+                        }
 
-                                if (remainingTries === 1)
-                                    {
-                                        tries = "essai" ;
-                                        console.log("cest votre dernière chance... Réfléchissez bien !")
-                                    }
+                    {
+                    collectIndice = playerWord.toLowerCase() ;
+                    console.log (playerWord) ;
+                    }
 
-                                if (remainingTries === 0)
-                                    {
-                                        tries = "essai" ;
-                                        console.log("Vous avez perdu une bataille mais pas la guerre. Faire une nouvelle partie ?")
-                                    }
+                    console.log(`vérification de collectIndice : ${collectIndice}`) ;
+                                        
+                    for ( let k = 0 ; k < collectIndice.length; k ++)
+                        {
 
-                                if (remainingTries < 0 )
-                                    {
-                                        tries = 0 ;
-                                    }
-                            } ;
+                            if (collectIndice.at(k) == indices.at(k)) 
+                                    { 
+                                        myclues.push( indices.at(k)) ;
+
+                                    }   
+                            console.log(`vérification de myclues ${myclues}`) ;
+                        }
+                    
+                    wonClues = `Vos indices sont : ${myclues}`;
+                    console.log(wonClues) ;
+                    myclues.length = 0 ;
+                    let checkmyCluesInit ;
+                    if (myclues.length === 0) {checkmyCluesInit = "oui" ;} else {checkmyCluesInit = "non" ;}
+                    console.log(`la variable "myClues" est-elle bien réinitialisée ? : ${checkmyCluesInit} `) ;
+                    
+                      
+                               
+                } ;
+        
+       
         } 
     while (remainingTries > 0) ;
 } 
-
     runningGame() ;
 
-  
+    
+  /*
+    if (myclues.length < 1) { wonClues = "Vous n'avez pas encore trouvé d'indice"; }
 
-
-
+*/
 
                         /*
 while(mot?.toLowerCase() !="stop")
