@@ -196,9 +196,9 @@ console.log(compute(division, 4, 5));
 
 //Création du tableau
 const employes = [
-            {id:1, nom: "lotfi", poste: "développeur", salaire:4000},
-            {id:2, nom: "Maria", poste: "designer", salaire:5000 },
-            {id:3, nom: "Soriba", poste: "manager", salaire:4500 },
+            {id:1, nom: "lotfi", poste: "développeur", salaire:4000, dateEmbauche: new Date( 2018, 11, 15) },
+            {id:2, nom: "Maria", poste: "designer", salaire:5000, dateEmbauche: new Date( 2019, 10, 14)  },
+            {id:3, nom: "Soriba", poste: "manager", salaire:4500,dateEmbauche: new Date( 2020, 12, 16)  },
                  ];
 
 console.log (typeof employes);
@@ -377,3 +377,116 @@ let initiales = employes.map(
                                 } 
                             )  ;
                             console.log(initiales) ;
+
+/*
+
+// Exercice 16 page 228
+let userPhrase = []
+const userWords = [] ;
+
+let newPhrase = prompt( "saisissez votre phrase") 
+                { 
+                   userPhrase = newPhrase.split(" ") ;
+                }
+                console.table(`Vérification de la variable : ${userPhrase}`) ;
+                for (i=0 ; i<userPhrase.lenght ; i ++) 
+                    { 
+                        if (userPhrase.at(i) != " " )
+                            {
+                                userWords.at(i) = ` mot : ${userPhrase.at(i) };
+                            }
+                        
+                    }
+
+/*
+let userPhrase = []
+const userWords = [] ;
+
+let newPhrase = prompt( "saisissez votre phrase") 
+userPhrase = newPhrase.split(" ") ;
+console.table(`Vérification de la variable : ${userPhrase}`) ;
+              
+                     userPhrase.forEach ( ( Phrase ) =>
+                        {  
+                            userWords[i] = ` mot : ${userPhrase.at(i) }`;
+                            console.table(`${userWords}`) ;
+                        })
+                                
+*/
+
+// Ajout d'une date d'embauche à chaque employé
+employes.forEach( (employe, index ) => {employe.dateEmbauche = new Date(2020, index, 1) ; }) 
+// new Date permet d'instancier un nouvel objet de type date au format iso : year, month, day
+// Attention, en JavaScript les mois commencent à Zéro. Janvier estr "0".
+// si les heures, minutes et secondes ne sont pas déclarées, il les mettra à zéro.
+console.log(employes) ;
+
+// Pour avoir juste la date du jour
+employes.dateEmbauche = new Date() ; // iso complète automatiquemnent. 
+
+// Filtrer les employés selon leur ancienneté
+let employesAnciens =employes.filter( (employe) => 
+                                                {
+                                                    let dateActuelle = new Date()
+                                                    let diffTemps = dateActuelle - employe.dateEmbauche ; //résultat donné en milliseconde
+                                                    let diffAnnees = diffTemps / (1000 * 60 * 60 *24 * 365.25)
+                                                    return diffAnnees > 4 ; // employesavec plus de 4 ans
+                                                }); 
+
+//Afficher les dates sous un format lisible qui renvoie seulement la date sans les heures.
+employes.forEach( (employe) => {console.log(`Nom: ${employe.nom}, Date embauche: ${employe.dateEmbauche.toLocaleDateString()}`)} );
+// toLocalstring --> renvoie la date et l'heure
+// toDateString renvoie seulement la date mais est personnalisable
+// il y en a d'autres
+
+//Les autres méthodes
+let now = new Date() ;
+console.log(now.getFullYear()) ;
+console.log(now.getMonth()) ;
+console.log(now.getDate()) ;
+console.log(now.getDay()) ;
+
+
+/* 
+//Exercice // Ne pas oublier 
+const myDate = new Date() ;
+ 
+//console.log(myDate.getFullYear()) ;
+//console.log(myDate.getMonth()) ;
+//console.log(myDate.getDate()) ;
+//console.log(myDate.getDay()) ;
+//console.log(myDate.getHours()) ;
+//console.log(myDate.getMinutes()) ;
+//console.log(myDate.getSeconds()) ;
+
+// Opérateur ternair
+myDate = myDate < 10 ? "0"+myDate:myDate ; 
+console.log(`${myDate.getDay()}/${myDate.getMonth()}/${myDate.getFullYear()}/ ${myDate.getHours()}:${myDate.getMinutes()}:${myDate.getSeconds()}`) ;
+// à reprendre avec la correction
+
+
+*/
+
+ // Étape 1 : Créer un objet Date représentant la date et l'heure actuelles
+ const dateActuelle = new Date();
+
+ // Étape 2 : Obtenir les composants (jour, mois, année, heures, minutes, secondes)
+ let jour = dateActuelle.getDate();
+ let mois = dateActuelle.getMonth();
+ let année = dateActuelle.getFullYear();
+ let heures = dateActuelle.getHours();
+ let minutes = dateActuelle.getMinutes();
+ let secondes = dateActuelle.getSeconds()
+ 
+ // Étape 3 : Formater les composants pour avoir toujours deux chiffres
+ jour = jour < 10 ? "0"+jour:jour;
+ mois = mois < 10 ? "0"+mois:mois;
+ heures = heures < 10 ? "0"+heures:heures;
+ minutes = minutes < 10 ? "0"+minutes:minutes;
+ secondes = secondes < 10 ? "0"+secondes:secondes;
+ 
+ // Étape 4 : Construire la chaîne au format DD/MM/YYYY HH:MM:SS
+ let dateFormatée = `${jour}/${mois+1}/${année} ${heures}:${minutes}:${secondes}`;
+ 
+ // Étape 5 : Afficher la date et l'heure formatées
+ console.log(dateFormatée);
