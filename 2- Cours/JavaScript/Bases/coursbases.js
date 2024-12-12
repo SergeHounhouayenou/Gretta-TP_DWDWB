@@ -1,4 +1,13 @@
 
+/*
+function test()
+                {
+                    let bonbon = 10 ;
+                    return bonbon ;
+                }
+                let resultat = test() ;
+
+
 //
 //Documentation officielle : Mdn
 
@@ -180,3 +189,133 @@ function compute(op, x, y)
 }
 console.log(compute(multiply, 4, 5) );
 console.log(compute(division, 4, 5));
+
+*/
+//Chapitre 3 ... La création et la définition des tableaux  
+///!!! Souvent déclaré avec "const" si le tableau n'est pas sujet au changement !!!
+
+//Création du tableau
+const employes = [
+            {id:1, nom: "lotfi", poste: "développeur", salaire:4000},
+            {id:2, nom: "Maria", poste: "designer", salaire:5000 },
+            {id:3, nom: "Soriba", poste: "manager", salaire:4500 },
+                 ];
+
+console.log (typeof employes);
+console.log (employes.length); //longueur du tableau
+console.log (employes[1].nom); // accès au contenu de la valeur "nom" pour l'objet N°2 car les indexes commencent à "0" dans les tableaux
+
+// Ajout d'ééments dans le tableau
+employes.push({id:4, nom: "Tohir", poste: "Directeur", salaire:5500}); // Push ajoute les éléments à la fin du tableau
+console.log("Après ajout d'un employé:", employes)
+
+// Ajouter des éléments au début
+employes.unshift({id:0, nom: "Yanis", poste:"Manager", salaire:5500});
+console.log("Après ajout d'un employé au début du tableau: ", employes);
+
+// Ajouter des éléments au milieu du tableau avec "array.splice()" syntaxe : 
+// --> maArray.splice(index, nombreElementASupprimer, elementAAjouter)
+// exemple : ajouter à l'index N1 un objet
+let dernierEmploye ;
+employes.splice(1, 0, dernierEmploye);
+
+
+
+// Pour un visuel plus facile à lire on peut utiliser "console.table(employes)"
+console.table(employes);
+
+// Ajouter une clé-valeur à un objet
+employes[0].prime=500; // on ajoute une entrée de valeur à l'indexe "0" du tableau
+console.table(employes);
+
+//Supression d'éléments des tableaux
+
+//supprimer le dernier employé
+dernierEmploye = employes.pop();
+console.log("Employe suprimmé :", dernierEmploye) ;
+
+//Supprimer l'employer du début du tableau avec "shift()" --> voir sur MDN
+
+
+
+
+// Modification avec splice() : array.splice(index, nombreElementASupprimer, elementAajouter au tableau)
+//Ajouter à l'index 1 un objet
+employes.splice(1,0,dernierEmploye);
+console.table(employes);
+
+dernierEmploye = employes.pop();
+console.log("Employe suprimmé :", dernierEmploye) ;
+
+
+employes[2] = {id:5, nom: "Serge", poste: "N/A", salaire:"N/A" } ;
+console.log("Nouvel employé: ", employes[2]);
+console.table(employes);
+
+//Extraire une range d'employés --> slice() --> array.slice(start, end)
+let topEmployes = employes.slice(0,2) ;
+console.log("Employés du top 2:", topEmployes);
+
+
+
+//Lire les données --> "for" ou "forEach"
+console.log("Lecture des employés avec une boucle for :") ;
+for (let i = 0; i< employes.length ; i++)
+{
+    console.log(`Employé : ${employes[i].nom} - Poste : ${employes[i].poste}`);
+} 
+
+console.log("Lecture des données avec une boucle forEach :") ; // On appelle cela une fonction Call back : 
+                                                            // une fonction à l'intérieur d'une autre, 
+                                                            //suceptible d'être appelée par une fonction.
+employes.forEach( 
+                (employe) => // employé est utilisé comme argument de la fonction fléchée qui représente les valeurs du tableau
+                    {
+                        console.log(`Employé : ${employe.nom} - Poste : ${employe.poste}`) ;
+                    } 
+                );
+
+             
+
+
+
+// Utilisation plus avancée des tableaux
+
+// Trouver un empoyé par son ID avec la fonction find qui nous retourne 
+// le premier éément d'un tableau qui satisfait la condition donnée dans le tableau.
+let employeRecherche = employes.find(
+                                        (employe) => employe.id === 2
+                                    ) ;
+                                    console.log(employeRecherche) ;
+
+
+
+
+
+//Filtrer les employés gangnat plus de 4500 euros avec "filter"
+//Filter retourne un tableau contenant tous les éléments qui vont satisfaire les conditions délarées dans la fonction callback. 
+let employesBienPayes = employes.filter(
+                                            (employe) => employe.salaire > 4500
+                                        ) ;
+                                    console.log(employesBienPayes) ;
+
+
+
+// Créer un tableau avec les noms des emplyés avec "map" qui 
+//retourne un nouveau tableau en appliquent une fonction donnée à chaque élément
+let nomsEmployes = employes.map(
+                                    (employe) => employe.nom
+                                );
+                                console.log(nomsEmployes) ;
+
+// Trier les employés dans le tableau employés en rangeant par salaire du plus bas au plus haut.
+// On utilise "sort()" --> !!!!! modification du tabeau d'origine
+//La fonction qui suit va comparer deux employés "a" et "b" selon leur salaires.
+//JS réalise la soustraction "a.salaire" - "b.salaire". Les résiltats pouvant être :
+// Négatif : a est plus petit que b : a sera pacé avant b
+//positif : a est plus grand que b : a sera placé après b
+// Zéro : a et b restent inchangés
+let emplyesTries = employes.sort(
+                        (a , b) => a.salaire - b.salaire
+                    ) ;
+                    console.log(emplyesTries) ;
