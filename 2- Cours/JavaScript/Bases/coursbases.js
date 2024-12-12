@@ -6,7 +6,7 @@ function test()
                     return bonbon ;
                 }
                 let resultat = test() ;
-
+// l'utilisation de "ALT + 7" s'appelle "Template Gabarit".
 
 //
 //Documentation officielle : Mdn
@@ -315,7 +315,65 @@ let nomsEmployes = employes.map(
 // Négatif : a est plus petit que b : a sera pacé avant b
 //positif : a est plus grand que b : a sera placé après b
 // Zéro : a et b restent inchangés
-let emplyesTries = employes.sort(
+let employesTries = employes.sort(
                         (a , b) => a.salaire - b.salaire
                     ) ;
-                    console.log(emplyesTries) ;
+                    console.log(employesTries) ;
+
+
+const produits = 
+                [
+                    {id:1, nom: "Chaise", prix: 25},
+                    {id: 2, nom: "Table", prix: 100},
+                    {id: 3, nom: "Lampe", prix: 45}
+                ] ;
+produits.forEach ( (produit) =>
+                    {
+                        produit.enStock = true ;
+                    }
+                );
+
+for (let i=0 ; i<produits.length ; i++) 
+        {
+            produits[i].enstock = true ;
+        }
+console.log(produits) ;
+
+// Manipulation des chaînes de caractère
+
+//Mettre les nom en majuscule 
+let nomsEnMajuscules = employes.map( 
+                                    (employe) => employe.nom.toUpperCase()
+                                 ) ;
+                                 console.log(nomsEnMajuscules) ;
+
+
+// Rechercher et filtrer sur les chînes de caractères
+let managers = employes.filter( (employe) => { employe.poste.includes("Manager") } ) ;
+
+// Autre exemple
+let nomsCommencantParM = employes.filter ( (employe) =>employe.nom.startsWith("M") ) ;
+
+//Nettoyage et mise en formae des chaîne de caractère
+employes[0].nom = "         Serge          " ;
+console.log(employes) ;
+employes[0].nom = employes[0].nom.trim() ;   
+
+employes.forEach (( employe ) => 
+                                {
+                                    employe.poste=employe.poste.replace("Manager", "Responsable") ;
+                                }) ;
+                                console.log(employes) ;
+
+//Créer des données formatées
+// Créer un tableau avec les initilaes des amployés
+
+//Récupérer les initiales des emploes 
+let initiales = employes.map( 
+                            (employe) => 
+                                { 
+                                    console.log(employe.nom.split( " " ))
+                                    return employe.nom.split( " " ).map( (mot) => [0]).join("") ; 
+                                } 
+                            )  ;
+                            console.log(initiales) ;
