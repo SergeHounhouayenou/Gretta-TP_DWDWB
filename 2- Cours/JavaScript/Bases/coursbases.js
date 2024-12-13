@@ -170,7 +170,7 @@ const maFonctionAnonyme = function ()
 // Les fonctions fléchées : "arrow function" syntaxe concise pour écrire des fonctions
 //Syntaxe : (param1, param2 ...) =>expression
 const add = (a,b) => a +b ; // lorsqu'il n'y a qu'une seule instruction dans la fonction fléchée, JavaSript inclu automatiquement le RETURN
-console.log(add(2, 3)) ;// De plus, pour une seule instruction les acollades ne sont pas nécessaires mais on doit les metres quand à partir de deux instructions. 
+console.log(add(2, 3)) ;// De plus, pour une seule instruction les acollades ne sont pas nécessaires mais on doit les metres à partir de deux instructions. 
 
 const addition = (a, b) => 
 {
@@ -182,6 +182,7 @@ console.log(addition( 2, 5 ))
 // Les fonctions comme "données" : les fonctions passées en argument
 const multiply = (a, b) => a*b ;
 const division = (a, b) => a/b ;
+
 //"op" est une fonction qui réalise une opération
 function compute(op, x, y) 
 {
