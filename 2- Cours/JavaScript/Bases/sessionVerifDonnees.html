@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1c;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .register-form {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #222;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        .form-group input::placeholder {
+            color: #888;
+        }
+
+        .form-group .error-message {
+            color: #e50914;
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+
+        .strength-bar {
+            height: 10px;
+            border-radius: 5px;
+            background-color: #444;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+
+        .strength-bar span {
+            display: block;
+            height: 100%;
+            transition: width 0.3s;
+        }
+
+        .password-criteria {
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+
+        .password-criteria span {
+            display: block;
+            margin-top: 5px;
+            color: #e50914;
+        }
+
+        .password-criteria span.valid {
+            color: #4caf50;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e50914;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #b00710;
+        }
+    </style>
+</head>
+<body>
+<form id="register-form" class="register-form">
+    <div class="form-group">
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" placeholder="Entrez votre nom d'utilisateur" required />
+        <div class="error-message" id="username-error"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" placeholder="Entrez votre email" required />
+        <div class="error-message" id="email-error"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" placeholder="Entrez votre mot de passe" required />
+        <div class="strength-bar" id="password-strength">
+            <span style="width: 0; background-color: #e50914;"></span>
+        </div>
+        <div class="password-criteria" id="password-criteria">
+            <span id="criteria-length">Au moins 8 caractères</span>
+            <span id="criteria-uppercase">Une majuscule</span>
+            <span id="criteria-number">Un chiffre</span>
+        </div>
+        <div class="error-message" id="password-error"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="confirm-password">Confirmer le mot de passe :</label>
+        <input type="password" id="confirm-password" placeholder="Confirmez votre mot de passe" required />
+        <div class="error-message" id="confirm-password-error"></div>
+    </div>
+
+    <button type="submit" class="submit-button">S'inscrire</button>
+</form>
+
+    <script src="sessionVerifDonnees.js" defer></script>
+</body>
+</html>
