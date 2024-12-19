@@ -3,6 +3,21 @@ document.addEventListener('DOMContentLoaded', function()
 const movieSearch= document.getElementById('movieSearch');
 const movieResults = document.getElementById('movieResults');
 const apiKey = "d9797a92cd99a3a89d9fdc08d3fdd8fe";
+const voiceSearchBtn = document.getElementById('voiceSearchBtn');
+
+function initializeVoiceSearch()
+    {
+        //Vérifier si le avigateur prend en charge API Web Speach
+        if (!('webkitSpeechRecognition' in window))
+        {
+            alert('La reconnaissance vocale n\'est pas prise en charge par votre navigateur') ;
+            return;
+        }
+    }
+    const recognition = new webkitSpeechRecognition() ;
+    recognition.lang = 'fr-FR' ;
+    recognition.interimResults = false ;
+    recognition.maxAlternatives = 1 ;
 
 //Fonction pour récupérer les films depuis API
 async function fetchMovies(query) 
@@ -38,6 +53,7 @@ async function fetchMovies(query)
         console.log(movies);
         movieResults.innerHTML = movies.map(movie => 
             `<div class="col-12 col-md-4">
+                <a href="details.html?id=${movie.id}" class= "text-decoration-none">
                 <div class="card h-100 shadow">
                     <img class="card-img-top movie-poster" alt="${movie.tite}" 
                     src="${movie.poster_path ? 'https://image.tmdb.org/t/p/w500' + movie.poster_path : 'https://via.placeholder.com/150'}">
@@ -48,6 +64,8 @@ async function fetchMovies(query)
                         <p class="card-text">${movie.overview ? movie.overview.substring(0,50)+'...' : 'pas de description'}</p>
                     </div>
                 </div>
+                </a>
+                
             </div>`
         ).join(''); // Join va convertir le retour du MAP en chaîne de caractère
     }

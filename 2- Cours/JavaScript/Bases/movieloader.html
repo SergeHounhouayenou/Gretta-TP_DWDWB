@@ -12,7 +12,7 @@
   >
   <style>
     .movie-poster {
-      max-height: 150px;
+      height: 600px;
       object-fit: cover;
     }
   </style>
@@ -22,12 +22,15 @@
         <h1 class="text-center mb-4">Recherche de films</h1>
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Tapez le titre d'un film" aria-label="Rechercher un film" id="movieSearch">
+            <button id = "voiceSearchBtn" class="btn btn-primary" type="button">🎤</button>
         </div>
 
         <div id="movieResults" class="row g-3">
 
-        </div>
     </div>
+
+
+
     <script src="movieloader.js" defer></script>
 </body>
 </html>
