@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', ()=>
                     {
                         console.log(error.message) ;
                     } 
+        }
         function populateCountrySelect(countries)
                     {
                         //Trie un tableau selon l'ordre alphabétique
@@ -61,6 +62,7 @@ document.addEventListener('DOMContentLoaded', ()=>
                                         //Encode des paramètres dynamiques
                                         const encodedCountry = encodedURIComponent (country);
                                         const encodedPostalCode = encodedURIComponent(postalCode);
+                                        populateCitiesSelect(cities);
 
                                         
 
@@ -71,7 +73,18 @@ document.addEventListener('DOMContentLoaded', ()=>
                                             resetCitySelect(er.message) ;
                                         }
                             }
-        }
+        
+
+        function populateCitiesSelect(data) 
+        {
+            citySelect.disabled = false ;
+            data.places.forEach(datas => 
+                {
+                    const option = document.createElement('option') ;
+                    option.textContent = datas['place name'];
+                    citySelect.appendChild(option) ;
+                }) ;
+        };
 
         //Ecouteur pour la saisie du code postal
         postalCodeInput.addEventListener('input', () => 
@@ -85,7 +98,7 @@ document.addEventListener('DOMContentLoaded', ()=>
                                                             {
                                                                 resetCitySelect() ;
                                                             }
-                                                    } )
+                                                    } ) ;
         
 
 

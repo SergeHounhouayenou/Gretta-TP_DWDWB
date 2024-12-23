@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Movie Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .movie-card {
+            background-color: #2e2e2e;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            width: 170px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .movie-card img {
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .delete-button {
+            background-color: #e50914;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .delete-button:hover {
+            background-color: #b00710;
+        }
+
+
+    </style>
+</head>
+<body>
+<header class="header">
+    <h1>Netflix Movie Manager</h1>
+</header>
+<main class="main-content">
+    <button id="add-movie-button" class="add-movie-button">Ajouter un film</button>
+    <div id="movie-container" class="movie-container"></div>
+</main>
+<footer class="footer">
+    <p>© 2024 Netflix Movie Manager</p>
+</footer>
+<script>
+    // Attendre que le DOM soit complètement chargé avant d'exécuter le script
+    document.addEventListener('DOMContentLoaded', () => {
+        // Sélection des éléments nécessaires dans le DOM
+        const addMovieButton = document.getElementById('add-movie-button');
+        const movieContainer = document.getElementById('movie-container');
+
+        // Fonction pour créer une nouvelle carte de film
+        function createMovieCard(movieTitle) {
+            // Créer les éléments nécessaires
+            const card = document.createElement('div');
+            const img = document.createElement('img');
+            const title = document.createElement('h3');
+            const deleteButton = document.createElement('button');
+
+            // Ajouter des classes et du contenu aux éléments
+            card.className = 'movie-card';
+            img.src = 'https://via.placeholder.com/150'; // Image par défaut
+            img.alt = `Image de ${movieTitle}`;
+            title.textContent = movieTitle;
+            deleteButton.textContent = 'Supprimer';
+            deleteButton.className = 'delete-button';
+
+            // Ajouter un écouteur d'événement au bouton de suppression
+            deleteButton.addEventListener('click', () => {
+                card.remove(); // Supprime la carte du DOM
+            });
+
+            // Ajouter les éléments enfants à la carte
+            card.appendChild(img);
+            card.appendChild(title);
+            card.appendChild(deleteButton);
+
+            return card;
+        }
+
+        // Gestionnaire de clic pour ajouter un nouveau film
+        addMovieButton.addEventListener('click', () => {
+            const movieTitle = prompt('Entrez le titre du film :');
+
+            if (movieTitle) {
+                const newCard = createMovieCard(movieTitle); // Créer une nouvelle carte
+                movieContainer.appendChild(newCard); // Ajouter la carte au conteneur
+            } else {
+                alert('Le titre du film ne peut pas être vide.');
+            }
+        });
+    });
+
+
+</script>
+</body>
+</html>

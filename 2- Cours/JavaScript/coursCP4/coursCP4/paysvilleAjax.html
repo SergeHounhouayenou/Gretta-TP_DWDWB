@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Fetch Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 600px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        select, input {
+            padding: 8px;
+            font-size: 16px;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+    <script src="paysvilleAjax.js"></script>
+</head>
+<body>
+<h1>AJAX Fetch: Pays et Villes</h1>
+<form id="locationForm">
+    <div>
+        <label for="countrySelect">Pays :</label>
+        <select id="countrySelect">
+            <option value="">-- Sélectionnez un pays --</option>
+        </select>
+    </div>
+    <div>
+        <label for="postalCodeInput">Code Postal :</label>
+        <input type="text" id="postalCodeInput" placeholder="Entrez un code postal" />
+    </div>
+    <div>
+        <label for="citySelect">Ville :</label>
+        <select id="citySelect" disabled>
+            <option value="">-- Sélectionnez une ville --</option>
+        </select>
+    </div>
+</form>
+</body>
+</html>

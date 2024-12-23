@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Movie Manager</title>
+    <style>
+        /* Style global */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1c;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #e50914;
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        main {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .movie-form {
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .movie-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .movie-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .movie-form input,
+        .movie-form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #222;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        .movie-form input::placeholder,
+        .movie-form textarea::placeholder {
+            color: #888;
+        }
+
+        .movie-form input[type="file"] {
+            padding: 5px;
+            border: none;
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+        }
+
+        .movie-form .submit-button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e50914;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .movie-form .submit-button:hover {
+            background-color: #b00710;
+        }
+
+        /* Movie container styles */
+        .movie-container {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .movie-card {
+            background-color: #444;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .movie-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .movie-card h4 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .movie-card p {
+            font-size: 0.9rem;
+            margin: 5px 0;
+        }
+
+        #movie-color{
+            height: 50px;
+        }
+
+    </style>
+    <script src="addmovie.js"></script>
+</head>
+<body>
+<header class="header">
+    <h1>Netflix Movie Manager</h1>
+</header>
+<main class="main-content">
+    <form id="movie-form" class="movie-form">
+        <div class="form-group">
+            <label for="movie-img">Image :</label>
+            <input type="file" id="movie-img" accept="image/*" />
+        </div>
+
+        <div class="form-group">
+            <label for="movie-title">Titre :</label>
+            <input type="text" id="movie-title" placeholder="Entrez le titre du film" />
+        </div>
+
+        <div class="form-group">
+            <label for="movie-description">Description :</label>
+            <textarea id="movie-description" placeholder="Entrez une description" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="movie-date">Date de mise en ligne :</label>
+            <input type="date" id="movie-date" required />
+        </div>
+        <div class="form-group">
+            <label for="movie-color">Couleur de la bordure :</label>
+            <input type="color" id="movie-color" value="#000000" height="50px" />
+        </div>
+
+
+        <button type="submit" class="submit-button">Ajouter un film</button>
+    </form>
+    <div id="movie-container" class="movie-container"></div>
+</main>
+<footer class="footer">
+    <p>© 2024 Netflix Movie Manager</p>
+</footer>
+</body>
+</html>

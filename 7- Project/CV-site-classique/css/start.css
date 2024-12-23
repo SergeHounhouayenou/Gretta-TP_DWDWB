@@ -1,15 +1,25 @@
 
 html
 {
-margin:0 0 0 0;
-background-color: whitesmoke;
+margin:-1rem 0rem 0rem 0rem;
+background-color:  rgb(199, 213, 223);
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header
 {
-padding: 1rem 1rem 1rem 1rem;
-background-color: rgb(24, 90, 145);
+position: fixed;
+margin: 0rem -1rem 0rem -1rem;
+padding: 1.5rem 2rem 1rem 2rem;
+background-color: rgb(59, 119, 168);
+width: 100%;
+}
+
+main
+{
+margin: 0rem -0.5rem 0rem -0.5rem;
+padding-top: 10rem;
+justify-items: center;
 }
 
 .logo
@@ -19,17 +29,20 @@ max-width: 8rem;
 
 header nav
 {
+position: relative;
 display: grid;
 grid-template-areas:
-"navBar médiaBar userProfil";
-grid-template-columns: 22rem 1fr 15rem;
+"navBar navBar navBar navBar médiaBar médiaBar médiaBar médiaBar userProfil userProfil userProfil userProfil";
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 grid-row: 1fr;
-gap: 2rem;
-justify-content: stretch;
+gap: 1.5rem;
+justify-content: space-between;
+width: 100%;
 }
 
 .navBar
 {
+position: relative;
 grid-area: navBar;
 width: 100%;
 display: flex;
@@ -40,23 +53,32 @@ align-items: center;
 gap: 1.5rem;
 }
 
-.médiaBar
+.mediaBar
 {
 grid-area: médiaBar;
 width: 100%;
-justify-content: stretch;
+}
+
+.pictoBar
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+
 }
 
 .userProfil
 {
+position: relative;
 grid-area: userProfil;
-width: 100%;
+width: 94%;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-around;
+justify-content: space-evenly;
 align-items: center;
-
 }
 
 .mainMenu-layout
@@ -72,7 +94,7 @@ gap: 1rem;
 
 .mainMenu
 {
-color: whitesmoke;
+color: rgb(248, 244, 244);
 text-decoration: none;
 line-height: 2rem;
 font-size: 1.2rem;
@@ -95,9 +117,9 @@ max-width: 4.5rem;
 
 .headerButton
 {
-background-color: rgb(24, 90, 145);
-color:rgb(233, 237, 240);
-font-size: 1rem;
+background-color:  rgb(59, 119, 168);
+color:rgb(241, 234, 234);
+font-size: 1.1rem;
 font-weight: 100;
 text-align: center;
 width: 6rem;
@@ -112,6 +134,10 @@ color:rgb(253, 253, 253);
 transform: scale(1.2);
 }
 
+.cvContent
+{
+max-width: 100%;
+}
 
 h1
 {
@@ -120,11 +146,8 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 letter-spacing: 0.001rem;
 word-spacing: 0.001rem;
 font-weight: 650;
-text-align: center;
+text-align: start;
 }
-
-h1 + p
-{text-align: center;}
 
 h2
 {
@@ -133,6 +156,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 letter-spacing: 0.001rem;
 word-spacing: 0.001rem;
 font-weight: 650;
+
 }
 
 h3
@@ -142,6 +166,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 letter-spacing: 0.001rem;
 word-spacing: 0.001rem;
 font-weight: 650;
+color:  rgb(7, 88, 78);
 }
 
 h4
@@ -151,89 +176,141 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 letter-spacing: 0.001rem;
 word-spacing: 0.001rem;
 font-weight: 650;
+color:  rgb(131, 11, 47);
 }
 
 
-main>section
+.cvGrid
 {
 display: grid;
 grid-template-areas: 
-"identity identity identity identity identity identity"
-"div1 div2 div2 div2 div2 div3"
-"values values values values values values"
-"div4 div4 div4 div5 div5 div5";
-grid-template-columns: 1fr 1fr  1fr  1fr  1fr 1fr;
-grid-template-rows: 0rem 10rem 0rem 30rem;
+"identity identity identity identity identity identity identity identity identity identity identity identity"
+"div1 div1 div2 div2 div2 div2 div2 div2 div2 div2 div3 div3"
+"values values values values values values values values values values values values"
+"div4 div4 div4 div4 div4 div4 div5 div5 div5 div5 div5 div5";
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 0.25fr 0fr 1fr 0fr;
 gap: 2rem;
 margin: -1rem 0rem 0rem 0rem;
 padding: 2rem 2rem 2rem 2rem;
-}
-
-main>section articles
-{
-width: 100%;
+max-width: 100%;
 }
 
 .identity
 {
-
-margin: -2rem 0rem 0rem 0rem;
+max-width: 100%;
+margin: 0rem 0rem 0rem 0rem;
 grid-area: identity;
 display: flex;
 flex-direction: row;
+flex-wrap: wrap-reverse;
 justify-content: space-between;
-gap: 3rem;
+align-items: start;
+gap: 2rem;
 }
 
 .values
 {
+max-width: 100%;    
 margin: -2rem 0rem 0rem 0rem;
 grid-area: values;
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
 justify-content: space-between;
-border-top:solid;
+align-items: center;
+gap: 2rem;
 }
 
 .div1
 {
-width: 15%;
+background-color:  rgb(214, 224, 231);
+width: 12rem;
 grid-area: div1;
+min-height: 11rem;
+border: solid;
+border-radius: 1rem;
+}
+
+.titreCandidat
+{
+   line-height: 1.35rem;
+   text-align: start;
+   margin-top: 1rem;
+   padding-left: 2.5rem;
+   color:  rgb(6, 65, 110);
+}
+
+.dataCandidat
+{
+   justify-self: center;
 }
 
 .div2
 {
-width: 60%;
-grid-area: div2;    
+background-color:  rgb(214, 224, 231);
+max-width: 40rem; 
+min-height: 11rem;
+grid-area: div2;
+padding: 0rem 1rem 0rem 1rem ;    
+border: solid;
+border-radius: 1rem;
+}
+
+.cvTitle
+{
+ margin-top: 0.5rem;
+ color:  rgb(6, 65, 110);
+}
+
+.cvTitle + p
+{
+text-align: justify;
+margin-top: -0.5rem;
+
 }
 
 .div2 p span
 {
-font-weight: 550;
+
+font-size: 1.03rem;
 }
 
 .div3
 {
-
+background-color:  rgb(215, 225, 235);
+width: 12rem;
+min-height: 11rem;
 grid-area: div3;    
+justify-items:center ;
+align-items: center;
+border: solid;
+border-radius: 1rem;
 }
 
 .photoSerge
 {
-width: auto;
+width: 6rem;
 }
 
 .div4
 {
-
-
+background-color:  rgb(217, 226, 233);
+max-width: 45%;
 grid-area: div4;   
+border: solid;
+border-radius: 1rem;
+padding: 0rem 1rem 0rem 1rem;
 }
+
 .div5
 {
-
-
+background-color:  rgb(217, 226, 233);
+max-width: 45%;
 grid-area: div5;   
+border: solid;
+border-radius: 1rem;
+padding: 0rem 1rem 0rem 1rem;
 }
 
 
@@ -241,35 +318,38 @@ grid-area: div5;
 .cvFormationExperienceGrid
 {
 grid-template-areas:
-"div41 div41 div41"
-"literaryLanguages code frameworks"
-"div42 div42 div42"
-"selfTaught university technical"
-"div43 div43 div43"
-"digitalBuisness artProduction sport"
+"titreProfil titreProfil titreProfil titreProfil titreProfil titreProfil"
+"langues langues langues langues langues langues"
+"titre-languages titre-languages titre-languages titre-languages titre-languages titre-languages"
+"div41 div41 div41 div41 div41 div41"
+"literaryLanguages literaryLanguages code code frameworks frameworks"
+"Formation Formation Formation Formation Formation Formation"
+"titreFormation titreFormation titreFormation titreFormation titreFormation titreFormation"
+"div42 div42 div42 div42 div42 div42"
+"selfTaught selfTaught university university  technical technical"
+"experience experience experience experience experience experience"
+"titreFormation titreFormation titreFormation titreFormation titreFormation titreFormation"
+"div43 div43 div43 div43 div43 div43"
+"digitalBuisness digitalBuisness artProduction artProduction sport sport"
 ;
-grid-template-columns: 15rem 15rem 15rem;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+min-width: 45vw;
 }
 
 .langues
 {
 grid-area: langues;
-width: 100%;
+
 } 
 
 .titre-languages
 {
 grid-area: titre-languages;
-width: 100%;
+
 
 } 
 
-.informatique
-{
-grid-area: informatique ;
-width: 100%;
-} 
 
 .div41
 {
@@ -278,63 +358,38 @@ display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
-width: 45rem;
-gap: 2rem;
+gap: 2em;
+width: 100%;
 }
-
-.block-literaryLanguages
-{
-grid-area: block-literaryLanguages ;
-width: 100%;
-} 
-
-.titre-literaryLanguages
-{
-grid-area: titre-literaryLanguages;
-width: 100%;
-} 
 
 .literaryLanguages
 {
 grid-area: literaryLanguages ;
-width: 100%;
+width: 33%;
 }
-
-.block-informatiqueLanguages
-{
-grid-area: block-informatiqueLanguages;
-width: 100%;
-}
-
-.titre-informatiqueLanguages
-{
-grid-area: titre-informatiqueLanguages;
-width: 100%;
-}
-
 
 .code
 {
 grid-area: code ;
-width: 100%;
+width: 33%;
 }
 
 .frameworks
 {
 grid-area: frameworks ;
-width: 100%;
+width: 33%;
 }
 
 .Formation
 {
 grid-area: Formation ;
-width: 100%;
+
 }
 
 .titreFormation
 {
 grid-area: titreFormation ;
-width: 100%;
+
 }
 
 .div42
@@ -344,41 +399,41 @@ display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
-width: 45rem;
-gap: 2rem; 
+gap: 2em; 
+width: 100%;
 }
 
 
 .selfTaught
 {
 grid-area: selfTaught ;
-width: 100%;
+width: 33%;
 }
 
 
 .university
 {
 grid-area: university ;
-width: 100%;
+width: 33%;
 }
 
 
 .technical
 {
 grid-area: technical ;
-width: 100%;
+width: 33%;
 }
 
 .experience
 {
 grid-area: experience ;
-width: 100%;
+
 }
 
 .titreExperience
 {
 grid-area: titreExperience ;
-width: 100%;
+
 }
 
 .div43
@@ -388,15 +443,15 @@ display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
-width: 45rem;
-gap: 2rem; 
+gap: 2em; 
+width: 100%;
 }
 
 
 .digitalBuisness
 {
 grid-area: digitalBuisness ;
-width: 100%;
+width: 33%;
 
 }
 
@@ -404,29 +459,48 @@ width: 100%;
 .artProduction
 {
 grid-area: artProduction ;
-width: 100%;
+width: 33%;
 }
 
 
 .sport
 {
 grid-area: sport ;
-width: 100%;
+width: 33%;
 }
 
 
 .cvConnaissancesGrid
 {
 grid-template-areas:
-"div51 div51 div51"
-"production deploiement administration"
-"div52 div52 div52"
-"savoirs1 savoirs2 savoirs3"
-"div53 div53 div53"
-"time work group"
+"titreConnaissances titreConnaissances titreConnaissances titreConnaissances titreConnaissances titreConnaissances"
+"competences competences competences competences competences competences"
+"titre-competences titre-competences titre-competences titre-competences titre-competences titre-competences"
+"div51 div51 div51 div51 div51 div51"
+"production production deploiement deploiement administration administration"
+"Savoirs Savoirs Savoirs Savoirs Savoirs Savoirs"
+"titreSavoirs titreSavoirs titreSavoirs titreSavoirs titreSavoirs titreSavoirs"
+"div52 div52 div52 div52 div52 div52"
+"savoirs1 savoirs1 savoirs2 savoirs2 savoirs3 savoirs3"
+"savoirEtre savoirEtre savoirEtre savoirEtre savoirEtre savoirEtre"
+"titreSavoirEtre titreSavoirEtre titreSavoirEtre titreSavoirEtre titreSavoirEtre titreSavoirEtre"
+"div53 div53 div53 div53 div53 div53"
+"time time work work group group" 
 ;
-grid-template-columns: 15rem 15rem 15rem;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+width: 45vw;
+}
+
+
+.competences
+{
+    grid-area: competences ;
+}
+
+.titre-competences
+{
+    grid-area: titre-competences;
 }
 
 
@@ -438,31 +512,37 @@ display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
-width: 45rem;
-gap: 2rem; 
+gap: 2em; 
+width: 100%;
 }
-
 
 .production
 {
 grid-area: production ;
-width: 100%;
+width: 33%;
 }
-
 
 .deploiement
 {
 grid-area: deploiement ;
-width: 100%;
+width: 33%;
 }
-
 
 .administration
 {
 grid-area: administration ;
-width: 100%;
+width: 33%;
 }
 
+.Savoirs
+{
+    grid-area: Savoirs ;
+}
+
+.titreSavoirs
+{
+    grid-area: titreSavoirs ;
+}
 
 .div52
 {
@@ -471,30 +551,38 @@ display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
-width: 45rem;
-gap: 2rem; 
-
+gap: 2em; 
+width: 100%;
 }
-
 
 .savoirs1
 {
 grid-area:  savoirs ;
-width: 100%;
+width: 33%;
 }
-
 
 .savoirs2
 {
 grid-area: savoirFaire ;
-width: 100%;
+width: 33%;
 }
-
 
 .savoirs3
 {
 grid-area: savoirEtre ;
-width: 100%;
+width: 33%;
+}
+
+.savoirEtre
+{
+    grid-area: savoirEtre ;
+  
+}
+
+.titreSavoirEtre
+{
+    grid-area: titreSavoirEtre ;
+  
 }
 
 
@@ -505,28 +593,27 @@ display: flex;
 flex-direction: row;
 justify-content: start;
 align-items: start;
-width: 45rem;
-gap: 2rem; 
-
+gap: 2em; 
+width: 100%;
 }
 
 
 .time
 {
 grid-area: FaceToTime ;
-width: 100%;
+width: 33%;
 }
 
 
 .work
 {
 grid-area: FaceToWork ;
-width: 100%;
+width: 33%;
 }
 
 
 .group
 {
 grid-area: FaceToGroups ;
-width: 100%;
+width: 33%;
 }
