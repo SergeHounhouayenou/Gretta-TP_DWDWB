@@ -2,7 +2,7 @@
 html
 {
 margin:-1rem 0rem 0rem 0rem;
-background-color:  rgb(199, 213, 223);
+background-color:  rgb(220, 229, 235);
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -126,6 +126,7 @@ width: 6rem;
 border-radius: 0.75rem;
 border:none ;
 transition-duration: 1s;
+transition-property: scale duration;
 }
 
 .headerButton:hover
@@ -141,12 +142,14 @@ max-width: 100%;
 
 h1
 {
-font-size: 1.4rem;
+margin-top: 0.5rem;
+font-size: 1.35rem;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 letter-spacing: 0.001rem;
 word-spacing: 0.001rem;
 font-weight: 650;
 text-align: start;
+color:  rgb(6, 65, 110);
 }
 
 h2
@@ -166,17 +169,17 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 letter-spacing: 0.001rem;
 word-spacing: 0.001rem;
 font-weight: 650;
-color:  rgb(7, 88, 78);
+color:  rgb(16, 41, 112);
 }
 
 h4
 {
-font-size: 0.8rem;
+font-size: 0.875rem;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 letter-spacing: 0.001rem;
 word-spacing: 0.001rem;
 font-weight: 650;
-color:  rgb(131, 11, 47);
+color:  rgb(95, 21, 43);
 }
 
 
@@ -257,11 +260,6 @@ border: solid;
 border-radius: 1rem;
 }
 
-.cvTitle
-{
- margin-top: 0.5rem;
- color:  rgb(6, 65, 110);
-}
 
 .cvTitle + p
 {
@@ -273,7 +271,7 @@ margin-top: -0.5rem;
 .div2 p span
 {
 
-font-size: 1.03rem;
+font-size: 0.95rem;
 }
 
 .div3
@@ -291,6 +289,11 @@ border-radius: 1rem;
 .photoSerge
 {
 width: 6rem;
+}
+
+.cvDataContent
+{
+color:  rgb(7, 88, 78);
 }
 
 .div4
@@ -448,7 +451,7 @@ width: 100%;
 }
 
 
-.digitalBuisness
+.computerScience
 {
 grid-area: digitalBuisness ;
 width: 33%;
