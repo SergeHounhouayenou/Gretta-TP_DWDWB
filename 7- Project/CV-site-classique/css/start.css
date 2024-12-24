@@ -180,7 +180,9 @@ letter-spacing: 0.001rem;
 word-spacing: 0.001rem;
 font-weight: 600;
 color:  rgb(16, 41, 112);
-padding-left: 3rem;
+text-align: center;
+
+margin-bottom: 0.5rem;
 }
 
 h4
@@ -328,7 +330,7 @@ max-width: 45%;
 grid-area: div4;   
 border: solid;
 border-radius: 1rem;
-padding: 0rem 1rem 0rem 1rem;
+padding-bottom: 0.75rem;
 }
 
 .div5
@@ -339,74 +341,97 @@ max-width: 45%;
 grid-area: div5;   
 border: solid;
 border-radius: 1rem;
-padding: 0rem 1rem 0rem 1rem;
+padding-bottom: 0.75rem;
 }
-
 
 
 .cvFormationExperienceGrid
 {
 grid-template-areas:
-"titreProfil titreProfil titreProfil titreProfil titreProfil titreProfil"
+"cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer"
 "langues langues langues langues langues langues"
 "titre-languages titre-languages titre-languages titre-languages titre-languages titre-languages"
 "div41 div41 div41 div41 div41 div41"
 "literaryLanguages literaryLanguages code code frameworks frameworks"
+"cvFormationContainer cvFormationContainer cvFormationContainer cvFormationContainer cvFormationContainer cvFormationContainer"
 "Formation Formation Formation Formation Formation Formation"
 "titreFormation titreFormation titreFormation titreFormation titreFormation titreFormation"
 "div42 div42 div42 div42 div42 div42"
 "selfTaught selfTaught university university  technical technical"
+"cvExperienceContainer cvExperienceContainer cvExperienceContainer cvExperienceContainer cvExperienceContainer cvExperienceContainer"
 "experience experience experience experience experience experience"
 "titreFormation titreFormation titreFormation titreFormation titreFormation titreFormation"
 "div43 div43 div43 div43 div43 div43"
 "digitalBuisness digitalBuisness artProduction artProduction sport sport"
 ;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
 min-width: 45vw;
+
 }
 
+
+.cvLanguageContainer
+{
+grid-area: cvLanguageContainer;
+width: 100%;
+}
 .langues
 {
 grid-area: langues;
-
 } 
 
 .titre-languages
 {
 grid-area: titre-languages;
-
-
 } 
 
 
 .div41
 {
 grid-area: div41 ;
+margin: 0rem 0rem 0rem 0rem ;
+padding: 0rem 0rem 0rem 0.5rem;
 display: flex;
 flex-direction: row;
-justify-content: start;
+justify-content: space-between;
 align-items: start;
-gap: 2em;
-width: 100%;
+width: 90%;
 }
+
+
+.cvRubriqueContent
+{
+padding: 0.5rem 0.5rem 0rem 0.5rem;
+}
+
 
 .literaryLanguages
 {
 grid-area: literaryLanguages ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
 .code
 {
 grid-area: code ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
 .frameworks
 {
 grid-area: frameworks ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
+}
+
+
+.cvFormationContainer
+{
+grid-area: cvFormationContainer;
+width: 100%;
 }
 
 .Formation
@@ -424,35 +449,45 @@ grid-area: titreFormation ;
 .div42
 {
 grid-area: div42 ;
+margin: 0rem 0rem 0rem 0rem ;
+padding: 0rem 0rem 0rem 0.5rem;
 display: flex;
 flex-direction: row;
-justify-content: start;
+justify-content: space-between;
 align-items: start;
-gap: 2em; 
-width: 100%;
+width: 90%;
 }
 
 
 .selfTaught
 {
 grid-area: selfTaught ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
 
 .university
 {
 grid-area: university ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
 
 .technical
 {
 grid-area: technical ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
+
+.cvSkillsContainer
+{
+grid-area: cvSkillsContainer;
+width: 100%;
+}
 .experience
 {
 grid-area: experience ;
@@ -468,19 +503,21 @@ grid-area: titreExperience ;
 .div43
 {
 grid-area: div43 ;
+margin: 0rem 0rem 0rem 0rem ;
+padding: 0rem 0rem 0rem 0.5rem;
 display: flex;
 flex-direction: row;
-justify-content: start;
+justify-content: space-between;
 align-items: start;
-gap: 2em; 
-width: 100%;
+width: 90%;
 }
 
 
 .computerScience
 {
 grid-area: digitalBuisness ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 
 }
 
@@ -488,40 +525,49 @@ width: 33%;
 .artProduction
 {
 grid-area: artProduction ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
 
 .sport
 {
 grid-area: sport ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
 
 .cvConnaissancesGrid
 {
 grid-template-areas:
-"titreConnaissances titreConnaissances titreConnaissances titreConnaissances titreConnaissances titreConnaissances"
+"cvSkillsContainer cvSkillsContainer cvSkillsContainer cvSkillsContainer cvSkillsContainer cvSkillsContainer"
 "competences competences competences competences competences competences"
 "titre-competences titre-competences titre-competences titre-competences titre-competences titre-competences"
 "div51 div51 div51 div51 div51 div51"
 "production production deploiement deploiement administration administration"
+"cvKnowledgeContainer cvKnowledgeContainer cvKnowledgeContainer cvKnowledgeContainer cvKnowledgeContainer cvKnowledgeContainer"
 "Savoirs Savoirs Savoirs Savoirs Savoirs Savoirs"
 "titreSavoirs titreSavoirs titreSavoirs titreSavoirs titreSavoirs titreSavoirs"
 "div52 div52 div52 div52 div52 div52"
 "savoirs1 savoirs1 savoirs2 savoirs2 savoirs3 savoirs3"
+"cvBehaviourContainer cvBehaviourContainer cvBehaviourContainer cvBehaviourContainer cvBehaviourContainer cvBehaviourContainer"
 "savoirEtre savoirEtre savoirEtre savoirEtre savoirEtre savoirEtre"
 "titreSavoirEtre titreSavoirEtre titreSavoirEtre titreSavoirEtre titreSavoirEtre titreSavoirEtre"
 "div53 div53 div53 div53 div53 div53"
 "time time work work group group" 
 ;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 width: 45vw;
 }
 
 
+.cvSkillsContainer
+{
+grid-area: cvSkillsContainer;
+width: 100%;
+}
 .competences
 {
     grid-area: competences ;
@@ -536,33 +582,42 @@ width: 45vw;
 .div51
 {
 grid-area: div51 ;
-grid-area: informatiqueLanguages ;
+margin: 0rem 0rem 0rem 0rem ;
+padding: 0rem 0rem 0rem 0.5rem;
 display: flex;
 flex-direction: row;
-justify-content: start;
+justify-content: space-between;
 align-items: start;
-gap: 2em; 
-width: 100%;
+width: 90%;
 }
 
 .production
 {
 grid-area: production ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
 .deploiement
 {
 grid-area: deploiement ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
 .administration
 {
 grid-area: administration ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
+
+.cvKnowledgeContainer
+{
+grid-area: cvKnowledgeContainer;
+width: 100%;
+}
 .Savoirs
 {
     grid-area: Savoirs ;
@@ -576,32 +631,43 @@ width: 33%;
 .div52
 {
 grid-area: div52 ;
+margin: 0rem 0rem 0rem 0rem ;
+padding: 0rem 0rem 0rem 0.5rem;
 display: flex;
 flex-direction: row;
 justify-content: start;
+justify-content: space-between;
 align-items: start;
-gap: 2em; 
-width: 100%;
+width: 90%;
 }
 
 .savoirs1
 {
 grid-area:  savoirs ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
 .savoirs2
 {
 grid-area: savoirFaire ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
 .savoirs3
 {
 grid-area: savoirEtre ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
+
+.cvBehaviourContainer
+{
+grid-area: cvBehaviourContainer;
+width: 100%;
+}
 .savoirEtre
 {
     grid-area: savoirEtre ;
@@ -618,31 +684,35 @@ width: 33%;
 .div53
 {
 grid-area: div53 ;
+margin: 0rem 0rem 0rem 0rem ;
+padding: 0rem 0rem 0rem 0.5rem;
 display: flex;
 flex-direction: row;
-justify-content: start;
+justify-content: space-between;
 align-items: start;
-gap: 2em; 
-width: 100%;
+width: 90%;
 }
 
 
 .time
 {
 grid-area: FaceToTime ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
 
 .work
 {
 grid-area: FaceToWork ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
 
 
 .group
 {
 grid-area: FaceToGroups ;
-width: 33%;
+background-color:  rgb(190, 205, 214);
+width: 28%;
 }
