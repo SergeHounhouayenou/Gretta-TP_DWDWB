@@ -1,546 +1,141 @@
 
-html
-{
-margin:-1rem 0rem 0rem 0rem;
-background-color:  rgb(220, 229, 235);
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-header
-{
-position: fixed;
-margin: 0rem -1rem 0rem -1rem;
-padding: 1.5rem 2rem 1rem 2rem;
-background-color: rgb(59, 119, 168);
-width: 100%;
-}
-
-main
-{
-margin: 0rem -0.5rem 0rem -0.5rem;
-padding-top: 10rem;
-justify-items: center;
-}
-
-.logo
-{
-max-width: 8rem;
-}
-
-header nav
-{
-position: relative;
-display: grid;
-grid-template-areas:
+html {margin:-1rem 0rem 0rem 0rem; background-color:  rgb(220, 229, 235); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+header {background-color: rgb(59, 119, 168); width: 100%; position: fixed; margin: 0rem -1rem 0rem -1rem; padding: 1.5rem 2rem 1rem 2rem;}
+main {margin: 0rem -0.5rem 0rem -0.5rem; padding-top: 10rem; justify-items: center;}
+header nav {display: grid; grid-template-areas:
 "navBar navBar navBar navBar médiaBar médiaBar médiaBar médiaBar médiaBar userProfil userProfil userProfil";
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-grid-row: 1fr;
-gap: 1.5rem;
-justify-content: space-between;
-width: 100%;
-}
+grid-row: 1fr; width: 100%; position: relative; justify-content: space-between; gap: 1.5rem;}
 
-.navBar
-{
-position: relative;
-grid-area: navBar;
-width: 100%;
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: stretch;
-align-items: center;
-gap: 1.5rem;
-}
+.navBar {grid-area: navBar; width: 100%; position: relative;
+display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: stretch; align-items: center; gap: 1.5rem;}
+.mainMenu-layout {display: flex; flex-direction: row ; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem;}
 
-.mediaBar
-{
-grid-area: médiaBar;
-width: 100%;
-}
+.mediaBar {grid-area: médiaBar; width: 100%;}
+.pictoBar {display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;}
+.pictoBar img {max-width: 70%; transition-duration: 0.5s ;}
+.pictoBar img:hover{max-width: 55%; transform: rotateX(30deg);}
 
-.pictoBar
-{
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: space-between;
-align-items: center;
-}
+.userProfil {grid-area: userProfil; width: 94%; position: relative;
+display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; align-items: center;}
 
-.pictoBar img
-{
-max-width: 70%;
-transition-duration: 0.5s ;
-}
+.logo {max-width: 8rem;}
+.headerButton {background-color:  rgb(59, 119, 168); width: 6rem; color:rgb(241, 234, 234); font-size: 1.1rem; font-weight: 100;
+text-align: center; border-radius: 0.75rem; border:none; transition-duration: 1s; transition-property: scale duration background-color;}
+.headerButton:hover {background-color:  rgb(59, 119, 168); color:rgb(253, 253, 253); transform: scale(1.1);}
 
-.pictoBar img:hover
-{
-max-width: 55%;
-transform: rotateX(30deg);
-}
+.mainMenu {line-height: 2rem; font-size: 1.2rem; transition-duration: 1s; transition-property: scale duration background-color;}
+.mainMenu:hover {background-color:  rgb(59, 119, 168); color:rgb(253, 253, 253); transform: scale(1.1);}
+.mainMenuLinkFormat {color: rgb(248, 244, 244); text-decoration: none;}
 
-.userProfil
-{
-position: relative;
-grid-area: userProfil;
-width: 94%;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-evenly;
-align-items: center;
-}
+.titleStyle {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+letter-spacing: 0.001rem; word-spacing: 0.001rem;}
+h1 {margin-top: 0.5rem; font-size: 1.1rem; font-weight: 650; text-align: start; color:  rgb(6, 65, 110);}
+h2 {font-size: 1rem; font-weight: 650;}
+h3 {font-size: 0.9rem; font-weight: 600; color: rgb(16, 41, 112); text-align: center; margin-bottom: 0.5rem;}
+h4 {margin-top: 0rem; font-size: 0.9rem; font-weight:500; color: rgb(38, 7, 88);}
 
-.mainMenu-layout
-{
-display: flex;
-flex-direction: row ;
-flex-wrap: wrap;
-justify-content: space-between;
-align-items: center;
-gap: 1.5rem;
-
-}
-
-.headerButton
-{
-background-color:  rgb(59, 119, 168);
-color:rgb(241, 234, 234);
-font-size: 1.1rem;
-font-weight: 100;
-text-align: center;
-width: 6rem;
-border-radius: 0.75rem;
-border:none ;
-transition-duration: 1s;
-transition-property: scale duration background-color;
-}
-
-.headerButton:hover
-{
-background-color:  rgb(59, 119, 168);
-color:rgb(253, 253, 253);
-transform: scale(1.1);
-}
-
-.mainMenu
-{
-line-height: 2rem;
-font-size: 1.2rem;
-transition-duration: 1s;
-transition-property: scale duration background-color;
-}
-
-.mainMenu:hover
-{
-background-color:  rgb(59, 119, 168);
-color:rgb(253, 253, 253);
-transform: scale(1.1);
-}
-
-.mainMenuLinkFormat
-{
-color: rgb(248, 244, 244);
-text-decoration: none;
-}
-
-.cvContent
-{
-max-width: 100%;
-}
-
-h1
-{
-margin-top: 0.5rem;
-font-size: 1.1rem;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-letter-spacing: 0.001rem;
-word-spacing: 0.001rem;
-font-weight: 650;
-text-align: start;
-color:  rgb(6, 65, 110);
-}
-
-h2
-{
-font-size: 1rem;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-letter-spacing: 0.001rem;
-word-spacing: 0.001rem;
-font-weight: 650;
-
-}
-
-h3
-{
-font-size: 0.9rem;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-letter-spacing: 0.001rem;
-word-spacing: 0.001rem;
-font-weight: 600;
-color:  rgb(16, 41, 112);
-text-align: center;
-
-margin-bottom: 0.5rem;
-}
-
-h4
-{
-margin-top: 0rem;
-font-size: 0.9rem;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-letter-spacing: 0.001rem;
-word-spacing: 0.001rem; 
-font-weight:500 ;
-color:  rgb(38, 7, 88);
-}
-
-
-.cvGrid
-{
-display: grid;
-grid-template-areas: 
+.cvGrid {display: grid; grid-template-areas: 
 "identity identity identity identity identity identity identity identity identity identity identity identity"
 "div1 div1 div2 div2 div2 div2 div2 div2 div2 div2 div3 div3"
 "values values values values values values values values values values values values"
 "div4 div4 div4 div4 div4 div4 div5 div5 div5 div5 div5 div5";
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 0.25fr 0fr 1fr 0fr;
-gap: 2rem;
-margin: -1rem 0rem 0rem 0rem;
-padding: 2rem 2rem 2rem 2rem;
-max-width: 100%;
-}
+grid-template-rows: 0.25fr 0fr 1fr 0fr; max-width: 100%; margin: -1rem 0rem 0rem 0rem; padding: 2rem 2rem 2rem 2rem; gap: 2rem; }
 
-.identity
-{
-max-width: 100%;
-margin: 0rem 0rem 0rem 0rem;
-grid-area: identity;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap-reverse;
-justify-content: space-between;
-align-items: start;
-gap: 2rem;
-}
+.cvIdentity {max-width: 100%; margin: 0rem 0rem 0rem 0rem; grid-area: identity; 
+display: flex; flex-direction: row; flex-wrap: wrap-reverse; justify-content: space-between; align-items: start; gap: 2rem;}
 
-.values
-{
-max-width: 100%;    
-margin: -2rem 0rem 0rem 0rem;
-grid-area: values;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
-align-items: center;
-gap: 2rem;
-}
+.cvIdentityContainers{background-color:  rgb(214, 224, 231);min-height: 9rem; border: solid; border-radius: 1rem; }
+.cvValues {grid-area: values; max-width: 100%; margin: -2rem 0rem 0rem 0rem;
+display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 2rem;}
 
-.div1
-{
-background-color:  rgb(214, 224, 231);
-width: 12rem;
-grid-area: div1;
-height: 9rem;
-border: solid;
-border-radius: 1rem;
-}
+.div1 {grid-area: div1; width: 12rem;}
+.div2 {grid-area: div2; max-width: 40rem; min-height: 9rem; padding: 0rem 1rem 0rem 1rem ;}
+.div3{width: 12rem; height: 9rem; grid-area: div3;justify-items:center ; align-items: center;}
+.div4{grid-area: div4;}
+.div5{grid-area: div5;}
 
-.titreCandidat
-{
-text-align: start;
-margin-top: 0.5rem;
-padding-left: 1.5rem;
-color:  rgb(6, 65, 110);
-}
+.titreCandidat{text-align: start; margin-top: 0.5rem; padding-left: 1.5rem; color:  rgb(6, 65, 110); }
+.dataCandidat {margin-top: 0rem; justify-self: center;}
+.dataCandidat p {margin-top: -0.5rem;}
 
-.dataCandidat
-{
-margin-top: 0rem;
-justify-self: center;
-}
+.cvTitle + p{text-align: justify; margin-top: -0.5rem;}
+.div2 p span{font-size: 0.95rem;}
 
-.dataCandidat p
-{
-margin-top: -0.5rem;
-}
+.photoCvContainer{height: 9rem;}
+.photoCv{width: 5.5rem; margin-top: -0.5rem;} 
 
-.div2
-{
-background-color:  rgb(214, 224, 231);
-max-width: 40rem; 
-min-height: 9rem;
-grid-area: div2;
-padding: 0rem 1rem 0rem 1rem ;    
-border: solid;
-border-radius: 1rem;
-}
-
-
-.cvTitle + p
-{
-text-align: justify;
-margin-top: -0.5rem;
-
-}
-
-.div2 p span
-{
-
-font-size: 0.95rem;
-}
-
-.div3
-{
-background-color:  rgb(215, 225, 235);
-width: 12rem;
-height: 9rem;
-grid-area: div3;    
-justify-items:center ;
-align-items: center;
-border: solid;
-border-radius: 1rem;
-}
-
-.photoCvContainer
-{
-height: 9rem;
-}
-
-.photoCv
-{
-width: 5.5rem;
-margin-top: -0.5rem;
-}
-
-.cvDataContent
-{
-margin-top: -1rem;
-color:  rgb(7, 88, 78);
-}
-
-.div4
-{
-background-color:  rgb(217, 226, 233);
-min-width: 15rem;
-max-width: 45%;
-grid-area: div4;   
-border: solid;
-border-radius: 1rem;
-padding-bottom: 0.75rem;
-}
-
-.div5
-{
-min-width: 15rem;
-background-color:  rgb(217, 226, 233);
-max-width: 45%;
-grid-area: div5;   
-border: solid;
-border-radius: 1rem;
-padding-bottom: 0.75rem;
-}
-
-
-.cvFormationExperienceGrid
-{
-grid-template-areas:
+.cvFormationExperienceGrid {display: grid ; grid-template-areas:
 "cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer"
-"langues langues langues langues langues langues"
-"titre-languages titre-languages titre-languages titre-languages titre-languages titre-languages"
-"div41 div41 div41 div41 div41 div41"
+
 "literaryLanguages literaryLanguages code code frameworks frameworks"
 "cvFormationContainer cvFormationContainer cvFormationContainer cvFormationContainer cvFormationContainer cvFormationContainer"
-"Formation Formation Formation Formation Formation Formation"
-"titreFormation titreFormation titreFormation titreFormation titreFormation titreFormation"
-"div42 div42 div42 div42 div42 div42"
+
 "selfTaught selfTaught university university  technical technical"
 "cvExperienceContainer cvExperienceContainer cvExperienceContainer cvExperienceContainer cvExperienceContainer cvExperienceContainer"
-"experience experience experience experience experience experience"
-"titreFormation titreFormation titreFormation titreFormation titreFormation titreFormation"
-"div43 div43 div43 div43 div43 div43"
+
 "digitalBuisness digitalBuisness artProduction artProduction sport sport"
 ;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
 min-width: 45vw;
-
 }
 
-
-.cvLanguageContainer
+.cvThemeContainer
 {
-grid-area: cvLanguageContainer;
+background-color: rgb(217, 226, 233);
+min-width: 15rem; max-width: 45%;
+border: solid; border-radius: 1rem;
+padding-bottom: 0.75rem;
+}
+.cvRubriqueContainer
+{
 width: 100%;
 }
-.langues
+.cvRubriqueDiv 
 {
-grid-area: langues;
-} 
-
-.titre-languages
-{
-grid-area: titre-languages;
-} 
-
-
-.div41
-{
-grid-area: div41 ;
-margin: 0rem 0rem 0rem 0rem ;
-padding: 0rem 0rem 0rem 0.5rem;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+width: 90%; padding: 0rem 0rem 0rem 0.5rem; 
+display: flex; flex-direction: row; justify-content: space-between; 
 align-items: start;
-width: 90%;
 }
-
-
 .cvRubriqueContent
 {
+background-color:  rgb(190, 205, 214);
 padding: 0.5rem 0.5rem 0rem 0.5rem;
-}
-
-
-.literaryLanguages
-{
-grid-area: literaryLanguages ;
-background-color:  rgb(190, 205, 214);
 width: 28%;
 }
-
-.code
+.cvDataContent  
 {
-grid-area: code ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
+margin-top: -1rem; 
+color:  rgb(7, 88, 78);
 }
 
-.frameworks
-{
-grid-area: frameworks ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
+.cvLanguageContainer{grid-area: cvLanguageContainer;}
+.langues{grid-area: langues;} 
+.titre-languages{grid-area: titre-languages;} 
+.div41{grid-area: div41;}
+.literaryLanguages {grid-area: literaryLanguages;}
+.code {grid-area: code;}
+.frameworks{grid-area: frameworks;}
 
+.cvFormationContainer {grid-area: cvFormationContainer;}
+.Formation {grid-area: Formation;}
+.titreFormation{grid-area: titreFormation;}
+.div42{grid-area: div42;}
+.selfTaught{grid-area: selfTaught;}
+.university{grid-area: university;}
+.technical{grid-area: technical;}
 
-.cvFormationContainer
-{
-grid-area: cvFormationContainer;
-width: 100%;
-}
+.cvSkillsContainer{grid-area: cvSkillsContainer;}
+.experience{grid-area: experience;}
+.titreExperience{grid-area: titreExperience;}
+.div43{grid-area: div43;}
+.computerScience{grid-area: digitalBuisness;}
+.artProduction{grid-area: artProduction;}
+.sport{grid-area: sport;}
 
-.Formation
-{
-grid-area: Formation ;
-
-}
-
-.titreFormation
-{
-grid-area: titreFormation ;
-
-}
-
-.div42
-{
-grid-area: div42 ;
-margin: 0rem 0rem 0rem 0rem ;
-padding: 0rem 0rem 0rem 0.5rem;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: start;
-width: 90%;
-}
-
-
-.selfTaught
-{
-grid-area: selfTaught ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
-
-
-.university
-{
-grid-area: university ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
-
-
-.technical
-{
-grid-area: technical ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
-
-
-.cvSkillsContainer
-{
-grid-area: cvSkillsContainer;
-width: 100%;
-}
-.experience
-{
-grid-area: experience ;
-
-}
-
-.titreExperience
-{
-grid-area: titreExperience ;
-
-}
-
-.div43
-{
-grid-area: div43 ;
-margin: 0rem 0rem 0rem 0rem ;
-padding: 0rem 0rem 0rem 0.5rem;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: start;
-width: 90%;
-}
-
-
-.computerScience
-{
-grid-area: digitalBuisness ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-
-}
-
-
-.artProduction
-{
-grid-area: artProduction ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
-
-
-.sport
-{
-grid-area: sport ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
-
-
-.cvConnaissancesGrid
-{
-grid-template-areas:
+.cvConnaissancesGrid {grid-template-areas:
 "cvSkillsContainer cvSkillsContainer cvSkillsContainer cvSkillsContainer cvSkillsContainer cvSkillsContainer"
 "competences competences competences competences competences competences"
 "titre-competences titre-competences titre-competences titre-competences titre-competences titre-competences"
@@ -562,157 +157,28 @@ grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 width: 45vw;
 }
 
+.cvSkillsContainer{grid-area: cvSkillsContainer;}
+.competences{grid-area: competences;}
+.titre-competences{grid-area: titre-competences;}
+.div51{grid-area: div51;}
+.production{grid-area: production;}
+.deploiement{grid-area: deploiement;}
+.administration{grid-area: administration;}
 
-.cvSkillsContainer
-{
-grid-area: cvSkillsContainer;
-width: 100%;
-}
-.competences
-{
-    grid-area: competences ;
-}
+.cvKnowledgeContainer{grid-area: cvKnowledgeContainer;}
+.Savoirs{grid-area: Savoirs;}
+.titreSavoirs{grid-area: titreSavoirs;}
+.div52{grid-area: div52;}
+.savoirs1{grid-area:  savoirs;}
+.savoirs2{grid-area: savoirFaire;}
+.savoirs3{grid-area: savoirEtre;}
 
-.titre-competences
-{
-    grid-area: titre-competences;
-}
+.cvBehaviourContainer{grid-area: cvBehaviourContainer;}
+.savoirEtre{grid-area: savoirEtre;}
+.titreSavoirEtre{grid-area: titreSavoirEtre;}
+.div53{grid-area: div53;}
+.time{grid-area: FaceToTime;}
+.work{grid-area: FaceToWork;}
+.group{grid-area: FaceToGroups;}
 
-
-.div51
-{
-grid-area: div51 ;
-margin: 0rem 0rem 0rem 0rem ;
-padding: 0rem 0rem 0rem 0.5rem;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: start;
-width: 90%;
-}
-
-.production
-{
-grid-area: production ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
-
-.deploiement
-{
-grid-area: deploiement ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
-
-.administration
-{
-grid-area: administration ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
-
-
-.cvKnowledgeContainer
-{
-grid-area: cvKnowledgeContainer;
-width: 100%;
-}
-.Savoirs
-{
-    grid-area: Savoirs ;
-}
-
-.titreSavoirs
-{
-    grid-area: titreSavoirs ;
-}
-
-.div52
-{
-grid-area: div52 ;
-margin: 0rem 0rem 0rem 0rem ;
-padding: 0rem 0rem 0rem 0.5rem;
-display: flex;
-flex-direction: row;
-justify-content: start;
-justify-content: space-between;
-align-items: start;
-width: 90%;
-}
-
-.savoirs1
-{
-grid-area:  savoirs ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
-
-.savoirs2
-{
-grid-area: savoirFaire ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
-
-.savoirs3
-{
-grid-area: savoirEtre ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
-
-
-.cvBehaviourContainer
-{
-grid-area: cvBehaviourContainer;
-width: 100%;
-}
-.savoirEtre
-{
-    grid-area: savoirEtre ;
-  
-}
-
-.titreSavoirEtre
-{
-    grid-area: titreSavoirEtre ;
-  
-}
-
-
-.div53
-{
-grid-area: div53 ;
-margin: 0rem 0rem 0rem 0rem ;
-padding: 0rem 0rem 0rem 0.5rem;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: start;
-width: 90%;
-}
-
-
-.time
-{
-grid-area: FaceToTime ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
-
-
-.work
-{
-grid-area: FaceToWork ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
-
-
-.group
-{
-grid-area: FaceToGroups ;
-background-color:  rgb(190, 205, 214);
-width: 28%;
-}
+.cvContent{max-width: 100%;}
