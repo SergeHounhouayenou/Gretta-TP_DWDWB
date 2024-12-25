@@ -12,14 +12,24 @@ display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: stretch;
 .mainMenu-layout {display: flex; flex-direction: row ; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem;}
 
 .mediaBar {grid-area: médiaBar; width: 100%;}
-.pictoBar {display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;}
+.pictoBar {margin-top: 0.7rem; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;}
 .pictoBar img {max-width: 70%; transition-duration: 0.5s ;}
 .pictoBar img:hover{max-width: 55%; transform: rotateX(30deg);}
 
 .userProfil {grid-area: userProfil; width: 94%; position: relative;
 display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; align-items: center;}
 
-.logo {max-width: 8rem;}
+.logo {max-width: 8rem; transition-duration: 1s;}
+.logo:hover {animation-duration: 2s; animation-name: logRotate;}
+@keyframes logRotate
+{
+    0% {transform:rotateZ(0deg);} 10% {transform:rotateZ(20deg);} 30% {transform:rotateZ(45deg);} 45% {transform:rotateZ(-80deg);}
+    60% {transform:rotateZ(20deg);} 70% {transform:rotateZ(-20deg);} 80% {transform:rotateZ(10deg);} 90% {transform:rotateZ(-10deg);}
+    95% {transform:rotateZ(-5deg);} 96% {transform:rotateZ(-4deg);} 97% {transform:rotateZ(-3deg);} 98% {transform:rotateZ(-2deg);}
+    99% {transform:rotateZ(-1deg);} 100% {transform:rotateZ(0deg);}
+}
+
+
 .headerButton {background-color:  rgb(59, 119, 168); width: 6rem; color:rgb(241, 234, 234); font-size: 1.1rem; font-weight: 100;
 text-align: center; border-radius: 0.75rem; border:none; transition-duration: 1s; transition-property: scale duration background-color;}
 .headerButton:hover {background-color:  rgb(59, 119, 168); color:rgb(253, 253, 253); transform: scale(1.1);}
@@ -33,7 +43,10 @@ letter-spacing: 0.001rem; word-spacing: 0.001rem;}
 h1 {margin-top: 0.5rem; font-size: 1.1rem; font-weight: 650; text-align: start; color:  rgb(6, 65, 110);}
 h2 {font-size: 1rem; font-weight: 650;}
 h3 {font-size: 0.9rem; font-weight: 600; color: rgb(16, 41, 112); text-align: center; margin-bottom: 0.5rem;}
-h4 {margin-top: 0rem; font-size: 0.9rem; font-weight:500; color: rgb(38, 7, 88);}
+h4 {margin-top: 0rem; font-size: 0.85rem; font-weight:500; color: rgb(38, 7, 88);}
+.containerH4 {height: 1rem;}
+
+.cvContent{max-width: 100%;}
 
 .cvGrid {display: grid; grid-template-areas: 
 "identity identity identity identity identity identity identity identity identity identity identity identity"
@@ -53,8 +66,8 @@ display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-betw
 .div1 {grid-area: div1; width: 12rem;}
 .div2 {grid-area: div2; max-width: 40rem; min-height: 9rem; padding: 0rem 1rem 0rem 1rem ;}
 .div3{width: 12rem; height: 9rem; grid-area: div3;justify-items:center ; align-items: center;}
-.div4{grid-area: div4;}
-.div5{grid-area: div5;}
+.div4{grid-area: div4; width: 43vw;}
+.div5{grid-area: div5; width: 43vw;}
 
 .titreCandidat{text-align: start; margin-top: 0.5rem; padding-left: 1.5rem; color:  rgb(6, 65, 110); }
 .dataCandidat {margin-top: 0rem; justify-self: center;}
@@ -68,24 +81,21 @@ display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-betw
 
 .cvFormationExperienceGrid {display: grid ; grid-template-areas:
 "cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer"
-
 "literaryLanguages literaryLanguages code code frameworks frameworks"
 "cvFormationContainer cvFormationContainer cvFormationContainer cvFormationContainer cvFormationContainer cvFormationContainer"
-
 "selfTaught selfTaught university university  technical technical"
 "cvExperienceContainer cvExperienceContainer cvExperienceContainer cvExperienceContainer cvExperienceContainer cvExperienceContainer"
-
-"digitalBuisness digitalBuisness artProduction artProduction sport sport"
+"computerScience computerScience artProduction artProduction sport sport"
 ;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-min-width: 45vw;
+grid-template-rows: 16% 16% 16% 16% 16% 16%;
+width: 1fr;
 }
 
 .cvThemeContainer
 {
 background-color: rgb(217, 226, 233);
-min-width: 15rem; max-width: 45%;
+min-width: 18rem; max-width: 100%;
 border: solid; border-radius: 1rem;
 padding-bottom: 0.75rem;
 }
@@ -94,91 +104,53 @@ padding-bottom: 0.75rem;
 width: 100%;
 }
 .cvRubriqueDiv 
-{
-width: 90%; padding: 0rem 0rem 0rem 0.5rem; 
-display: flex; flex-direction: row; justify-content: space-between; 
-align-items: start;
+{background-color:  rgb(190, 203, 214); 
+width: 100%; padding: 0rem 0rem 0rem 0rem; 
+display: flex; flex-direction: row; justify-content: space-between; align-items: start;
 }
-.cvRubriqueContent
-{
-background-color:  rgb(190, 205, 214);
-padding: 0.5rem 0.5rem 0rem 0.5rem;
-width: 28%;
-}
-.cvDataContent  
-{
-margin-top: -1rem; 
-color:  rgb(7, 88, 78);
-}
+.cvRubriqueContent {width: 100%; padding: 0.5rem 0.5rem 0rem 0.5rem;}
+.cvDataContent {margin-top: -1rem; color:  rgb(7, 88, 78);}
 
 .cvLanguageContainer{grid-area: cvLanguageContainer;}
-.langues{grid-area: langues;} 
-.titre-languages{grid-area: titre-languages;} 
-.div41{grid-area: div41;}
 .literaryLanguages {grid-area: literaryLanguages;}
 .code {grid-area: code;}
 .frameworks{grid-area: frameworks;}
 
 .cvFormationContainer {grid-area: cvFormationContainer;}
-.Formation {grid-area: Formation;}
-.titreFormation{grid-area: titreFormation;}
-.div42{grid-area: div42;}
 .selfTaught{grid-area: selfTaught;}
 .university{grid-area: university;}
 .technical{grid-area: technical;}
 
-.cvSkillsContainer{grid-area: cvSkillsContainer;}
-.experience{grid-area: experience;}
-.titreExperience{grid-area: titreExperience;}
-.div43{grid-area: div43;}
-.computerScience{grid-area: digitalBuisness;}
+.cvExperienceContainer{grid-area: cvExperienceContainer;}
+.computerScience{grid-area: computerScience;}
 .artProduction{grid-area: artProduction;}
 .sport{grid-area: sport;}
 
-.cvConnaissancesGrid {grid-template-areas:
+.cvConnaissancesGrid {display: grid ; grid-template-areas:
 "cvSkillsContainer cvSkillsContainer cvSkillsContainer cvSkillsContainer cvSkillsContainer cvSkillsContainer"
-"competences competences competences competences competences competences"
-"titre-competences titre-competences titre-competences titre-competences titre-competences titre-competences"
-"div51 div51 div51 div51 div51 div51"
 "production production deploiement deploiement administration administration"
 "cvKnowledgeContainer cvKnowledgeContainer cvKnowledgeContainer cvKnowledgeContainer cvKnowledgeContainer cvKnowledgeContainer"
-"Savoirs Savoirs Savoirs Savoirs Savoirs Savoirs"
-"titreSavoirs titreSavoirs titreSavoirs titreSavoirs titreSavoirs titreSavoirs"
-"div52 div52 div52 div52 div52 div52"
 "savoirs1 savoirs1 savoirs2 savoirs2 savoirs3 savoirs3"
 "cvBehaviourContainer cvBehaviourContainer cvBehaviourContainer cvBehaviourContainer cvBehaviourContainer cvBehaviourContainer"
-"savoirEtre savoirEtre savoirEtre savoirEtre savoirEtre savoirEtre"
-"titreSavoirEtre titreSavoirEtre titreSavoirEtre titreSavoirEtre titreSavoirEtre titreSavoirEtre"
-"div53 div53 div53 div53 div53 div53"
 "time time work work group group" 
 ;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-width: 45vw;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+grid-template-rows: auto;
+width: 1fr;
 }
 
 .cvSkillsContainer{grid-area: cvSkillsContainer;}
-.competences{grid-area: competences;}
-.titre-competences{grid-area: titre-competences;}
-.div51{grid-area: div51;}
 .production{grid-area: production;}
 .deploiement{grid-area: deploiement;}
 .administration{grid-area: administration;}
 
 .cvKnowledgeContainer{grid-area: cvKnowledgeContainer;}
-.Savoirs{grid-area: Savoirs;}
-.titreSavoirs{grid-area: titreSavoirs;}
-.div52{grid-area: div52;}
-.savoirs1{grid-area:  savoirs;}
-.savoirs2{grid-area: savoirFaire;}
-.savoirs3{grid-area: savoirEtre;}
+.savoirs1{grid-area:  savoirs1;}
+.savoirs2{grid-area: savoirs2;}
+.savoirs3{grid-area: savoirs3;}
 
 .cvBehaviourContainer{grid-area: cvBehaviourContainer;}
-.savoirEtre{grid-area: savoirEtre;}
-.titreSavoirEtre{grid-area: titreSavoirEtre;}
-.div53{grid-area: div53;}
 .time{grid-area: FaceToTime;}
 .work{grid-area: FaceToWork;}
 .group{grid-area: FaceToGroups;}
 
-.cvContent{max-width: 100%;}
