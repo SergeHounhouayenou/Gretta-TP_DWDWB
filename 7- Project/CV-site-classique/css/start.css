@@ -1,10 +1,11 @@
 
 html {margin:0rem 0rem 0rem 0rem; background-color:  rgb(220, 229, 235); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
-header {background-color: rgb(59, 119, 168); width: 100%; position: relative; margin: 0rem 0rem 0rem -0.5rem; padding: 1rem 0rem 1rem 1.5rem;}
-main {margin: 1rem 0rem 0rem 0rem; padding-top: 0rem; justify-items: center;}
+body {min-width: 326px ; margin: 0rem 0rem 0rem 0rem;}
+header {z-index: 10; background-color: rgb(59, 119, 168); max-width: 100%; position: relative; margin: 0rem 0rem 0rem 0rem; padding: 1rem 0rem 1rem 0rem;}
+main {z-index: 5; margin: 1rem 0rem 0rem 0rem; padding-top: 0rem; justify-items: center;}
 .headBannerNav{ max-width: 100%; display: flex; flex-direction: row; flex-wrap:nowrap; justify-content: space-between; align-items: center; gap: 1.5rem;} 
 
-.navBar {margin: 0rem 0rem 0rem 0rem; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: start; align-items: center; gap: 1.5rem;}
+.navBar {margin: 0rem 0rem 0rem 1rem; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: start; align-items: center; gap: 1.5rem;}
 .mainMenu-layout { display: flex; flex-direction: row ; flex-wrap: nowrap; justify-content: space-between; align-items: center; gap: 1.5rem;}
 
 .mediaBar {max-width: 100%;}
@@ -12,7 +13,7 @@ main {margin: 1rem 0rem 0rem 0rem; padding-top: 0rem; justify-items: center;}
 .pictoBarIcon {max-width: 70%; min-width: 2.5rem; transition-duration: 0.5s ;}
 .pictoBarIcon:hover{max-width: 65%; transform: rotateX(35deg);}
 
-.userProfil {max-width: 100%; margin-right: 2.5rem; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; gap:2rem;}
+.userProfil {max-width: 100%; margin-right: 2rem; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; gap:1rem;}
 
 .logoDiv {max-width: 8rem; transition-duration: 1s;}
 .logoDiv:hover {animation-duration: 2s; animation-name: logRotate;}
@@ -53,19 +54,19 @@ h4 {margin-top: 0rem; font-size: 0.85rem; font-weight:500; color: rgb(38, 7, 88)
 "div1 div1 div2 div2 div2 div2 div2 div2 div2 div2 div3 div3"
 "values values values values values values values values values values values values"
 "div4 div4 div4 div4 div4 div4 div5 div5 div5 div5 div5 div5";
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: repeat(12, 1fr); 
 grid-template-rows: 0.25fr 0fr 1fr 0fr; max-width: 100%; margin: -1rem 0rem 0rem 0rem; padding: 2rem 2rem 2rem 2rem; gap: 2rem; }
 
 .cvIdentity {max-width: 100%; margin: 0rem 0rem 0rem 0rem; grid-area: identity; 
-display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: start; gap: 2rem;}
+display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: start; gap: 1.75rem;}
 
 .cvIdentityContainers{background-color:  rgb(214, 224, 231);min-height: 9rem; border: solid; border-radius: 1rem; }
 .cvValues {grid-area: values; max-width: 100%; margin: -2rem 0rem 0rem 0rem;
-display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 2rem;}
+display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem;}
 
 .div1 {grid-area: div1; max-width: 12rem;}
 .div2 {grid-area: div2; max-width: 40rem; min-height: 9rem; padding: 0rem 1rem 0rem 1rem ;}
-.div3{width: 12rem; height: 9rem; grid-area: div3;justify-items:center ; align-items: center;}
+.div3{width: 7rem; height: 9rem; grid-area: div3;justify-items:center ; align-items: center;}
 .div4{grid-area: div4; width: 43vw;}
 .div5{grid-area: div5; width: 43vw;}
 
@@ -87,8 +88,8 @@ display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-betw
 "cvExperienceContainer cvExperienceContainer cvExperienceContainer cvExperienceContainer cvExperienceContainer cvExperienceContainer"
 "computerScience computerScience artProduction artProduction sport sport"
 ;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-grid-template-rows: 16% 16% 16% 16% 16% 16%;
+grid-template-columns:  repeat(6, 1fr); 
+grid-template-rows:  repeat(6, 16%); 
 width: 1fr;
 }
 
@@ -98,6 +99,7 @@ background-color: rgb(217, 226, 233);
 min-width: 18rem; max-width: 100%;
 border: solid; border-radius: 1rem;
 padding-bottom: 0.75rem;
+align-items: center;
 }
 .cvRubriqueContainer
 {
@@ -134,8 +136,8 @@ display: flex; flex-direction: row; justify-content: space-between; align-items:
 "cvBehaviourContainer cvBehaviourContainer cvBehaviourContainer cvBehaviourContainer cvBehaviourContainer cvBehaviourContainer"
 "time time work work group group" 
 ;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-grid-template-rows: auto;
+grid-template-columns:  repeat(6, 1fr); 
+grid-template-rows:  repeat(6, 16%); 
 width: 1fr;
 }
 
@@ -154,3 +156,392 @@ width: 1fr;
 .work{grid-area: FaceToWork;}
 .group{grid-area: FaceToGroups;}
 
+
+@media (max-width : 1080px) 
+{
+    .headerButton {font-size: 95%;}
+    .mainMenuLinkFormat {font-size: 95%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.5rem;}
+    .div1{max-width: 12rem; font-size: 92.5%;}
+    .titreCandidat {padding-left: 1.5rem;}
+    .div2{max-width: 38rem; font-size: 92.5%;}
+    .div2 p span{font-size: 0.9rem;}
+    .div3 {width: 6rem;}
+    .cvIdentity {gap: 1.5rem;}
+}
+
+@media (max-width : 1024px) 
+{
+    .headerButton {font-size: 95%;}
+    .mainMenuLinkFormat {font-size: 95%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.5rem;}
+    .div1{max-width: 12rem; font-size: 92.5%;}
+    .titreCandidat {padding-left: 1.5rem;}
+    .div2{max-width: 36rem; font-size: 92.5%;}
+    .div2 p span{font-size: 0.9rem;}
+    .div3 {width: 6rem;}
+    .cvIdentity {gap: 1.5rem;}
+}
+
+@media (max-width : 990px) 
+{
+    .headerButton {font-size: 95%;}
+    .mainMenuLinkFormat {font-size: 95%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.5rem;}
+    .div1{max-width: 12rem; font-size: 92.5%;}
+    .titreCandidat {padding-left: 1.5rem; padding-top: 0.1rem;}
+    .div2{max-width: 34rem; font-size: 92.5%;}
+    .div2 p span{font-size: 0.9rem;}
+    .div3 {width: 6rem;}
+    .cvIdentity {gap: 1.5rem;}
+}
+
+@media (max-width : 950px) 
+{
+    .headerButton {font-size: 95%;}
+    .mainMenuLinkFormat {font-size: 95%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.4rem;}
+    .div1{max-width: 12rem; font-size: 90%;}
+    .titreCandidat {padding-left: 1.5rem; padding-top: 0.1rem;}
+    .div2{max-width: 33rem; font-size: 92%;}
+    .div2 p span{font-size: 0.9rem;}
+    .div3 {width: 6rem;}
+    .cvIdentity {gap: 1.4rem;}
+}
+
+@media (max-width : 930px) 
+{
+    .headerButton {font-size: 95%;}
+    .mainMenuLinkFormat {font-size: 95%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.4rem;}
+    .div1{max-width: 12rem; font-size: 90%;}
+    .titreCandidat {padding-left: 1.5rem; padding-top: 0.1rem;}
+    .div2{max-width: 30rem; font-size: 92%;}
+    .div2 p span{font-size: 0.9rem;}
+    .div3 {width: 6rem;}
+    .cvIdentity {gap: 1.25rem;}
+}
+
+
+@media (max-width : 900px) 
+{
+    .headerButton {font-size: 95%;}
+    .mainMenuLinkFormat {font-size: 95%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.5rem;}
+    .div1{max-width: 12rem; font-size: 90%;}
+    .titreCandidat {padding-left: 1rem;}
+    .div1 p {padding-top: 0.2rem;}
+    .div2{max-width: 29rem; font-size: 92%;}
+    .div2 p span{font-size: 0.875rem;}
+    .cvIdentity {gap: 1.25rem;}
+}
+
+/*Ecran de moins de 768px  (mobiles) */
+
+@media (max-width : 870px) 
+{
+    .headerButton {font-size: 90%;}
+    .mainMenuLinkFormat {font-size: 90%;}
+    h1, h2 {font-size: 95%;}
+    .pictoBar {gap: 1.5rem;}
+    .div1{max-width: 12rem; font-size: 80%;}
+    .titreCandidat {padding-left: 1rem;}
+    .div2{max-width: 27rem; font-size: 88%;}
+    .div2 p span{font-size: 0.8rem;}
+    .cvIdentity {gap: 0.8rem;}
+}
+
+@media (max-width : 800px) 
+{
+    .headerButton {font-size: 85%;}
+    .mainMenuLinkFormat {font-size: 85%;}
+    h1, h2 {font-size: 90%;}
+    .pictoBar {gap: 1.5rem;}
+    .div1{max-width: 12rem; font-size: 85%;}
+    .titreCandidat {padding-left: 1rem;}
+    .div1 p {line-height: 1.05rem;}
+    .div2{font-size: 94%;}
+    .div2 p span{font-size: 0.8rem;}
+    .cvIdentity {gap: 1.25rem;}
+}
+
+@media (max-width : 768px) 
+{
+    header{position: fixed; margin-top: -1rem;}
+    main {padding-top: 6rem;}
+    .div4{width: 100vw; margin-top: 10.5rem;}
+    .div5{width: 100vw;}
+    .cvFormationExperienceGrid
+        {
+        width: auto; margin-left: 1rem; margin-right: 1rem;
+        }
+    .cvConnaissancesGrid 
+        {
+        width: auto; margin-left: 1rem; margin-right: 1rem;
+        }
+    .cvRubriqueDiv
+        {
+        border-radius: 0.5rem;       
+        }
+        .div2 {position: absolute;top:25rem; max-width: 100%; min-height: 4.5rem; margin: 0rem 2rem 0rem 0rem;}
+
+    .headerButton {font-size: 85%;}
+    .mainMenuLinkFormat {font-size: 85%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.5rem;}
+    .cvIdentity {gap: 1.25rem;}
+    .div1{position : relative ; max-width: 100%; font-size: 1.5rem;}
+    .titreCandidat {padding-left: 2.5rem;}
+    .div1 p {width: 38vw; line-height: 2rem; text-align: justify; padding-left: 1rem; padding-right: 1rem;}
+    .div2 {position: absolute;top:25rem; max-width: 100%; min-height: 4.5rem; margin: 0rem 2rem 0rem 0rem;}
+    .div2{font-size: 100%;}
+    .div2 p span{font-size: 0.8rem;}
+    .div3{position : relative ; width: 40vw; height: 15rem;}
+    .photoCvContainer{height: 15rem;}
+    .photoCv{ min-width: 8.5rem; margin: 0rem 0.5rem 0rem 0.5rem;} 
+}
+
+    @media (max-width : 588px) 
+{
+    .headerButton {font-size: 85%;}
+    .mainMenuLinkFormat {font-size: 85%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.5rem;}
+    .cvIdentity {gap: 1.5rem;}
+    .div1{position : relative ; max-width: 100%; font-size: 1.35rem;}
+    .titreCandidat {padding-left: 2.5rem;}
+    .div1 p {width: 38vw; line-height: 2rem; text-align: justify; padding-left: 0.9rem; padding-right: 0.9rem;}
+    .div2 {position: absolute;top:24.5rem; max-width: 100%; min-height: 4.5rem; margin: 0rem 2rem 0rem 0rem;}
+    .div2{font-size: 100%;}
+    .div2 p span{font-size: 0.8rem;}
+    .div3{position : relative ; width: 40vw; height: 14.60rem;}
+    .photoCvContainer{height: 14.60rem;}
+    .photoCv{ min-width: 8.5rem; margin: 0rem 0.5rem 0rem 0.5rem;} 
+    .div4{width: 100vw; margin-top: 12rem;}
+    .div5{width: 100vw;}
+}
+
+@media (max-width : 522px) 
+{
+    .headerButton {font-size: 85%;}
+    .mainMenuLinkFormat {font-size: 85%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.5rem;}
+    .cvIdentity {gap: 1.5rem;}
+    .div1{position : relative ; max-width: 100%; font-size: 1.2rem;}
+    .titreCandidat {padding-left: 2.5rem;}
+    .div1 p {width: 38vw; line-height: 2rem; text-align: justify; padding-left: 0.9rem; padding-right: 0.9rem;}
+    .div2 {position: absolute;top:24.5rem; max-width: 100%; min-height: 4.5rem; margin: 0rem 2rem 0rem 0rem;}
+    .div2{font-size: 100%;}
+    .div2 p span{font-size: 0.8rem;}
+    .div3{position : relative ; width: 40vw; height: 14.1rem;}
+    .photoCvContainer{height: 14.1rem;}
+    .photoCv{ min-width: 8.5rem; margin: -0.25rem 0.5rem 0rem 0.5rem;} 
+    .div4{width: 100vw; margin-top: 12.75rem;}
+    .div5{width: 100vw;}
+}
+
+@media (max-width : 510px) 
+{
+    .headerButton {font-size: 85%;}
+    .mainMenuLinkFormat {font-size: 85%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.5rem;}
+    .cvIdentity {gap: 1.5rem;}
+    .div1{position : relative ; max-width: 100%; font-size: 1.2rem;}
+    .titreCandidat {padding-left: 2.5rem;}
+    .div1 p {width: 38vw; line-height: 2rem; text-align: justify; padding-left: 0.9rem; padding-right: 0.9rem;}
+    .div2 {position: absolute;top:24.5rem; max-width: 100%; min-height: 4.5rem; margin: 0rem 2rem 0rem 0rem;}
+    .div2{font-size: 100%;}
+    .div2 p span{font-size: 0.8rem;}
+    .div3{position : relative ; width: 40vw; height: 14.1rem;}
+    .photoCvContainer{height: 14.1rem;}
+    .photoCv{ min-width: 8.5rem; margin: -0.25rem 0.5rem 0rem 0.5rem;} 
+    .div4{width: 100vw; margin-top: 14rem;}
+    .div5{width: 100vw;}
+}
+
+@media (max-width : 465px) 
+{
+    .headerButton {font-size: 85%;}
+    .mainMenuLinkFormat {font-size: 85%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.5rem;}
+    .cvIdentity {gap: 1.5rem;}
+    .div1{position : relative ; max-width: 100%; font-size: 1rem;}
+    .titreCandidat {padding-left: 2.5rem;}
+    .div1 p {width: 38vw; line-height: 2rem; text-align: justify; padding-left: 0.9rem; padding-right: 0.9rem;}
+    .div2 {position: absolute;top:23.5rem; max-width: 100%; min-height: 4.5rem; margin: 0rem 2rem 0rem 0rem;}
+    .div2{font-size: 100%;}
+    .div2 p span{font-size: 0.8rem;}
+    .div3{position : relative ; width: 40vw; height: 13.52rem;}
+    .photoCvContainer{height: 14.1rem;}
+    .photoCv{ min-width: 8.5rem; margin: -0.5rem 0.5rem 0rem 0.5rem;} 
+    .div4{width: 100vw; margin-top: 13.5rem;}
+    .div5{width: 100vw;}
+}
+
+@media (max-width : 454px) 
+{
+    .headerButton {font-size: 85%;}
+    .mainMenuLinkFormat {font-size: 85%;}
+    h1, h2 {font-size: 100%;}
+    h3 {font-size: 100%;}
+    h4 {font-size: 80%;}
+    .pictoBar {gap: 1.5rem;}
+    .cvIdentity {gap: 1.5rem;}
+    .div1{position : relative ; max-width: 100%; font-size: 1rem;}
+    .titreCandidat {padding-left: 2.5rem;}
+    .div1 p {width: 38vw; line-height: 2rem; text-align: justify; padding-left: 0.9rem; padding-right: 0.9rem;}
+    .div2 {position: absolute;top:23.5rem; max-width: 100%; min-height: 4.5rem; margin: 0rem 2rem 0rem 0rem;}
+    .div2{font-size: 100%;}
+    .div2 p span{font-size: 0.8rem;}
+    .div3{position : relative ; width: 40vw; height: 13.52rem;}
+    .photoCvContainer{height: 14.1rem;}
+    .photoCv{ min-width: 8.5rem; margin: -0.5rem 0.5rem 0rem 0.5rem;} 
+    .div4{width: 100vw; margin-top: 14.65rem;}
+    .div5{width: 100vw;}
+}
+
+@media (max-width : 417px) 
+{
+    .headerButton {font-size: 85%;}
+    .mainMenuLinkFormat {font-size: 85%;}
+    h1, h2 {font-size: 100%;}
+    h3 {font-size: 100%;}
+    h4 {font-size: 80%;}
+    .pictoBar {gap: 1.5rem;}
+    .cvIdentity {gap: 1.5rem;}
+    .div1{position : relative ; max-width: 100%; font-size: 1rem;}
+    .titreCandidat {padding-left: 2.5rem;}
+    .div1 p {width: 38vw; line-height: 2rem; text-align: justify; padding-left: 0.9rem; padding-right: 0.9rem;}
+    .div2 {position: absolute;top:23.5rem; width: 19.5rem; min-height: 4.5rem; margin: 0rem 2rem 0rem 0rem;}
+    .div2{font-size: 100%;}
+    .div2 p span{font-size: 0.8rem;}
+    .div3{position : relative ; width: 40vw; height: 13.52rem;}
+    .photoCvContainer{height: 13.52rem;}
+    .photoCv{ min-width: 8.5rem; margin: -0.5rem 0.5rem 0rem 0.5rem;} 
+    .div4{width: 100vw; margin-top: 16rem;}
+    .div5{width: 100vw;}
+}
+
+@media (max-width : 387px) 
+{
+    .headerButton {font-size: 85%;}
+    .mainMenuLinkFormat {font-size: 85%;}
+    h1, h2 {font-size: 100%;}
+    h3 {font-size: 100%;}
+    h4 {font-size: 80%;}
+    .pictoBar {gap: 1.5rem;}
+    .cvIdentity {gap: 1.5rem;}
+    .div1{position : relative ; max-width: 100%; font-size: 0.9rem;}
+    .titreCandidat {padding-left: 2.5rem;}
+    .div1 p {width: 38vw; line-height: 2rem; text-align: justify; padding-left: 0.9rem; padding-right: 0.9rem;}
+    .div2 {position: absolute;top:23.5rem; width: 19.5rem; min-height: 4.5rem; margin: 0rem 2rem 0rem 0rem;}
+    .div2{font-size: 100%;}
+    .div2 p span{font-size: 0.8rem;}
+    .div3{position : relative ; width: 40vw; height: 13.25rem;}
+    .photoCvContainer{height: 13.25rem;}
+    .photoCv{ min-width: 8rem; margin: -0.5rem 0.5rem 0rem 0.5rem;} 
+    .div4{width: 100vw; margin-top: 16rem;}
+    .div5{width: 100vw;}
+}
+
+@media (max-width : 349px) 
+{
+    .headerButton {font-size: 85%;}
+    .mainMenuLinkFormat {font-size: 85%;}
+    h1, h2 {font-size: 100%;}
+    h3 {font-size: 100%;}
+    h4 {font-size: 76%;}
+    .pictoBar {gap: 1.5rem;}
+    .cvIdentity {gap: 1.5rem;}
+    .div1{position : relative ; max-width: 100%; font-size: 0.8rem;}
+    .titreCandidat {padding-left: 2.5rem;}
+    .div1 p {width: 38vw; line-height: 2rem; text-align: justify; padding-left: 0.9rem; padding-right: 0.9rem;}
+    .div2 {position: absolute;top:23.5rem; max-width: 100%; min-height: 4.5rem; margin: 0rem 2rem 0rem 0rem;}
+    .div2{font-size: 100%;}
+    .div2 p span{font-size: 0.8rem;}
+    .div3{position : relative ; width: 40vw; height: 13.25rem;}
+    .photoCvContainer{height: 13.25rem;}
+    .photoCv{ min-width: 8rem; margin: -0.5rem 0.5rem 0rem 0.5rem;} 
+    .div4{width: 100vw; margin-top: 16rem;}
+    .div5{width: 100vw;}
+}
+
+@media (max-width : 326px) 
+{
+    .headerButton {font-size: 85%;}
+    .mainMenuLinkFormat {font-size: 85%;}
+    h1, h2 {font-size: 100%;}
+    h3 {font-size: 100%;}
+    h4 {font-size: 76%;}
+    .pictoBar {gap: 1.5rem;}
+    .cvIdentity {gap: 1.5rem;}
+    .div1{position : relative ; max-width: 100%; font-size: 0.8rem;}
+    .titreCandidat {padding-left: 2.5rem;}
+    .div1 p {width: 38vw; line-height: 2rem; text-align: justify; padding-left: 0.9rem; padding-right: 0.9rem;}
+    .div2 {position: absolute;top:23.5rem; width: 19.5rem;; min-height: 4.5rem; margin: 0rem 2rem 0rem 0rem;}
+    .div2{font-size: 100%;}
+    .div2 p span{font-size: 0.8rem;}
+    .div3{position : relative ; width: 40vw; height: 13.25rem;}
+    .photoCvContainer{height: 13.25rem;}
+    .photoCv{ min-width: 8rem; margin: -0.5rem 0.5rem 0rem 0.5rem;} 
+    .div4{width: 100vw; margin-top: 16rem;}
+    .div5{width: 100vw;}
+}
+
+@media (max-width : 310px) 
+{
+    .headerButton {font-size: 85%;}
+    .mainMenuLinkFormat {font-size: 85%;}
+    h1, h2 {font-size: 100%;}
+    h3 {font-size: 100%;}
+    h4 {font-size: 76%;}
+    .pictoBar {gap: 1.5rem;}
+    .cvIdentity {gap: 1.5rem;}
+    .div1{position : relative ; max-width: 100%; font-size: 0.7rem;}
+    .titreCandidat {padding-left: 2.5rem;}
+    .div1 p {width: 38vw; line-height: 2rem; text-align: justify; padding-left: 0.9rem; padding-right: 0.9rem;}
+    .div2 {position: absolute;top:23.5rem; width: 19.5rem;; min-height: 4.5rem; margin: 0rem 2rem 0rem 0rem;}
+    .div2{font-size: 100%;}
+    .div2 p span{font-size: 0.8rem;}
+    .div3{position : relative ; width: 40vw; height: 13.25rem;}
+    .photoCvContainer{height: 13.25rem;}
+    .photoCv{ min-width: 8rem; margin: -0.5rem 0.5rem 0rem 0.5rem;} 
+    .div4{width: 100vw; margin-top: 16rem;}
+    .div5{width: 100vw;}
+}
+
+
+
+
+
+
+@media (max-width : 254px) 
+{
+    .headerButton {font-size: 85%;}
+    .mainMenuLinkFormat {font-size: 85%;}
+    h1, h2 {font-size: 100%;}
+    h3 {font-size: 100%;}
+    h4 {font-size: 76%;}
+    .pictoBar {gap: 1.5rem;}
+    .cvIdentity {gap: 1.5rem;}
+    .div1{position : relative ; max-width: 100%; font-size: 0.7rem;}
+    .titreCandidat {padding-left: 2.5rem;}
+    .div1 p {width: 38vw; line-height: 2rem; text-align: justify; padding-left: 0.9rem; padding-right: 0.9rem;}
+    .div2 {position: absolute;top:23.5rem; width: 19.5rem;; min-height: 4.5rem; margin: 0rem 2rem 0rem 0rem;}
+    .div2{font-size: 100%;}
+    .div2 p span{font-size: 0.8rem;}
+    .div3{position : relative ; width: 40vw; height: 13.25rem;}
+    .photoCvContainer{height: 13.25rem;}
+    .photoCv{ min-width: 8rem; margin: -0.5rem 0.5rem 0rem 0.5rem;} 
+    .div4{width: 100vw; margin-top: 16rem;}
+    .div5{width: 100vw;}
+}
