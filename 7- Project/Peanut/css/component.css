@@ -1,4 +1,36 @@
 
+header button 
+        {
+        background-color: rgba(60, 50, 50, 0.95);  
+        color: rgb(238, 234, 227) ;
+        font-size: 1rem;
+        }
+
+header form button 
+{
+    width: 10rem;
+    font-size: 0.8rem;
+    color: rgb(243, 235, 235);
+    transition: 1s;
+}
+header form button:hover 
+{
+    scale: 1.2;
+}
+
+footer button 
+{
+    width: 6rem;
+    font-size: 0.8rem;
+    color: rgb(243, 235, 235);
+    transition: 1s;
+}
+footer button:hover 
+{
+    scale: 1.2;
+}
+
+
 button 
         {
         background-color: rgba(177, 118, 141, 0.474);
@@ -15,131 +47,7 @@ button:hover
         background-color: rgba(213, 155, 155, 0.458);       
         }
 
- 
-header button 
-        {
-        background-color: rgba(60, 50, 50, 0.95);  
-        color: rgb(238, 234, 227) ;
-        font-size: 1rem;
-        }
-
-header input
-        {
-        background-color: rgba(60, 50, 50, 0.95);
-        height: 1.6rem;
-        border: solid;
-        border-width: thin;
-        border-radius: 0.5rem;
-        text-align: center;
-        color: rgb(238, 234, 227) ;
-        }
-
-header form img
-        {
-        vertical-align: text-bottom;
-        }
-
-header input::placeholder
-        {
-        color: rgb(188, 184, 178) ;
-        }
-
-header a
-        {
-        color: rgb(226, 236, 238) ;
-        text-decoration: none;
-        }
-
-footer a 
-        { 
-        color: rgb(213, 208, 200) ;
-        text-decoration: none;
-        }
-
-main a 
-        {
-        color: rgb(100, 83, 56) ;
-        text-decoration: none;
-        }
-    
-li      
-        {
-        list-style-type: none;
-        }
-header li :hover
-        {
-        font-size: x-large;
-        color: rgb(167, 172, 26);     
-        }
-footer li :hover
-        {
-        font-size: x-large;
-        color: rgb(167, 172, 26);    
-        }
-
-/*
-header li :active
-        {
-        color: darkgoldenrod;    
-        }
-*/
-main ol li:hover
-        {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: x-large;    
-        }
-main ol li>:hover
-        {
-        font-size: initial;  
-        }
-main ol li>a:hover
-        {
-        font-size: x-large; 
-        color: rgb(172, 26, 133);
-        }
-
-.subscripton-choice form
-        {
-        width: 20rem;
-        border: solid;
-        border-style: thin;
-        margin: 1rem 0rem 1rem 0rem;
-        }
-
-.subscripton-choice form article
-        {
-        width: 18rem;
-        margin: 0rem 0rem 1rem 0rem;
-        }
-.subscripton-choice form article section
-        {
-        width: 8rem;
-        font-size: 0.9rem;
-        }
-.subscripton-choice img
-        {
-        max-width: 7rem;
-        background-color: rgb(30, 30, 30);        
-        }
 .subscripton-choice form button
         {
         margin: 0rem 0rem 1rem 0rem;        
         }
-
-main input
-        {
-        border-radius: 0.25rem;
-        height: 1.5rem;
-        margin: 0rem 0rem 1rem 0rem
-        }
-main input:hover
-        {
-        background-color:rgba(139, 136, 84, 0.2) ;   
-        }
-main input:focus
-        {
-        border-style: outset;
-        border-width: 0.2rem;
-        background-color:rgba(219, 214, 114, 0.2) ;
-        }
-

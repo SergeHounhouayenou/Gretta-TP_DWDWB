@@ -22,43 +22,70 @@
 
 <body class="poppins-regular">
 
-<header>
-    <article class="entete-abonnement">
-
-        <section class="logos-boutons-abonnement">
-
-            <section class="logo-langues-recherche">
-
+    <header>
+        <div class="headerRessources">
+        <img class="logo-entete" 
+             src="images/Icons/logo/logo-Vector.svg" 
+             alt="un kangourou en trait doré sur fond noir"/>
+            <nav>  
                 <div>
-                    <img class="logo-entete" src="../images/Icons/logo/logo-Vector.svg" alt="un kangourou en trait doré sur fond noir"/>
-                    
-                    <div>
-                        <button class="langues" type="button"> langues </button>
-                            <div>
-                                <button class="langues-français" type="button"> Français </button>
-                                <button class="langues-anglais" type="button"> Anglais </button>
-                                <button class="langues-espagnole" type="button"> Espagnole </button>
-                            </div>
-                    </div>
+                    <ul class="headerNavBar1" id=""> 
+                        <li>
+                            <a target="_self" href="html-ressources/catalogue.html">
+                                Catalogue
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_self" href="html-ressources/series.html">
+                                Série
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_self" href="html-ressources/films.html">
+                                Films
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_self" href="html-ressources/suites.html">
+                                Suites
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="headerNavBar2" id=""> 
+                        <li>
+                            <a target="_self" href="html-ressources/live.html">
+                                Live
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_self" href="html-souscription/abonnement.html">
+                                Abonnement
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_self" href="">
+                                Compte 
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_self" href="index.html">
+                                Accueil
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
                 <div>
-                    <p>Chercher</p>
-                    <img class="loupe" src="../images/Icons/button/loupe.svg" alt="une loupe pour activer le moteur de recherche"/>
+                    <form class="headerSearchBar" id="headerSearchBar" aria-labelledby="chercher dans ce site" name="headerSearchBar" action="headerSearchBar.php" method="">
+                        <input class="" id="" type="text" placeholder="chercher dans ce site">
+                        <label class="" id="" for="">🔍</label>
+                        <div class="" id="">
+                            <a class="advanceResearch" id="advanceResearch" href="html-ressources/advanceResearch.html" target="_self"><button class="" id="" type="button">recherches avancées</button></a>
+                        </div>
+                    </form>
                 </div>
-
-                    
-            </section>
-
-            <div class="format-bouton-accueil">
-               <a class="" href="../index.html"> <button class="bouton-accueil" type="button"> accueil </button> </a>
-            </div>
-
-        </section>
-
-        <h1> Valider son inscription </h1>
-    </article>
-</header>
+            </nav>
+        </div>
+    </header>
 
 
     <main>
@@ -201,29 +228,42 @@
         <nav>  
             <ul> 
                 <li>
-                    <a target="_self" href="../html-userAdmin/Donnees-personnelles.html">
+                    <a target="_self" href="html-userAdmin/Donnees-personnelles.html">
                     Préférences
                     </a>
                 </li>
                   
                 <li>
-                    <a target="_self" href="../html-infosUtiles/confidentialites.html">
+                    <a target="_self" href="html-infosUtiles/confidentialites.html">
                     Confidentialités
                     </a>
                 </li>
               
                 <li>
-                    <a target="_self" href="../html-infosUtiles/Mentions-legales.html">
+                    <a target="_self" href="html-infosUtiles/Mentions-legales.html">
                     Mentions légales
                     </a>
                 </li>
     
                 <li>
-                    <a target="_self" href="../html-infosUtiles/contacts-credits.html">
+                    <a target="_blank" href="html-infosUtiles/contacts-credits.html" rel="noopener noreferrer">
                     Contact et Crédits
                     </a>
                 </li>
             </ul>
+            <div class="subscriberAccess" id="subscriberAccess">
+                <label class="LanguageLabel" id="LanguageLabel" for="LanguageSelect">Langues</label>
+                <select class="LanguageSelect" id="LanguageSelect" name="LanguageSelect">
+                        <option class="languageChoice" id="languageChoice" value="English">Choisir une langue</option>
+                        <option class="languageChoice" id="languageChoice" value="French">French</option>
+                        <option class="languageChoice" id="languageChoice" value="English">English</option>
+                        <option class="languageChoice" id="languageChoice" value="Deutch">Deutch</option>
+                </select>
+                <button class="footerButton" id="footerButton" 
+                        type="button" aria-labelledby="Connexon">
+                        Connexion
+                </button>
+            </div>
         </nav>
     </footer>
     
