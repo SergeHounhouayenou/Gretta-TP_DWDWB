@@ -8,20 +8,29 @@ header:first-child
         gap: 0rem;*/
 }
 
+
 .logoSearchBar
 {
+       
        margin: 0rem; padding: 0rem;
-       justify-self:  center;
+       justify-self:  center; text-align: center;
+}
+.logo-entete
+{
+        position: relative; top: 0vw; left: -10rem;
+
 }
 
 header section
 {
-      
-        margin: 0rem 0rem 3rem 0rem;
-        align-self: center;
+        width: 80vw;
+        margin: 0rem 0rem 3rem -1rem;
+        
+       
 }
 header form 
 {
+        width: 70vw;
         display: flex; flex-direction: row; flex-wrap: nowrap; 
         justify-content: center; align-items: center; gap: 1rem;
 }
