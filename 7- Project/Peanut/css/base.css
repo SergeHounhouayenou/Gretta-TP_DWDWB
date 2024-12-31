@@ -1,19 +1,16 @@
 
 body    {
         font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-        margin: 0rem; padding: 0rem ; 
+        margin: 0rem;
         background-color: rgba(207, 228, 227,0.5); color: rgba(30, 30, 30, 1);
         text-decoration: none;
         }
-
-main    {
-        padding: 2rem;
-        }
   
 header {
+        width: 100vw;
         padding: 2rem;
         background-color: rgba(20, 20, 20, 0.95);  
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: rgba(241, 177, 79, 1) ;
         }
 .logo-entete
@@ -23,11 +20,18 @@ header {
         min-height: 2rem;
         min-width: 2rem ;
         }
+
+
+main    {
+        padding: 2rem;
+        }
+
 footer {
-        padding: 1rem;
         background-color: rgba(15, 15, 15, 0.95);  
         color: rgb(213, 208, 200) ;
+        font-size: 0.9rem;
         }
+
 h1, h2, h5  {
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
         }  

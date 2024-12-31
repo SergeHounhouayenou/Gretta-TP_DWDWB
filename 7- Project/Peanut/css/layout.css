@@ -1,33 +1,112 @@
 
 
 
-header div
+header:first-child
 {
-    display: flex; flex-direction: row; justify-content: start; align-items: center;
-    gap: 1rem;
-}
-header nav
-{
-    width: 90vw;
-    display: flex; flex-direction: row; justify-content: space-between; align-items: center;
-    gap: 2rem;
-}
-header nav div
-{
-   display: flex; flex-direction: row ; flex-wrap: wrap; 
-   justify-content:space-between; align-items: center; gap: 2rem;
-}
-header ul
-{
-    width: 25vw;
-    display: flex; flex-direction: row; justify-content: space-between; align-items: center;
+        width: 100vw;
+       /* display: flex; flex-direction: row; justify-content: start; align-items: center;
+        gap: 0rem;*/
 }
 
+.logoSearchBar
+{
+       margin: 0rem; padding: 0rem;
+       justify-self:  center;
+}
+
+header section
+{
+      
+        margin: 0rem 0rem 3rem 0rem;
+        align-self: center;
+}
+header form 
+{
+        display: flex; flex-direction: row; flex-wrap: nowrap; 
+        justify-content: center; align-items: center; gap: 1rem;
+}
+
+header form input , header form label 
+{
+        color: rgb(255, 254, 254);
+        transition: 1s;
+}
+header form input
+{
+        background-color: rgba(60, 50, 50, 0.95);
+        width: 9rem;
+        height: 1.6rem;
+        border: solid;
+        border-width: thin;
+        border-radius: 0.5rem;
+        text-align: center;
+        color: rgb(238, 234, 227) ;
+}
+
+header form input:hover
+{
+        scale: 1.2;
+}
+
+header form label:hover 
+{
+        scale: 2;
+
+}
+
+header form input::placeholder
+        {
+        color: rgb(188, 184, 178) ;
+        }
+
+header form img
+        {
+        vertical-align: text-bottom;
+        }
+
+header nav
+{
+        width: 85vw;/*
+        display: flex; flex-direction: row; justify-content: space-between; align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;*/
+}
+
+.shopDiv
+{
+        margin-bottom: 3rem;
+        margin-left: 0rem; padding-left: 0rem;
+        display: flex; flex-direction: row; flex-wrap: wrap;
+        justify-content: space-between; align-items: center;
+}
+
+.shopAcess 
+{
+        
+        display: flex; flex-direction: row; flex-wrap: wrap;
+        justify-content: space-between; align-items: center; 
+        gap: 2rem; 
+       
+}
+
+.shopAcess div
+{ width: 86.25vw;
+        display: flex; flex-direction: row; flex-wrap: nowrap;
+        justify-content: space-between; align-items: center;
+        gap: 2rem; 
+}
+
+header ul
+{
+        margin-left: 0rem; padding-left: 0rem;
+        display: flex; flex-direction: row; justify-content: space-between; 
+        align-items: center; gap: 1rem;
+}
+    
 header li :hover
         {
         text-decoration: underline;    
         }
-
 
 /*
 header li :active
@@ -35,23 +114,6 @@ header li :active
         color: darkgoldenrod;    
         }
 */
-           
-
-header input
-        {
-        background-color: rgba(60, 50, 50, 0.95);
-        height: 1.6rem;
-        border: solid;
-        border-width: thin;
-        border-radius: 0.5rem;
-        text-align: center;
-        color: rgb(238, 234, 227) ;
-        }
-
-header input::placeholder
-        {
-        color: rgb(188, 184, 178) ;
-        }
 
 header a
         {
@@ -59,42 +121,6 @@ header a
         text-decoration: none;
         transition: 1s;
         }
-
-header form 
-{
-    display: flex; flex-direction: row; flex-wrap: nowrap; 
-    justify-content: start; align-items: center; gap: 2rem;
-}
-
-header form input , header form label 
-{
-    color: rgb(255, 254, 254);
-    transition: 1s;
-}
-
-header form input:hover
-{
-    scale: 1.2;
-}
-
-header form label:hover 
-{
-    scale: 2;
-
-}
-
-header form div 
-{
-    width: 11vw;
-   /*visibility: hidden;*/
-}
-
-header form img
-        {
-        vertical-align: text-bottom;
-        }
-
-
 
 
 main a 
@@ -144,17 +170,41 @@ main input:focus
 .smallArrows {width: 3rem; vertical-align:bottom ;}
 
 
+footer
+{
+        width: 100vw; margin: auto;
+        padding: 2rem;
+        align-content: center;
+}
+ 
 footer nav
 {
-    display: flex; flex-direction: row; flex-wrap: nowrap;
-    justify-content: space-between; align-items: center;
+        
+        max-width: 85vw; /*
+        display: flex; flex-direction: row; flex-wrap: wrap;
+        justify-content: space-between; align-items: center;
+        gap: 2rem;*/
 }
 
 footer ul
 {
-    width: 50vw;
-    display: flex; flex-direction: row; flex-wrap: nowrap;
-    justify-content: space-between; align-items: center;
+       
+        padding: 0rem;
+        display: flex; flex-direction: row; flex-wrap: nowrap;
+        justify-content: space-between; align-items: center; gap: 2rem;
+}
+
+.setUpAccess
+{
+        padding: 0rem;
+        display: flex; flex-direction: row; flex-wrap: nowrap;
+        justify-content: space-between; align-items: center; 
+}
+
+.setUpAccess button
+{
+        margin-right: -5.5px;
+        
 }
 
 footer a 
@@ -168,19 +218,36 @@ footer li :hover
         text-decoration: underline;    
         }
 
+/*        
 footer div
 {
-    width: 35vw;
-    display: flex; flex-direction: row; flex-wrap: nowrap;
-    justify-content: start; align-items: center;
-    font-size: 1.25rem;
-    color: rgb(195, 205, 214);
+        min-width: 30%;
+        padding-left: 0rem;
+
+        display: flex; flex-direction: row; flex-wrap: nowrap;
+        justify-content: start; align-items: center;
+        font-size: 1.25rem;
+        color: rgb(195, 205, 214);
+}
+*/
+
+footer span
+{
+        margin-right: 1.5rem;
+        transition: 1s;
+       
+}
+footer span:hover
+{
+        font-size: 1.4rem;
+
+       
 }
 
 footer select
 {
-    margin: 0rem 6rem 0rem 1rem ;
-    height: 2rem;
+        margin: 0rem 2rem 0rem 1rem ;
+        height: 2rem;
 }
 
 
@@ -192,30 +259,30 @@ li
 
 .classical-layout
 {
-    border: solid, rgba(30, 30, 30, 1);
-    padding: 1rem 1rem 1rem 1rem;
-    margin: 0rem 0rem 1rem 0rem;
+        border: solid, rgba(30, 30, 30, 1);
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 0rem 0rem 1rem 0rem;
 }
 
 .classical-layout section article
 {
-    background-color: rgba(142, 185, 178, 0.53);
-    border: solid ;
-    border-width: thin ;
-    border-radius: 1rem;
-    margin: 0rem 0rem 1rem 0rem;
-    width: 16rem;
-    text-align: center;
+        background-color: rgba(142, 185, 178, 0.53);
+        border: solid ;
+        border-width: thin ;
+        border-radius: 1rem;
+        margin: 0rem 0rem 1rem 0rem;
+        width: 16rem;
+        text-align: center;
 }
 .classical-layout section img
 {
-    width: 14rem;
-    border-radius: 1rem;
-    box-shadow: -0.5em -0.5em 0.3em ;
+        width: 14rem;
+        border-radius: 1rem;
+        box-shadow: -0.5em -0.5em 0.3em ;
 }
 .classical-layout section article section
 {
-    padding-left: 0.5em;  
+        padding-left: 0.5em;  
 }
 
 

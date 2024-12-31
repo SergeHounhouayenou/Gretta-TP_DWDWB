@@ -1,34 +1,4 @@
 
-header button 
-        {
-        background-color: rgba(60, 50, 50, 0.95);  
-        color: rgb(238, 234, 227) ;
-        font-size: 1rem;
-        }
-
-header form button 
-{
-    width: 10rem;
-    font-size: 0.8rem;
-    color: rgb(243, 235, 235);
-    transition: 1s;
-}
-header form button:hover 
-{
-    scale: 1.2;
-}
-
-footer button 
-{
-    width: 6rem;
-    font-size: 0.8rem;
-    color: rgb(243, 235, 235);
-    transition: 1s;
-}
-footer button:hover 
-{
-    scale: 1.2;
-}
 
 
 button 
@@ -46,6 +16,39 @@ button:hover
         {
         background-color: rgba(213, 155, 155, 0.458);       
         }
+
+
+header button 
+        {
+        background-color: rgba(60, 50, 50, 0.95);  
+        color: rgb(238, 234, 227) ;
+        font-size: 0.8rem;
+        transition: 1s;
+        }
+
+header button:hover 
+{
+        scale: 1.2;
+}
+
+header form button 
+{
+        width: 9rem;
+}
+
+
+
+footer button 
+{
+        width: 6rem;
+        font-size: 0.8rem;
+        color: rgb(243, 235, 235);
+        transition: 1s;
+}
+footer button:hover 
+{
+        scale: 1.2;
+}
 
 .subscripton-choice form button
         {
