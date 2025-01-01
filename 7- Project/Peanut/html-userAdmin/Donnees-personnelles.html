@@ -24,64 +24,102 @@
 
     <header>
         <div class="headerRessources">
-        <img class="logo-entete" 
-             src="../images/Icons/logo/logo-Vector.svg" 
-             alt="un kangourou en trait doré sur fond noir"/>
+            <div class="logoSearchBar" id="logoSearchBar">
+                <section class="" id="">
+                    <p>
+                        <img class="logo-entete" 
+                        src="../images/Icons/logo/logo-Vector.svg" 
+                        alt="un kangourou en trait doré sur fond noir"/>
+                    </p>
+                    <form class="headerSearchBar" id="headerSearchBar" aria-labelledby="chercher dans ce site" name="headerSearchBar" action="headerSearchBar.php" method="">
+                        <input class="" id="" type="text" placeholder="chercher dans ce site">
+                            <label class="" id="" for="">🔍</label>
+                            <div class="" id="">
+                                <a class="advanceResearch" id="advanceResearch" href="../html-ressources/advanceResearch.html" target="_self"><button class="" id="" type="button">recherche avancée</button></a>
+                            </div>
+                    </form>
+                </section>
+            </div>
             <nav>  
+                <div class="shopDiv" id="shopDiv">
+                    <div class="shopAcess" id="shopAcess">
+                        <div class="gamesAccess" id="gamesAccess">
+                            <label class="gamesChoices" id="gamesChoices" for="gamesChoices">Jouer aux Quiz&NonBreakingSpace;💡</label>
+                            <select class="QuizSelect" id="gamesChoices" name="gamesChoices">
+                                    <option class="GameisDefaut" id="GameisDefaut" value="GameisDefaut">Choisir un Quiz</option>
+                                    <option class="mysteryWord" id="mysteryWord" value="mysteryWord">The Mystery Word</option>
+                                    <option class="mysteryNumber" id="mysteryNumber" value="mysteryNumber">The Mystery Number</option>
+                                    <option class="mysteryArtst" id="mysteryArtst" value="mysteryArtst">Find The Artist</option>
+                                    <option class="mysteryDirector" id="mysteryDirector" value="mysteryDirector">Find The Director</option>
+                                    <option class="mysteryProducer" id="mysteryProducer" value="mysteryProducer">Find The Producer</option>
+                            </select>
+                            <button class="otherGames" id="otherGames" 
+                                    type="button" aria-labelledby="Autres jeux">
+                                    Autres Jeux
+                            </button>
+                        </div>
+                        <div class="productAccess" id="productAccess">
+                            <label class="productChoice" id="productChoice" for="productChoice">Soutenir ce projet</label>
+                            <select class="productSelect" id="productChoice" name="productSelect">
+                                    <option class="productisDefaut" id="productisDefaut" value="productisDefaut">acheter un produit</option>
+                                    <option class="productisBook" id="productisBook" value="productisBook">Acheter un livre</option>
+                                    <option class="productisMusic" id="productisMusic" value="productisMusic">Acheter une musique</option>
+                                    <option class="productisGame" id="productisGame" value="productisGame">Acheter un jeu</option>
+                                    <option class="productisOther" id="productisOther" value="productisOther">Autres produits</option>
+                            </select>
+                            <button class="giftAcces" id="giftAcces" 
+                                    type="button" aria-labelledby="Faire un don">
+                                    Faire un don
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
                 <div>
                     <ul class="headerNavBar1" id=""> 
                         <li>
-                            <a target="_self" href="html-ressources/catalogue.html">
+                            <a target="_self" href="../html-ressources/catalogue.html">
                                 Catalogue
                             </a>
                         </li>
                         <li>
-                            <a target="_self" href="html-ressources/series.html">
+                            <a target="_self" href="../html-ressources/series.html">
                                 Série
                             </a>
                         </li>
                         <li>
-                            <a target="_self" href="html-ressources/films.html">
+                            <a target="_self" href="../html-ressources/films.html">
                                 Films
                             </a>
                         </li>
                         <li>
-                            <a target="_self" href="html-ressources/suites.html">
+                            <a target="_self" href="../html-ressources/suites.html">
                                 Suites
                             </a>
                         </li>
                     </ul>
                     <ul class="headerNavBar2" id=""> 
                         <li>
-                            <a target="_self" href="html-ressources/live.html">
+                            <a target="_self" href="../html-ressources/live.html">
                                 Live
                             </a>
                         </li>
                         <li>
-                            <a target="_self" href="html-souscription/abonnement.html">
+                            <a target="_self" href="../html-souscription/abonnement.html">
                                 Abonnement
                             </a>
                         </li>
                         <li>
-                            <a target="_self" href="">
+                            <a target="_self" href="configuration.html">
                                 Compte 
                             </a>
                         </li>
                         <li>
-                            <a target="_self" href="index.html">
+                            <a target="_self" href="../index.html">
                                 Accueil
                             </a>
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <form class="headerSearchBar" id="headerSearchBar" aria-labelledby="chercher dans ce site" name="headerSearchBar" action="headerSearchBar.php" method="">
-                        <input class="" id="" type="text" placeholder="chercher dans ce site">
-                        <label class="" id="" for="">🔍</label>
-                        <div class="" id="">
-                            <a class="advanceResearch" id="advanceResearch" href="html-ressources/advanceResearch.html" target="_self"><button class="" id="" type="button">recherches avancées</button></a>
-                        </div>
-                    </form>
                 </div>
             </nav>
         </div>
@@ -232,30 +270,36 @@
         <nav>  
             <ul> 
                 <li>
-                    <a target="_self" href="html-userAdmin/Donnees-personnelles.html">
+                    <a target="_self" href="Donnees-personnelles.html">
                     Préférences
                     </a>
                 </li>
                   
                 <li>
-                    <a target="_self" href="html-infosUtiles/confidentialites.html">
+                    <a target="_self" href="../html-infosUtiles/confidentialites.html">
                     Confidentialités
                     </a>
                 </li>
               
                 <li>
-                    <a target="_self" href="html-infosUtiles/Mentions-legales.html">
+                    <a target="_self" href="../html-infosUtiles/Mentions-legales.html">
                     Mentions légales
                     </a>
                 </li>
     
                 <li>
-                    <a target="_blank" href="html-infosUtiles/contacts-credits.html" rel="noopener noreferrer">
-                    Contact et Crédits
+                    <a target="_blank" href="../html-infosUtiles/contacts-credits.html" rel="noopener noreferrer">
+                    Contact
                     </a>
                 </li>
             </ul>
-            <div class="subscriberAccess" id="subscriberAccess">
+            <div class="setUpAccess" id="setUpAccess">
+                <span class="" id="">
+                    <a class="credits" id="credits" target="_self" href="../html-infosUtiles/credits.html" rel="">
+                    crédits
+                    </a>
+                </span>
+                
                 <label class="LanguageLabel" id="LanguageLabel" for="LanguageSelect">Langues</label>
                 <select class="LanguageSelect" id="LanguageSelect" name="LanguageSelect">
                         <option class="languageChoice" id="languageChoice" value="English">Choisir une langue</option>

@@ -9,7 +9,7 @@ button
         color: rgb(2, 23, 30) ;
         font-size: 1rem;
         font-family: Arial, Helvetica, sans-serif;
-        width: 8rem ; 
+        width: 9rem ; 
         height: 2rem ;     
         }
 button:hover
@@ -21,7 +21,7 @@ button:hover
 header button 
         {
         background-color: rgba(60, 50, 50, 0.95);  
-        color: rgb(238, 234, 227) ;
+        color: rgb(247, 244, 240) ;
         font-size: 0.8rem;
         transition: 1s;
         }
@@ -36,6 +36,14 @@ header form button
         width: 9rem;
 }
 
+.otherGames {min-width: 8rem;}
+.giftAcces {min-width: 8rem;}
+
+
+.posterCard button
+{
+        margin-top: 1rem;
+}
 
 
 footer button 

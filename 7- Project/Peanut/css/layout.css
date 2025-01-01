@@ -17,14 +17,14 @@ header:first-child
 }
 .logo-entete
 {
-        position: relative; top: 0vw; left: -10rem;
+        position: relative; top: 0vw; left: -9rem;
 
 }
 
 header section
 {
-        width: 80vw;
-        margin: 0rem 0rem 3rem -1rem;
+        width: 70vw;
+        margin: 0rem 0rem 3rem -5rem;
         
        
 }
@@ -91,15 +91,13 @@ header nav
 
 .shopAcess 
 {
-        
         display: flex; flex-direction: row; flex-wrap: wrap;
         justify-content: space-between; align-items: center; 
         gap: 2rem; 
-       
 }
 
 .shopAcess div
-{ width: 86.25vw;
+{       width: 86.25vw;
         display: flex; flex-direction: row; flex-wrap: nowrap;
         justify-content: space-between; align-items: center;
         gap: 2rem; 
@@ -123,6 +121,13 @@ header li :active
         color: darkgoldenrod;    
         }
 */
+
+header select
+{
+        min-width: 10rem;
+        border-radius: 0.25rem;
+        padding-left: 0.1rem;
+}
 
 header a
         {
@@ -269,8 +274,16 @@ li
 .classical-layout
 {
         border: solid, rgba(30, 30, 30, 1);
-        padding: 1rem 1rem 1rem 1rem;
-        margin: 0rem 0rem 1rem 0rem;
+        border-radius: 1rem;
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 4rem 0rem 1rem 0rem;
+        justify-items: center;
+}
+
+.classical-layout  figcaption
+{
+        font-size: 1.2rem;
+        text-align: center;
 }
 
 .classical-layout section article
@@ -279,22 +292,47 @@ li
         border: solid ;
         border-width: thin ;
         border-radius: 1rem;
-        margin: 0rem 0rem 1rem 0rem;
-        width: 16rem;
+        margin: 2rem 0rem 6rem 0rem;
+        width: 70vw;
+        min-height: 127vw;
         text-align: center;
+        justify-items: center;
+        
+        
 }
+
+.videoCard
+{
+        width: 50vw;
+        position: relative;
+        margin-top: 1.5rem;
+        
+}
+
+.textSynopsis
+{
+        color: rgb(53, 13, 13);
+}
+
+.vieoUnit
+{
+        width: 50%;
+        text-align: center; font-size: 2rem;
+}
+
+.posterCard
+{
+        position: absolute;
+        top: 0rem; left: 0rem;
+        width: 100%;
+}
+
 .classical-layout section img
 {
-        width: 14rem;
+        width: 50vw;
         border-radius: 1rem;
-        box-shadow: -0.5em -0.5em 0.3em ;
+        padding-bottom: 0.5rem;
 }
-.classical-layout section article section
-{
-        padding-left: 0.5em;  
-}
-
-
 
 .subscripton-choice form
         {

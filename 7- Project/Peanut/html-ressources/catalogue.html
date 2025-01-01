@@ -24,10 +24,57 @@
 
     <header>
         <div class="headerRessources">
-        <img class="logo-entete" 
-             src="../images/Icons/logo/logo-Vector.svg" 
-             alt="un kangourou en trait doré sur fond noir"/>
+            <div class="logoSearchBar" id="logoSearchBar">
+                <section class="" id="">
+                    <p>
+                        <img class="logo-entete" 
+                        src="../images/Icons/logo/logo-Vector.svg" 
+                        alt="un kangourou en trait doré sur fond noir"/>
+                    </p>
+                    <form class="headerSearchBar" id="headerSearchBar" aria-labelledby="chercher dans ce site" name="headerSearchBar" action="headerSearchBar.php" method="">
+                        <input class="" id="" type="text" placeholder="chercher dans ce site">
+                            <label class="" id="" for="">🔍</label>
+                            <div class="" id="">
+                                <a class="advanceResearch" id="advanceResearch" href="advanceResearch.html" target="_self"><button class="" id="" type="button">recherche avancée</button></a>
+                            </div>
+                    </form>
+                </section>
+            </div>
             <nav>  
+                <div class="shopDiv" id="shopDiv">
+                    <div class="shopAcess" id="shopAcess">
+                        <div class="gamesAccess" id="gamesAccess">
+                            <label class="gamesChoices" id="gamesChoices" for="gamesChoices">Jouer aux Quiz&NonBreakingSpace;💡</label>
+                            <select class="QuizSelect" id="gamesChoices" name="gamesChoices">
+                                    <option class="GameisDefaut" id="GameisDefaut" value="GameisDefaut">Choisir un Quiz</option>
+                                    <option class="mysteryWord" id="mysteryWord" value="mysteryWord">The Mystery Word</option>
+                                    <option class="mysteryNumber" id="mysteryNumber" value="mysteryNumber">The Mystery Number</option>
+                                    <option class="mysteryArtst" id="mysteryArtst" value="mysteryArtst">Find The Artist</option>
+                                    <option class="mysteryDirector" id="mysteryDirector" value="mysteryDirector">Find The Director</option>
+                                    <option class="mysteryProducer" id="mysteryProducer" value="mysteryProducer">Find The Producer</option>
+                            </select>
+                            <button class="otherGames" id="otherGames" 
+                                    type="button" aria-labelledby="Autres jeux">
+                                    Autres Jeux
+                            </button>
+                        </div>
+                        <div class="productAccess" id="productAccess">
+                            <label class="productChoice" id="productChoice" for="productChoice">Soutenir ce projet</label>
+                            <select class="productSelect" id="productChoice" name="productSelect">
+                                    <option class="productisDefaut" id="productisDefaut" value="productisDefaut">acheter un produit</option>
+                                    <option class="productisBook" id="productisBook" value="productisBook">Acheter un livre</option>
+                                    <option class="productisMusic" id="productisMusic" value="productisMusic">Acheter une musique</option>
+                                    <option class="productisGame" id="productisGame" value="productisGame">Acheter un jeu</option>
+                                    <option class="productisOther" id="productisOther" value="productisOther">Autres produits</option>
+                            </select>
+                            <button class="giftAcces" id="giftAcces" 
+                                    type="button" aria-labelledby="Faire un don">
+                                    Faire un don
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
                 <div>
                     <ul class="headerNavBar1" id=""> 
                         <li>
@@ -74,15 +121,6 @@
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <form class="headerSearchBar" id="headerSearchBar" aria-labelledby="chercher dans ce site" name="headerSearchBar" action="headerSearchBar.php" method="">
-                        <input class="" id="" type="text" placeholder="chercher dans ce site">
-                        <label class="" id="" for="">🔍</label>
-                        <div class="" id="">
-                            <a class="advanceResearch" id="advanceResearch" href="html-ressources/advanceResearch.html" target="_self"><button class="" id="" type="button">recherches avancées</button></a>
-                        </div>
-                    </form>
-                </div>
             </nav>
         </div>
     </header>
@@ -91,13 +129,13 @@
     <main>
         <div id="catalogueAdvice">
             <h1> Naviguez dans les menus, trouvez votre plaisir </h1>
-            <a href="#quizCatalogue"> <button type="button">jouer au quiz</button> </a> 
+            <a href="#quizCatalogue"> <button type="button">le "Grand Quiz"</button> </a> 
         </div>
         <article class="classical-layout">
             <div class="">
                 <h3> Les 9 recommandations du mois </h3>
                 <figure>
-                    <figcaption>descendre</figcaption>
+                    <figcaption class="" id="">descendre</figcaption>
                     <a  href="#bddCatalogue"> <img src="../images/Icons/button/fleche-bas.png" 
                         alt="flèche orientée vers le bas"> 
                     </a>
@@ -106,198 +144,280 @@
             <section>
                 <article>
                     <h4> Titre du média N°1</h4>
+                    <button class="" id="" type="button" aria-labelledby="mediaN1">
+                        voir un exxtrait
+                    </button>
                     <section class="videoCard">
                         <div class="">
                             <video  class="vieoUnit" controls 
                                     poster="../images/Cards/Movies/recommanded/1.jpg">
                                     <source src="" type="video/mp4">
                                     <source src="" type="video/webm">
-                                    <p class="">
-                                    synopsis du media N°1
-                                    </p>
                             </video>
+                            <p class="">
+                                synopsis du media N°1
+                            </p>
                         </div>
                         <div class="posterCard">
                             <img src="../images/Cards/Movies/recommanded/1.jpg" 
                                   alt="film recommandé numéro 1"/>
                                   <label for="mediaN1">vous en êtes à :</label>
                                   <progress id="mediaN1" max="100" value="0">0%</progress>
+                            <button class="" id="" type="button" aria-label="mediaN1">
+                                voir le synopsis
+                            </button>
+                            <button class="" id="" type="button" aria-label="mediaN1">
+                                jouer au quiz
+                            </button>
                         </div>
                     </section>
                 </article>
 
                 <article>
                     <h4> Titre du média N°2</h4>
+                    <button class="" id="" type="button" aria-labelledby="mediaN1">
+                        voir un exxtrait
+                    </button>
                     <section class="videoCard">
                         <div class="">
                             <video  class="vieoUnit" controls 
                                 poster="../images/Cards/Movies/recommanded/2.jpg">
                                 <source src="" type="video/mp4">
                                 <source src="" type="video/webm">
-                                <p class="">
-                                synopsis du media N°2
-                                </p>
+                               
                             </video>
                         </div>
+                        <p class="textSynopsis">
+                            synopsis du media N°2
+                            </p>
                         <div class="posterCard">
                             <img src="../images/Cards/Movies/recommanded/2.jpg" 
                                  alt="film recommandé numéro 2"/>
                                  <label for="mediaN2">vous en êtes à :</label>
                                  <progress id="mediaN2" max="100" value="0">0%</progress>
+                                 <button class="" id="" type="button" aria-label="mediaN1">
+                                    voir le synopsis
+                                </button>
+                                <button class="" id="" type="button" aria-label="mediaN1">
+                                    jouer au quiz
+                                </button>
                         </div>
                     </section>
                 </article>
 
                 <article>
                     <h4> Titre du média N°3</h4>
+                    <button class="" id="" type="button" aria-labelledby="mediaN1">
+                        voir un exxtrait
+                    </button>
                     <section class="videoCard">
                         <div class="">
                             <video  class="vieoUnit" controls 
                                 poster="../images/Cards/Movies/recommanded/3.jpg">
                                 <source src="" type="video/mp4">
                                 <source src="" type="video/webm">
-                                <p class="">
-                                synopsis du media N°3
-                                </p>
                             </video>
+                            <p class="">
+                                synopsis du media N°3
+                            </p>
                         </div>
                         <div class="posterCard">
                             <img src="../images/Cards/Movies/recommanded/3.jpg" 
                                  alt="film recommandé numéro 3"/>
                                  <label for="mediaN3">vous en êtes à :</label>
                                  <progress id="mediaN3" max="100" value="0">0%</progress>
+                                 <button class="" id="" type="button" aria-label="mediaN1">
+                                    voir le synopsis
+                                </button>
+                                <button class="" id="" type="button" aria-label="mediaN1">
+                                    jouer au quiz
+                                </button>
                         </div>
                     </section>
                 </article>
 
                 <article>
                     <h4> Titre du média N°4</h4>
+                    <button class="" id="" type="button" aria-labelledby="mediaN1">
+                        voir un exxtrait
+                    </button>
                     <section class="videoCard">
                         <div class="">
                             <video  class="vieoUnit" controls 
                                 poster="../images/Cards/Movies/top/carte 1.jpg">
                                 <source src="" type="video/mp4">
                                 <source src="" type="video/webm">
-                                <p class="">
-                                synopsis du media N°4
-                                </p>
                             </video>
+                            <p class="">
+                                synopsis du media N°4
+                            </p>
                         </div>
                         <div class="posterCard">
                             <img src="../images/Cards/Movies/top/carte 1.jpg" 
                                  alt="film recommandé numéro 4"/>
                                  <label for="mediaN4">vous en êtes à :</label>
                                  <progress id="mediaN4" max="100" value="0">0%</progress>
+                                 <button class="" id="" type="button" aria-label="mediaN1">
+                                    voir le synopsis
+                                </button>
+                                <button class="" id="" type="button" aria-label="mediaN1">
+                                    jouer au quiz
+                                </button>
                         </div>
                     </section>
                 </article>
 
                 <article>
                     <h4> Titre du média N°5</h4>
+                    <button class="" id="" type="button" aria-labelledby="mediaN1">
+                        voir un exxtrait
+                    </button>
                     <section class="videoCard">
                         <div class="">
                             <video  class="vieoUnit" controls 
                                 poster="../images/Cards/Movies/top/carte 2.jpg">
                                 <source src="" type="video/mp4">
                                 <source src="" type="video/webm">
-                                <p class="">
-                                synopsis du media N°5
-                                </p>
                             </video>
+                            <p class="">
+                                synopsis du media N°5
+                            </p>
                         </div>
                         <div class="posterCard">
                             <img src="../images/Cards/Movies/top/carte 2.jpg" 
                                  alt="film recommandé numéro 5"/>
                                  <label for="mediaN5">vous en êtes à :</label>
                                  <progress id="mediaN5" max="100" value="0">0%</progress>
+                                 <button class="" id="" type="button" aria-label="mediaN1">
+                                    voir le synopsis
+                                </button>
+                                <button class="" id="" type="button" aria-label="mediaN1">
+                                    jouer au quiz
+                                </button>
                         </div>
                     </section>
                 </article>
 
                 <article>
                     <h4> Titre du média N°6</h4>
+                    <button class="" id="" type="button" aria-labelledby="mediaN1">
+                        voir un exxtrait
+                    </button>
                     <section class="videoCard">
                         <div class="">
                             <video  class="vieoUnit" controls 
                                 poster="../images/Cards/Movies/top/carte 3.jpg">
                                 <source src="" type="video/mp4">
                                 <source src="" type="video/webm">
-                                <p class="">
-                                synopsis du media N°6
-                                </p>
                             </video>
+                            <p class="">
+                                synopsis du media N°6
+                            </p>
                         </div>
                         <div class="posterCard">
                             <img src="../images/Cards/Movies/top/carte 3.jpg" 
                                  alt="film recommandé numéro 6"/>
                                  <label for="mediaN6">vous en êtes à :</label>
                                  <progress id="mediaN6" max="100" value="0">0%</progress>
+                                 <button class="" id="" type="button" aria-label="mediaN1">
+                                    voir le synopsis
+                                </button>
+                                <button class="" id="" type="button" aria-label="mediaN1">
+                                    jouer au quiz
+                                </button>
                         </div>
                     </section>
                 </article>
 
                 <article>
                     <h4> Titre du média N°7</h4>
+                    <button class="" id="" type="button" aria-labelledby="mediaN1">
+                        voir un exxtrait
+                    </button>
                     <section class="videoCard">
                         <div class="">
                             <video  class="vieoUnit" controls 
                                 poster="../images/Cards/Movies/top/carte 4.jpg">
                                 <source src="" type="video/mp4">
                                 <source src="" type="video/webm">
-                                <p class="">
-                                synopsis du media N°7
-                                </p>
                             </video>
+                            <p class="">
+                                synopsis du media N°7
+                            </p>
                         </div>
                         <div class="posterCard">
                             <img src="../images/Cards/Movies/top/carte 4.jpg" 
                                  alt="film recommandé numéro 7"/>
                                  <label for="mediaN7">vous en êtes à :</label>
                                  <progress id="mediaN7" max="100" value="0">0%</progress>
+                                 <button class="" id="" type="button" aria-label="mediaN1">
+                                    voir le synopsis
+                                </button>
+                                <button class="" id="" type="button" aria-label="mediaN1">
+                                    jouer au quiz
+                                </button>
                         </div>
                     </section>
                 </article>
 
                 <article>
                     <h4> Titre du média N°8</h4>
+                    <button class="" id="" type="button" aria-labelledby="mediaN1">
+                        voir un exxtrait
+                    </button>
                     <section class="videoCard">
                         <div class="">
                             <video  class="vieoUnit" controls 
                                 poster="../images/Cards/Movies/casual/carte 1.jpg">
                                 <source src="" type="video/mp4">
                                 <source src="" type="video/webm">
-                                <p class="">
-                                synopsis du media N°8
-                                </p>
                             </video>
+                            <p class="">
+                                synopsis du media N°8
+                            </p>
                         </div>
                         <div class="posterCard">
                             <img src="../images/Cards/Movies/casual/carte 1.jpg" 
                                  alt="film recommandé numéro 8"/>
                                  <label for="mediaN8">vous en êtes à :</label>
                                   <progress id="mediaN8" max="100" value="0">0%</progress>
+                                  <button class="" id="" type="button" aria-label="mediaN1">
+                                    voir le synopsis
+                                </button>
+                                <button class="" id="" type="button" aria-label="mediaN1">
+                                    jouer au quiz
+                                </button>
                         </div>
                         </section>
                 </article>
 
                 <article>
                     <h4> Titre du média N°9</h4>
+                    <button class="" id="" type="button" aria-labelledby="mediaN1">
+                        voir un exxtrait
+                    </button>
                     <section class="videoCard">
                         <div class="">
                             <video  class="vieoUnit" controls 
                                 poster="../images/Cards/Movies/casual/carte 2.jpg">
                                 <source src="" type="video/mp4">
                                 <source src="" type="video/webm">
-                                <p class="">
-                                synopsis du media N°9
-                                </p>
                             </video>
+                            <p class="">
+                                synopsis du media N°9
+                            </p>
                         </div>
                         <div class="posterCard">
                             <img src="../images/Cards/Movies/casual/carte 2.jpg" 
                                  alt="film recommandé numéro 9"/>
                                  <label for="mediaN9">vous en êtes à :</label>
                                  <progress id="mediaN9" max="100" value="0">0%</progress>
+                                 <button class="" id="" type="button" aria-label="mediaN1">
+                                    voir le synopsis
+                                </button>
+                                <button class="" id="" type="button" aria-label="mediaN1">
+                                    jouer au quiz
+                                </button>
                         </div>
                     </section>
                 </article>
@@ -488,30 +608,36 @@
         <nav>  
             <ul> 
                 <li>
-                    <a target="_self" href="html-userAdmin/Donnees-personnelles.html">
+                    <a target="_self" href="../html-userAdmin/Donnees-personnelles.html">
                     Préférences
                     </a>
                 </li>
                   
                 <li>
-                    <a target="_self" href="html-infosUtiles/confidentialites.html">
+                    <a target="_self" href="../html-infosUtiles/confidentialites.html">
                     Confidentialités
                     </a>
                 </li>
               
                 <li>
-                    <a target="_self" href="html-infosUtiles/Mentions-legales.html">
+                    <a target="_self" href="../html-infosUtiles/Mentions-legales.html">
                     Mentions légales
                     </a>
                 </li>
     
                 <li>
-                    <a target="_blank" href="html-infosUtiles/contacts-credits.html" rel="noopener noreferrer">
-                    Contact et Crédits
+                    <a target="_blank" href="../html-infosUtiles/contacts-credits.html" rel="noopener noreferrer">
+                    Contact
                     </a>
                 </li>
             </ul>
-            <div class="subscriberAccess" id="subscriberAccess">
+            <div class="setUpAccess" id="setUpAccess">
+                <span class="" id="">
+                    <a class="credits" id="credits" target="_self" href="../html-infosUtiles/credits.html" rel="">
+                    crédits
+                    </a>
+                </span>
+                
                 <label class="LanguageLabel" id="LanguageLabel" for="LanguageSelect">Langues</label>
                 <select class="LanguageSelect" id="LanguageSelect" name="LanguageSelect">
                         <option class="languageChoice" id="languageChoice" value="English">Choisir une langue</option>
