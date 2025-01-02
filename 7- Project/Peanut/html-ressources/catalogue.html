@@ -431,7 +431,7 @@
             </figure>
         </article>
 
-        <section class="classical-layout" id="quizCatalogue">
+        <article class="classical-layout" id="quizCatalogue">
             <h3> Prêts pour le Grand Quiz ?  </h3>
             <figure>
             <figcaption>descendre</figcaption>
@@ -454,137 +454,230 @@
                 </a>
                 <figcaption>remonter</figcaption>
             </figure>
-        </section>
+        </article>
 
 
-        <section class="classical-layout  bdd-Media" id="bddCatalogue">
-            <h3> Trouver le coup de coeurs en quelques clics  </h3>
-            <div class="sous-menu-vertical">
-                <h4> Genres </h4>
-                    <articles select-genres>
-                        <ol aria-labelledby="genre"> 
-                            <li class="genre">Action
-                                <ol>
-                                    <li><a class="selectCategory" href="">Atheurs & Acteurs</a></li>
-                                    <li><a class="selectCategory" href="">Cinéastes</a></li>
-                                    <li><a class="selectCategory" href="">Mondes imaginaires</a></li>
-                                </ol>
-                            </li>
-                            
-                            <li class="genre">Animation
-                                <ol>
-                                    <li><a class="selectCategory" href="">Atheurs & Acteurs</a></li>
-                                    <li><a class="selectCategory" href="">Cinéastes</a></li>
-                                    <li><a class="selectCategory" href="">Mondes imaginaires</a></li>
-                                </ol>
-                            </li>
-
-                            <li class="genre">Documentaires
-                                <ol>
-                                    <li><a class="selectCategory" href="">Atheurs & Acteurs</a></li>
-                                    <li><a class="selectCategory" href="">Cinéastes</a></li>
-                                    <li><a class="selectCategory" href="">Mondes imaginaires</a></li>
-                                </ol>
-                            </li>
-
-                            <li class="genre">Drames
-                                <ol>
-                                    <li><a class="selectCategory" href="">Atheurs & Acteurs</a></li>
-                                    <li><a class="selectCategory" href="">Cinéastes</a></li>
-                                    <li><a class="selectCategory" href="">Mondes imaginaires</a></li>
-                                </ol>
-                            </li>
-
-                            <li class="genre">Emissions télé
-                                <ol>
-                                    <li><a class="selectCategory" href="">Atheurs & Acteurs</a></li>
-                                    <li><a class="selectCategory" href="">Cinéastes</a></li>
-                                    <li><a class="selectCategory" href="">Mondes imaginaires</a></li>
-                                </ol>
-                            </li>
-
-                            <li class="genre">Guerre
-                                <ol>
-                                    <li><a class="selectCategory" href="">Atheurs & Acteurs</a></li>
-                                    <li><a class="selectCategory" href="">Cinéastes</a></li>
-                                    <li><a class="selectCategory" href="">Mondes imaginaires</a></li>
-                                </ol>
-                            </li>
-
-                            <li class="genre">Policier
-                                <ol>
-                                    <li><a class="selectCategory" href="">Atheurs & Acteurs</a></li>
-                                    <li><a class="selectCategory" href="">Cinéastes</a></li>
-                                    <li><a class="selectCategory" href="">Mondes imaginaires</a></li>
-                                </ol>
-                            </li>
-
-                            <li class="genre">Romance
-                                <ol>
-                                    <li><a class="selectCategory" href="">Atheurs & Acteurs</a></li>
-                                    <li><a class="selectCategory" href="">Cinéastes</a></li>
-                                    <li><a class="selectCategory" href="">Mondes imaginaires</a></li>
-                                </ol>
-                            </li>
-                            <li class="genre">Sciences-Fiction
-                                <ol>
-                                    <li><a class="selectCategory" href="">Atheurs & Acteurs</a></li>
-                                    <li><a class="selectCategory" href="">Cinéastes</a></li>
-                                    <li><a class="selectCategory" href="">Mondes imaginaires</a></li>
-                                </ol>
-                            </li>
-                        </ol>
-                    </articles>
+        <article class="classical-layout bdd bdd-Media" id="bddCatalogue">
+            <h3> Votre coup de coeur en quelques clics  </h3>
+            <div class="selectCategoryDiv selectCategoryDiv0 genderSubmenu" id="genderSubmenu">
+                <label class="genderSubmenuLabel" id="genderSubmenuLabel" for="genderSubmenuLabel">
+                    Genre
+                </label>
+                <select class="genderSubmenuSelect" id="genderSubmenuLabel" name="genderSubmenuSelect">
+                    <option class="genderSubmenuSelectIsDefaut" id="genderSubmenuSelectIsDefaut" value="genderSubmenuSelectIsDefaut">
+                        Tous
+                    </option>
+                    <option class="catLive" id="catLive" value="catLive">
+                        Live
+                    </option>
+                    <option class="catSciencesFiction" id="catSciencesFiction" value="catSciencesFiction">
+                        Sciences-Fiction
+                    </option>
+                    <option class="catAction" id="catAction" value="catAction">
+                        Action
+                    </option>
+                    <option class="catAnimation" id="catAnimation" value="catAnimation">
+                        Animation
+                    </option>
+                    <option class="catDrames" id="catDrames" value="catDrames">
+                        Drames
+                    </option>
+                    <option class="catWar" id="catWar" value="catWar">
+                        Guerre
+                    </option>
+                    <option class="catDetective" id="catDetective" value="catDetective">
+                        Policier
+                    </option>
+                    <option class="catRomance" id="catRomance" value="catRomance">
+                        Romance
+                    </option>
+                    
+                    <option class="catTvShow" id="catTvShow" value="catTvShow">
+                        Emissions télé
+                    </option>
+                    <option class="catTvReport" id="catTvReport" value="catTvReport">
+                        Documentaires
+                    </option>
+                </select>
+                <button class="selectValidation genderValidation" id="genderValidation" 
+                type="button" aria-labelledby="valider ce choix">
+                valider ce choix
+                </button>
+            </div>
+                    
+            <div class="selectCategoryDiv selectCategoryDiv1 videoTheme" id="videoTheme">
+                        <label class="videoThemeLabel" id="videoThemeLabel" for="videoThemeLabel">
+                            Thème
+                        </label>
+                        <select class="videoThemeSelect" id="videoThemeLabel" name="videoThemeSelect">
+                                <option class="videoThemeSelectIsDefaut" id="videoThemeSelectIsDefaut" value="videoThemeSelectIsDefaut">
+                                    Tous
+                                </option>
+                                <option class="themeAuthorActor" id="themeAuthorActor" value="themeAuthorActor">
+                                    Atheurs & Acteurs
+                                </option>
+                                <option class="themeDirector" id="themeDirector" value="themeDirector">
+                                    Réalisateur
+                                </option>
+                                <option class="themeImaginaryWorlds" id="themeImaginaryWorlds" value="themeImaginaryWorlds">
+                                    Mondes imaginaires
+                                </option>
+                        </select>
+                        <button class="selectValidation themeValidation" id="themeValidation" 
+                                type="button" aria-labelledby="valider ce choix">
+                                valider ce choix
+                        </button>
+            </div>
+                    
+            <div class="selectCategoryDiv selectCategoryDiv2 episodesNumber" id="episodesNumber">
+                        <label class="episodesNumberLabel" id="episodesNumberLabel" for="episodesNumberLabel">
+                            Nombre d'épisodes 
+                        </label>
+                        <select class="episodesNumberSelect" id="episodesNumberLabel" name="episodesNumberSelect">
+                                <option class="episodesNumberSelectIsDefaut" id="episodesNumberSelectIsDefaut" value="episodesNumberSelectIsDefaut">
+                                    Tous
+                                </option>
+                                <option class="catfilm" id="catfilm" value="catfilm">
+                                    Films
+                                </option>
+                                <option class="catSuite" id="catSuite" value="catSuite">
+                                    Suites
+                                </option>
+                                <option class="catSeries" id="catSeries" value="catSeries">
+                                    Séries
+                                </option>
+                        </select>
+                        <button class="selectValidation episodesValidation" id="episodesValidation" 
+                                type="button" aria-labelledby="valider ce choix">
+                                valider ce choix
+                        </button>
             </div>
 
-            <div class="sous-menu-horizontal">
-                <h4> Publics cibles</h4>
-                <figure>        
-                    <a  href="#quizCatalogue"> <img src="../images/Icons/button/fleche-haut.png" 
-                        alt="flèche orientée vers le haut"> 
-                    </a>
-                    <figcaption>remonter</figcaption>
-                </figure>
-                <article select-publics>
-                    <ol aria-labelledby="public"> 
-                        <li>Adolescent
-                            <ol>
-                                <li><a class="selectSubUnits" href="">Films</a></li>
-                                <li><a class="selectSubUnits" href="">Séries</a></li>
-                                <li><a class="selectSubUnits" href="">Suites</a></li>
-                             </ol>
-                        </li>
-                        <li>Adulte
-                            <ol>
-                                <li><a class="selectSubUnits" href="">Films</a></li>
-                                <li><a class="selectSubUnits" href="">Séries</a></li>
-                                <li><a class="selectSubUnits" href="">Suites</a></li>
-                            </ol>
-                        </li>
-                        <li>Enfant
-                            <ol>
-                                <li><a class="selectSubUnits" href="">Films</a></li>
-                                <li><a class="selectSubUnits" href="">Séries</a></li>
-                                <li><a class="selectSubUnits" href="">Suites</a></li>
-                            </ol>
-                        </li>
-                        <li>Tous petis
-                            <ol>
-                                <li><a class="selectSubUnits" href="">Films</a></li>
-                                <li><a class="selectSubUnits" href="">Séries</a></li>
-                                <li><a class="selectSubUnits" href="">Suites</a></li>
-                            </ol>
-                        </li>
+            <div class="selectCategoryDiv selectCategoryDiv3 catAge" id="catAge">
+                        <label class="catAgeLabel" id="catAgeLabel" for="catAgeLabel">
+                            Catégorie d'âge
+                        </label>
+                        <select class="catAgeSelect" id="catAgeLabel" name="catAgeSelect">
+                                <option class="catAgeSelectIsDefaut" id="catAgeSelectIsDefaut" value="catAgeSelectIsDefaut">
+                                    Tous
+                                </option>
+                                <option class="catAdolescent" id="catAdolescent" value="catAdolescent">
+                                    Adolescent
+                                </option>
+                                <option class="catAdulte" id="catAdulte" value="catAdulte">
+                                    Adulte
+                                </option>
+                                <option class="catChild" id="catChild" value="catChild">
+                                    Enfant
+                                </option>
+                                <option class="catLitteChild" id="catLitteChild" value="catLitteChild">
+                                    Tous petis
+                                </option>
+                                <option class="catSenior" id="catSenior" value="catSenior">
+                                    Seniors
+                                </option>
 
-                        <li>Seniors
-                            <ol>
-                                <li><a class="selectSubUnits" href="">Films</a></li>
-                                <li><a class="selectSubUnits" href="">Séries</a></li>
-                                <li><a class="selectSubUnits" href="">Suites</a></li>
-                            </ol>
-                        </li>
-                    </ol>
-                </article>
+                        </select>
+                        <button class="selectValidation ageValidation" id="ageValidation" 
+                                type="button" aria-labelledby="valider ce choix">
+                                valider ce choix
+                        </button>
+            </div>
+
+            <div class="selectCategoryDiv selectCategoryDiv4 catDuratione" id="catDuratione">
+                        <label class="catDurationLabel" id="catDurationLabel" for="catDurationLabel">
+                            Durée
+                        </label>
+                        <select class="catDurationeSelect" id="catDurationLabel" name="catDurationeSelect">
+                                <option class="catDurationeSelectIsDefaut" id="catDurationeSelectIsDefaut" value="catDurationeSelectIsDefaut">
+                                    Tous
+                                </option>
+                                <option class="catLess30mn" id="catLess30mn" value="catLess30mn">
+                                    - de 30 mn
+                                </option>
+                                <option class="cat30-45mn" id="cat30-45mn" value="cat30-45mn">
+                                    30 à 45 mn
+                                </option>
+                                <option class="cat45-60mn" id="cat45-60mn" value="cat45-60mn">
+                                    45 à 60 mn
+                                </option>
+                                <option class="cat60-90mn" id="cat60-90mn" value="cat60-90mn">
+                                    60 à 90 mn
+                                </option>
+                                <option class="cat90-120mn" id="cat90-120mn" value="cat90-120mn">
+                                    90 à 120 mn
+                                </option>
+                                <option class="catMoreThan2Hours" id="catMoreThan2Hours" value="catMoreThan2Hours">
+                                    + de 2 heures
+                                </option>
+                        </select>
+                        <button class="selectValidation durationValidation" id="durationValidation" 
+                                type="button" aria-labelledby="valider ce choix">
+                                valider ce choix
+                        </button>
+            </div>
+
+            <div class="selectCategoryDiv selectCategoryDiv5 catreleaseDate" id="catreleaseDate">
+                        <label class="catreleaseDateLabel" id="catreleaseDateLabel" for="catreleaseDateLabel">
+                            Date de sortie 
+                        </label>
+                        <select class="catreleaseDateSelect" id="catreleaseDateLabel" name="catreleaseDateSelect">
+                                <option class="catreleaseDateSelectIsDefaut" id="catreleaseDateSelectIsDefaut" value="catreleaseDateSelectIsDefaut">
+                                    Tous
+                                </option>
+                                <option class="lessThan1900" id="lessThan1900" value="lessThan1900">
+                                    &#x3008;1900
+                                </option>
+                                <option class="1900-1918" id="1900-1918" value="1900-1918">
+                                    de 1900 à 1918
+                                </option>
+                                <option class="1900-1918" id="1900-1918" value="1900-1918">
+                                    de 1900 à 1918
+                                </option>
+                                <option class="1919-1945" id="1919-1945" value="1919-1945">
+                                    de 1919 à 1945
+                                </option>
+                                <option class="1946-1960" id="1946-1960" value="1946-1960">
+                                    de 1946 à 1960
+                                </option>
+                                <option class="années-1970" id="années-1970" value="années-1970">
+                                    les années 1970
+                                </option>
+                                <option class="années-1980" id="années-1980" value="années-1980">
+                                    les années 1980
+                                </option>
+                                <option class="années-1990" id="années-1990" value="années-1990">
+                                    les années 1990
+                                </option>
+                                <option class="années-2000" id="années-2000" value="années-2000">
+                                    les années 2000
+                                </option>
+                                <option class="années-2010" id="années-2010" value="années-2010">
+                                    les années 2010
+                                </option>
+                                <option class="années-2020" id="années-2020" value="années-2020">
+                                    les années 2020
+                                </option>
+                        </select>
+                        <button class="selectValidation releaseDateValidation" id="releaseDateValidation" 
+                                type="button" aria-labelledby="valider ce choix">
+                                valider ce choix
+                        </button>
+            </div>
+            </div>
+            <button class="selectValidation genderValidation" id="genderValidation" 
+                type="button" aria-labelledby="valider ce choix">
+                tout valider
+            </button>
+            <figure>        
+                <a  href="#quizCatalogue"> <img src="../images/Icons/button/fleche-haut.png" 
+                    alt="flèche orientée vers le haut"> 
+                </a>
+                <figcaption>remonter</figcaption>
+            </figure>
+        </article>
+
+               
             </div>
         </section>
 

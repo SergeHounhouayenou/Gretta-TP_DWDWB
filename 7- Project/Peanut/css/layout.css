@@ -188,19 +188,17 @@ main input:focus
 
 .classical-layout
 {
+        background-color: rgba(199, 163, 165, 0.5); 
         border: solid, rgba(30, 30, 30, 1);
         border-radius: 1rem;
         padding: 0rem 0rem 0rem 0rem;
         margin: 4rem 0rem 1rem 0rem;
         justify-items: center;
-}
-
-.classical-layout 
-{
-        background-color: rgba(199, 163, 165, 0.5); 
         font-size: 1.2rem;
         text-align: center;
 }
+
+
 
 .classical-layout div img
 {
@@ -215,7 +213,7 @@ main input:focus
         border-radius: 1rem;
         margin: 2rem 0rem 6rem 0rem;
         width: 22rem;
-        height: 132vw;
+        height: 42rem;
         text-align: center;
         justify-items: center;
 }
@@ -257,6 +255,17 @@ main input:focus
         left: -2.5rem;
 }
 
+main article:first-of-type>figure:last-of-type
+{
+    margin-top: -4rem;
+}
+
+.selectCategoryDiv
+{
+        width: 100%;
+        margin: 2rem 0rem 2rem -1.5rem;
+        text-align: right;
+}
 
 
 .bddCatalogue-content
