@@ -184,6 +184,110 @@ main input:focus
 .smallArrows {width: 3rem; vertical-align:bottom ;}
 
 
+
+
+.classical-layout
+{
+        border: solid, rgba(30, 30, 30, 1);
+        border-radius: 1rem;
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 4rem 0rem 1rem 0rem;
+        justify-items: center;
+}
+
+.classical-layout 
+{
+        background-color: rgba(199, 163, 165, 0.5); 
+        font-size: 1.2rem;
+        text-align: center;
+}
+
+.classical-layout div img
+{
+        margin :auto
+}
+
+.classical-layout section article
+{
+        background-color: rgba(115, 173, 171, 0.5); 
+        border: solid ;
+        border-width: thin ;
+        border-radius: 1rem;
+        margin: 2rem 0rem 6rem 0rem;
+        width: 22rem;
+        height: 132vw;
+        text-align: center;
+        justify-items: center;
+}
+
+.videoCard
+{
+        
+        position: relative;
+        margin-top: 1.5rem;
+}
+
+.textSynopsis
+{
+        color: rgb(53, 13, 13);
+}
+
+.vieoUnit
+{
+        width: 50%;
+        text-align: center; font-size: 2rem;
+}
+
+.posterCard
+{
+        position: absolute;
+        top: 0rem; left: 0rem;
+        width: 100%;
+}
+
+.posterCard> img
+{
+        border-radius: 1rem;
+}
+
+.picture1, .picture2, .picture3
+{
+        position: relative;
+        width: 140%;
+        left: -2.5rem;
+}
+
+
+
+.bddCatalogue-content
+{
+        padding: 2rem 0rem ;
+}
+
+.subscripton-choice form
+        {
+        width: 20rem;
+        border: solid;
+        border-style: thin;
+        margin: 1rem 0rem 1rem 0rem;
+        }
+
+.subscripton-choice form article
+        {
+        width: 18rem;
+        margin: 0rem 0rem 1rem 0rem;
+        }
+.subscripton-choice form article section
+        {
+        width: 8rem;
+        font-size: 0.9rem;
+        }
+.subscripton-choice img
+        {
+        max-width: 7rem;
+        background-color: rgb(30, 30, 30);        
+        }
+
 footer
 {
         width: 100vw; margin: auto;
@@ -268,92 +372,4 @@ footer select
 li      
         {
         list-style-type: none;
-        }
-
-
-.classical-layout
-{
-        border: solid, rgba(30, 30, 30, 1);
-        border-radius: 1rem;
-        padding: 0rem 0rem 0rem 0rem;
-        margin: 4rem 0rem 1rem 0rem;
-        justify-items: center;
-}
-
-.classical-layout  figcaption
-{
-        font-size: 1.2rem;
-        text-align: center;
-}
-
-.classical-layout section article
-{
-        background-color: rgba(142, 185, 178, 0.53);
-        border: solid ;
-        border-width: thin ;
-        border-radius: 1rem;
-        margin: 2rem 0rem 6rem 0rem;
-        width: 70vw;
-        min-height: 127vw;
-        text-align: center;
-        justify-items: center;
-        
-        
-}
-
-.videoCard
-{
-        width: 50vw;
-        position: relative;
-        margin-top: 1.5rem;
-        
-}
-
-.textSynopsis
-{
-        color: rgb(53, 13, 13);
-}
-
-.vieoUnit
-{
-        width: 50%;
-        text-align: center; font-size: 2rem;
-}
-
-.posterCard
-{
-        position: absolute;
-        top: 0rem; left: 0rem;
-        width: 100%;
-}
-
-.classical-layout section img
-{
-        width: 50vw;
-        border-radius: 1rem;
-        padding-bottom: 0.5rem;
-}
-
-.subscripton-choice form
-        {
-        width: 20rem;
-        border: solid;
-        border-style: thin;
-        margin: 1rem 0rem 1rem 0rem;
-        }
-
-.subscripton-choice form article
-        {
-        width: 18rem;
-        margin: 0rem 0rem 1rem 0rem;
-        }
-.subscripton-choice form article section
-        {
-        width: 8rem;
-        font-size: 0.9rem;
-        }
-.subscripton-choice img
-        {
-        max-width: 7rem;
-        background-color: rgb(30, 30, 30);        
         }

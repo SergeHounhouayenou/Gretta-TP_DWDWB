@@ -2,7 +2,6 @@
 body    {
         font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
         margin: 0rem;
-        background-color: rgba(207, 228, 227,0.5); color: rgba(30, 30, 30, 1);
         text-decoration: none;
         }
   
@@ -32,6 +31,8 @@ header section
 
 
 main    {
+        background-color: rgba(132, 185, 183, 0.5); 
+        color: rgba(30, 30, 30, 1);
         padding: 2rem;
         }
 
