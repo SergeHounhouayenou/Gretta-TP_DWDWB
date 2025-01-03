@@ -461,7 +461,7 @@
             <h3> Votre coup de coeur en quelques clics  </h3>
             <div class="selectCategoryDiv selectCategoryDiv0 genderSubmenu" id="genderSubmenu">
                 <label class="genderSubmenuLabel" id="genderSubmenuLabel" for="genderSubmenuLabel">
-                    Genre
+                   genre du récit
                 </label>
                 <select class="genderSubmenuSelect" id="genderSubmenuLabel" name="genderSubmenuSelect">
                     <option class="genderSubmenuSelectIsDefaut" id="genderSubmenuSelectIsDefaut" value="genderSubmenuSelectIsDefaut">
@@ -507,7 +507,7 @@
                     
             <div class="selectCategoryDiv selectCategoryDiv1 videoTheme" id="videoTheme">
                         <label class="videoThemeLabel" id="videoThemeLabel" for="videoThemeLabel">
-                            Thème
+                            thème du trie
                         </label>
                         <select class="videoThemeSelect" id="videoThemeLabel" name="videoThemeSelect">
                                 <option class="videoThemeSelectIsDefaut" id="videoThemeSelectIsDefaut" value="videoThemeSelectIsDefaut">
@@ -520,7 +520,7 @@
                                     Réalisateur
                                 </option>
                                 <option class="themeImaginaryWorlds" id="themeImaginaryWorlds" value="themeImaginaryWorlds">
-                                    Mondes imaginaires
+                                    Monde imaginaire
                                 </option>
                         </select>
                         <button class="selectValidation themeValidation" id="themeValidation" 
@@ -531,21 +531,37 @@
                     
             <div class="selectCategoryDiv selectCategoryDiv2 episodesNumber" id="episodesNumber">
                         <label class="episodesNumberLabel" id="episodesNumberLabel" for="episodesNumberLabel">
-                            Nombre d'épisodes 
+                            style de suite 
                         </label>
                         <select class="episodesNumberSelect" id="episodesNumberLabel" name="episodesNumberSelect">
                                 <option class="episodesNumberSelectIsDefaut" id="episodesNumberSelectIsDefaut" value="episodesNumberSelectIsDefaut">
                                     Tous
                                 </option>
+                                <option class="catTelefilms" id="catTelefilms" value="catTelefilms">
+                                    Téléfilms
+                                </option>
                                 <option class="catfilm" id="catfilm" value="catfilm">
                                     Films
                                 </option>
-                                <option class="catSuite" id="catSuite" value="catSuite">
-                                    Suites
+                                <option class="catTrilogies" id="catTrilogies" value="catTrilogies">
+                                    Trilogies
                                 </option>
-                                <option class="catSeries" id="catSeries" value="catSeries">
+                                <option class="catQuadrilogie" id="catQuadrilogie" value="catQuadrilogie">
+                                    Quadrilogies
+                                </option>
+                                <option class="catSaga" id="catSaga" value="catSaga">
+                                    Sagas
+                                </option>
+                                 <option class="catSeries" id="catSeries" value="catSeries">
                                     Séries
                                 </option>
+                                <option class="catFeuillettons" id="catFeuillettons" value="catFeuillettons">
+                                    Feuillettons
+                                </option>
+                                <option class="catChronologies" id="catChronologies" value="catChronologies">
+                                    numéros datés
+                                </option>
+                               
                         </select>
                         <button class="selectValidation episodesValidation" id="episodesValidation" 
                                 type="button" aria-labelledby="valider ce choix">
@@ -555,23 +571,23 @@
 
             <div class="selectCategoryDiv selectCategoryDiv3 catAge" id="catAge">
                         <label class="catAgeLabel" id="catAgeLabel" for="catAgeLabel">
-                            Catégorie d'âge
+                            âge minimum
                         </label>
                         <select class="catAgeSelect" id="catAgeLabel" name="catAgeSelect">
                                 <option class="catAgeSelectIsDefaut" id="catAgeSelectIsDefaut" value="catAgeSelectIsDefaut">
                                     Tous
                                 </option>
                                 <option class="catAdolescent" id="catAdolescent" value="catAdolescent">
-                                    Adolescent
+                                    Adolescents
                                 </option>
                                 <option class="catAdulte" id="catAdulte" value="catAdulte">
-                                    Adulte
+                                    Adultes
                                 </option>
                                 <option class="catChild" id="catChild" value="catChild">
-                                    Enfant
+                                    Enfants
                                 </option>
                                 <option class="catLitteChild" id="catLitteChild" value="catLitteChild">
-                                    Tous petis
+                                    Touts petits
                                 </option>
                                 <option class="catSenior" id="catSenior" value="catSenior">
                                     Seniors
@@ -586,22 +602,34 @@
 
             <div class="selectCategoryDiv selectCategoryDiv4 catDuratione" id="catDuratione">
                         <label class="catDurationLabel" id="catDurationLabel" for="catDurationLabel">
-                            Durée
+                            durée maxim.
                         </label>
                         <select class="catDurationeSelect" id="catDurationLabel" name="catDurationeSelect">
                                 <option class="catDurationeSelectIsDefaut" id="catDurationeSelectIsDefaut" value="catDurationeSelectIsDefaut">
-                                    Tous
+                                    Toutes
                                 </option>
-                                <option class="catLess30mn" id="catLess30mn" value="catLess30mn">
+                                <option class="catLessThan5mn" id="catLessThan5mn" value="catLessThan5mn">
+                                    - de 5 mn
+                                </option>
+                                <option class="catLessThan10mn" id="catLessThan10mn" value="catLessThan10mn">
+                                    - de 10 mn
+                                </option>
+                                <option class="catThanLess15mn" id="catThanLess15mn" value="catThanLess15mn">
+                                    - de 15 mn
+                                </option>
+                                <option class="catLessThan20mn" id="catLessThan20mn" value="catLessThan20mn">
+                                    - de 20 mn
+                                </option>
+                                <option class="catLessThan30mn" id="catLessThan30mn" value="catLessThan30mn">
                                     - de 30 mn
                                 </option>
-                                <option class="cat30-45mn" id="cat30-45mn" value="cat30-45mn">
-                                    30 à 45 mn
+                                <option class="cat30-44mn" id="cat30-44mn" value="cat30-44mn">
+                                    30 à 44 mn
                                 </option>
-                                <option class="cat45-60mn" id="cat45-60mn" value="cat45-60mn">
-                                    45 à 60 mn
+                                <option class="cat45-59mn" id="cat45-59mn" value="cat45-59mn">
+                                    45 à 59 mn
                                 </option>
-                                <option class="cat60-90mn" id="cat60-90mn" value="cat60-90mn">
+                                <option class="cat60-89mn" id="cat60-89mn" value="cat60-89mn">
                                     60 à 90 mn
                                 </option>
                                 <option class="cat90-120mn" id="cat90-120mn" value="cat90-120mn">
@@ -619,14 +647,14 @@
 
             <div class="selectCategoryDiv selectCategoryDiv5 catreleaseDate" id="catreleaseDate">
                         <label class="catreleaseDateLabel" id="catreleaseDateLabel" for="catreleaseDateLabel">
-                            Date de sortie 
+                            date de sortie 
                         </label>
                         <select class="catreleaseDateSelect" id="catreleaseDateLabel" name="catreleaseDateSelect">
                                 <option class="catreleaseDateSelectIsDefaut" id="catreleaseDateSelectIsDefaut" value="catreleaseDateSelectIsDefaut">
-                                    Tous
+                                    Toutes
                                 </option>
                                 <option class="lessThan1900" id="lessThan1900" value="lessThan1900">
-                                    &#x3008;1900
+                                    &#x3008;&NonBreakingSpace;1900
                                 </option>
                                 <option class="1900-1918" id="1900-1918" value="1900-1918">
                                     de 1900 à 1918
@@ -665,7 +693,7 @@
                         </button>
             </div>
             </div>
-            <button class="selectValidation genderValidation" id="genderValidation" 
+            <button class="selectValidation SuperSearchValidation" id="SuperSearchValidation" 
                 type="button" aria-labelledby="valider ce choix">
                 tout valider
             </button>

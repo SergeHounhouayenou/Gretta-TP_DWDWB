@@ -257,14 +257,39 @@ main input:focus
 
 main article:first-of-type>figure:last-of-type
 {
-    margin-top: -4rem;
+        margin-top: -4rem;
 }
 
 .selectCategoryDiv
 {
         width: 100%;
-        margin: 2rem 0rem 2rem -1.5rem;
-        text-align: right;
+        margin: 2rem 0.5rem 2rem 0.5rem;
+        display: flex; flex-direction: row; flex-wrap: nowrap; 
+        justify-content: space-around; align-items: center;
+        
+}
+
+.selectCategoryDiv label
+{
+        width: 6.8rem;
+      
+        font-size: 1.1rem;
+        text-align: left;
+        
+       
+}
+
+.selectCategoryDiv select
+{
+        width: 7.5rem;
+       
+}
+
+.selectCategoryDiv button
+{
+        width: 8.5rem;
+        
+       
 }
 
 
