@@ -1,30 +1,23 @@
 
 
 
-header:first-child
-{
-        width: 100vw;
-       /* display: flex; flex-direction: row; justify-content: start; align-items: center;
-        gap: 0rem;*/
-}
-
 
 .logoSearchBar
 {
        
        margin: 0rem; padding: 0rem;
-       justify-self:  center; text-align: center;
+       justify-self:  center; justify-items: center;
 }
 .logo-entete
 {
-        position: relative; top: 0vw; left: -9rem;
+        position: relative; top: 0vw; left: 0rem;
 
 }
 
 header section
 {
         width: 70vw;
-        margin: 0rem 0rem 3rem -5rem;
+        margin: 0rem 0rem 3rem 0rem;
         
        
 }
@@ -298,33 +291,9 @@ main article:first-of-type>figure:last-of-type
         padding: 2rem 0rem ;
 }
 
-.subscripton-choice form
-        {
-        width: 20rem;
-        border: solid;
-        border-style: thin;
-        margin: 1rem 0rem 1rem 0rem;
-        }
-
-.subscripton-choice form article
-        {
-        width: 18rem;
-        margin: 0rem 0rem 1rem 0rem;
-        }
-.subscripton-choice form article section
-        {
-        width: 8rem;
-        font-size: 0.9rem;
-        }
-.subscripton-choice img
-        {
-        max-width: 7rem;
-        background-color: rgb(30, 30, 30);        
-        }
-
 footer
 {
-        width: 100vw; margin: auto;
+        margin: auto;
         padding: 2rem;
         align-content: center;
 }

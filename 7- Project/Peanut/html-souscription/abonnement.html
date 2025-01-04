@@ -127,27 +127,22 @@
 
 
     <main>
-        <h1> Choisir son abonnement </h1>
-        <article class="subscripton-choice">
-            <div>
-            <h2> Visitez gratuitement le catalogue </h2>
-            <a class="" href="../html-ressources/catalogue.html"> <button type="button">J'y vais !</button> </a>
-            </div>
-            
+        <h1 class="" id=""> Choisir son abonnement </h1>
+        <article class=" subscripton-choice">
             <form class="SubscriptionOffer-classic" aria-label="SubscriptionOffer-classic" 
                   action="userChose-Subscription.php" id="SubscriptionOffer-classic" 
                   name="SubscriptionOffer-classic" method="post">
                 
-                <div class="ligne-titre-abonnement">
+                <div class="subscriptonTitle">
                     <label  for="userSubscription-choice-1">Abonnement Classic</label>
                     <input  type="checkbox" id="userSubscription-choice-1" 
                             name="userSubscription-choice-1">
                 </div>
 
-                <article class="classicSubscription-poster">
-                        <h4> du streaming pour tous... </h4>
+                <article class="posterClassicSubscription">
                     <section>
                         <div>
+                            <h4> du streaming pour tous... </h4>
                             <p>
                             Pour un accès illimité aux films, aux séries et aux documentaires
                             </p> 
@@ -164,8 +159,8 @@
                 </article>
 
                 <div> 
-                    <a class="" href="../html-souscription/validation.html"> 
-                        <button type="submit" class="" > Choisir </button> 
+                    <a class="" href="validation.html"> 
+                        <button type="button" class="" > Choisir </button> 
                     </a> 
                 </div>
                       
@@ -175,16 +170,16 @@
                   action="userChose-Subscription.php" id="SubscriptionOffer-premium" 
                   name="SubscriptionOffer-premium" method="post">
 
-                <div class="ligne-titre-abonnement">
+                <div class="subscriptonTitle">
                     <label  for="userSubscription-choice-2">Abonnement Premium</label>
                     <input  type="checkbox" id="userSubscription-choice-2" 
                             name="userSubscription-choice-2">
                 </div>
 
-                <article class="affiche-abonnement-premium">
-                        <h4> Peanut en full access </h4>
+                <article class="posterPremiumSubscription">
                     <section>
                         <div>
+                            <h4> Peanut en full access... </h4>
                             <p>
                             Videos et salons lives en illimité pour vous et un invité par séance
                             </p> 
@@ -201,12 +196,16 @@
                 </article>
 
                 <div> 
-                    <a class="" href="../html-souscription/validation.html"> 
-                        <button type="submit" class="" > Choisir </button> 
+                    <a class="" href="validation.html"> 
+                        <button type="button" class="" > Choisir </button> 
                     </a> 
                 </div>
 
             </form>
+            <div>
+                <h2> Visitez gratuitement le catalogue </h2>
+                <a class="" href="../html-ressources/catalogue.html"> <button type="button">J'y vais !</button> </a>
+            </div>
         </article>
     </main>
 

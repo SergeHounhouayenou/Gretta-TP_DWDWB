@@ -1,0 +1,28 @@
+
+
+main article
+{
+width: 18rem;
+}
+
+
+
+
+
+
+
+
+.getUserProfil-userChoice-entete
+{
+    display: inline-flex;
+}
+
+.getUserProfil-userChoice-entete p:first-child
+{
+    width: 13rem;
+}
+
+.getUserProfil-userChoice-entete p:first-child  ~ p
+{
+    width: 2rem;
+}

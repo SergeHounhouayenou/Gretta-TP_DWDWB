@@ -1,0 +1,48 @@
+
+
+main {justify-items: center;}
+h1 {margin-top: 0rem; font-size: 1.25rem;}
+h2 {font-size: 1.1rem;}
+h4 {font-size: 0.9rem; text-align: left;}
+p {font-size: 1rem; margin-top: -0.5rem;}
+
+main form
+        {
+        width: 18rem;
+        border: solid;
+        border-style: thin;
+        border-radius: 0.5rem;
+        margin: 2rem 0rem;
+        justify-items: center;
+        justify-self: center;
+        }
+
+main form article
+        {
+        margin: 1rem 0rem 1.5rem 0rem;
+        display: flex; flex-direction: row; flex-wrap: wrap;
+        justify-content: center; align-items: center; gap: 0.75rem;
+        }
+main div:last-of-type
+        {
+        justify-items: center;
+        }
+
+main input
+        {
+       position: relative; top: 6.2px; left: 4px;
+        }
+main article section:first-of-type
+        {
+        width: 10rem;
+        }
+main article section:last-of-type
+        {
+        width: 5rem;
+        }
+
+main img
+        {
+        width: 5rem;
+        background-color: rgb(30, 30, 30);        
+        }
