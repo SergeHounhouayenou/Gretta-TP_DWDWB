@@ -7,20 +7,19 @@
     <title>Peanut</title>
     <meta name="author" content="Serge Hounhouayenou">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <meta name="description" content="Catalogue des collections du site Peanut"> 
+    <meta name="description" content="Page d'inscription du site Peanut"> 
 
     <meta name="keywords" content="Peanut, streaming, plateforme, film, série, animation, enfants, catalogue, feuilleton, saga, collection ">
 
   <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="../css/component.css">
+  <link rel="stylesheet" href="..//css/component.css">
   <link rel="stylesheet" href="../css/layout.css">
   <link rel="stylesheet" href="../css/theme.css">
-  <link rel="stylesheet" href="../css/css-spécific-pages/css-useradmin/espace-prive.css">
+  <link rel="stylesheet" href="../css/css-spécific-pages/css-quizzes/mysteryWord.css">
 
-  <script src="js/..."></script>
 </head>
 
-<body>
+<body class="poppins-regular">
 
     <header>
         <div class="headerRessources">
@@ -32,8 +31,8 @@
                         alt="un kangourou en trait doré sur fond noir"/>
                     </p>
                     <form class="headerSearchBar" id="headerSearchBar" aria-labelledby="chercher dans ce site" name="headerSearchBar" action="headerSearchBar.php" method="">
-                        <input class="" id="" type="text" placeholder="chercher dans ce site">
-                            <label class="" id="" for="">🔍</label>
+                        <input class="headerSearchSpace" id="headerGlass" type="text" placeholder="chercher dans ce site">
+                            <label class="headerGlass" id="headerGlass" for="headerGlass">🔍</label>
                             <div class="" id="">
                                 <a class="advanceResearch" id="advanceResearch" href="../html-ressources/advanceResearch.html" target="_self"><button class="" id="" type="button">recherche avancée</button></a>
                             </div>
@@ -44,14 +43,14 @@
                 <div class="shopDiv" id="shopDiv">
                     <div class="shopAcess" id="shopAcess">
                         <div class="gamesAccess" id="gamesAccess">
-                            <label class="gamesChoices" id="gamesChoices" for="gamesChoices">Jouer aux Quiz&NonBreakingSpace;💡</label>
-                            <select class="QuizSelect" id="gamesChoices" name="gamesChoices">
-                                    <option class="GameisDefaut" id="GameisDefaut" value="GameisDefaut">Choisir un Quiz</option>
-                                    <option class="mysteryWord" id="mysteryWord" value="mysteryWord">The Mystery Word</option>
-                                    <option class="mysteryNumber" id="mysteryNumber" value="mysteryNumber">The Mystery Number</option>
-                                    <option class="mysteryArtst" id="mysteryArtst" value="mysteryArtst">Find The Artist</option>
-                                    <option class="mysteryDirector" id="mysteryDirector" value="mysteryDirector">Find The Director</option>
-                                    <option class="mysteryProducer" id="mysteryProducer" value="mysteryProducer">Find The Producer</option>
+                            <label class="gamesChoices" id="gamesChoices" for="QuizSelect">Jouer aux Quiz&NonBreakingSpace;💡</label>
+                            <select class="QuizSelect" id="QuizSelect" name="QuizSelect">
+                                    <option class="GameisDefautSelect" id="GameisDefautSelect" value="GameisDefautSelect">Choisir un Quiz</option>
+                                    <option class="mysteryWordSelect" id="mysteryWordSelect" value="mysteryWordSelect">The Mystery Word</option>
+                                    <option class="mysteryNumberSelect" id="mysteryNumberSelect" value="mysteryNumberSelect">The Mystery Number</option>
+                                    <option class="mysteryArtstSelect" id="mysteryArtstSelect" value="mysteryArtstSelect">Find The Artist</option>
+                                    <option class="mysteryDirectorSelect" id="mysteryDirectorSelect" value="mysteryDirectorSelect">Find The Director</option>
+                                    <option class="mysteryProducerSelect" id="mysteryProducerSelect" value="mysteryProducerSelect">Find The Producer</option>
                             </select>
                             <button class="otherGames" id="otherGames" 
                                     type="button" aria-labelledby="Autres jeux">
@@ -59,8 +58,8 @@
                             </button>
                         </div>
                         <div class="productAccess" id="productAccess">
-                            <label class="productChoice" id="productChoice" for="productChoice">Soutenir ce projet</label>
-                            <select class="productSelect" id="productChoice" name="productSelect">
+                            <label class="productChoice" id="productChoice" for="productSelect">Soutenir ce projet</label>
+                            <select class="productSelect" id="productSelect" name="productSelect">
                                     <option class="productisDefaut" id="productisDefaut" value="productisDefaut">acheter un produit</option>
                                     <option class="productisBook" id="productisBook" value="productisBook">Acheter un livre</option>
                                     <option class="productisMusic" id="productisMusic" value="productisMusic">Acheter une musique</option>
@@ -105,12 +104,12 @@
                             </a>
                         </li>
                         <li>
-                            <a target="_self" href="../html-souscription/abonnement.html">
+                            <a target="_self" href="abonnement.html">
                                 Abonnement
                             </a>
                         </li>
                         <li>
-                            <a target="_self" href="configuration.html">
+                            <a target="_self" href="../html-userAdmin/configuration.html">
                                 Compte 
                             </a>
                         </li>
@@ -125,21 +124,60 @@
         </div>
     </header>
 
+
     <main>
-        <nav> 
-            <h2 class=""> <a clas="" href="../html-userAdmin/espace-prive.html" > espace privé </a> </h2>
-            <h2 class=""> <a clas="" href="../html-userAdmin/Donnees-personnelles.html" >  données personnelles </a> </h2>
-            <h2 class=""> <a clas="" href="../html-userAdmin/configuration.html" >  je configure mon site  </a> </h2>
-        </nav>
-        <article class="">
+        <h1> Trouvez le mot Mystérieux </h2>
+        <article class=" userData">
+            <form class="forms-baseLayout" aria-label="user-ident-validation" action="" id="identIsValid" name="identIsValid" method="post">
+<!-- Ne pas oublier les boutons de type submit. On préfèrera le code html <button type="submit"> enoyer </button> au code <input type="submit" value="envoyer"> car plus simple à traiter en design -->
+                <fieldset class="mysteryWord" id="mysteryWord" name="mysteryWord">
+                    <div class="AImessageSpace" id="">
+                        <p class="AImessageSpace1" id="AImessageSpace1"></p>
+                        <p class="AImessageSpace2" id="AImessageSpace2"></p>
+                        <p class="AImessageSpace3" id="AImessageSpace3"></p>
+                        <p class="AImessageSpace4" id="AImessageSpace4"></p>
+                    </div>
+                   
+                    <div class="userTrySpace" id="userTrySpace">
+                        <label class="userTryLabel" for="userTryEntry"> A vous de jouer ! Essai N°&NonBreakingSpace;<span class="userTryNbr" id="userTryNbr"></span></label><br>
+                        <input class="userTryEntry" type="text" id="userTryEntry" name="userTryEntry" placeholder="Cliquez sur 'Nouvelle Partie' pour commencer" required>
+                    </div>
+
+                    <div class="" id="">
+                        <button class="microButton" id="microButton" type="button"> 🎤 </button>
+                        <button class="validationButton" id="validationButton" type="submit"> valider </button>
+                        <button class="resetButton" id="resetButton" type="submit"> Nouvelle Partie </button>
+                    </div>
+
+                    <div class="userStatistics">
+                        <p class="userStatistics1" id="userStatistics1"></p>
+                        <p class="userStatistics2" id="userStatistics2"></p>
+                        <p class="userStatistics3" id="userStatistics3"></p>
+                        <p class="userStatistics4" id="userStatistics4"></p>
+                    </div>
+                    <div class="generalStatistics">
+                        <p class="generalStatistic1" id="generalStatistic1"></p>
+                        <p class="generalStatistic2" id="generalStatistic2"></p>
+                        <p class="generalStatistic3" id="generalStatistic3"></p>
+                        <p class="generalStatistic4" id="generalStatistic4"></p>
+                    </div>
+                    <div class="mysteryWordRanking">
+                        <p class="mysteryWordRanking1" id="mysteryWordRanking1"></p>
+                        <p class="mysteryWordRanking2" id="mysteryWordRanking2"></p>
+                        <p class="mysteryWordRanking3" id="mysteryWordRanking3"></p>
+                        <p class="mysteryWordRanking4" id="mysteryWordRanking4"></p>
+                    
+                </fieldset>
+            </form>
         </article>
     </main>
+
 
     <footer>
         <nav>  
             <ul> 
                 <li>
-                    <a target="_self" href="html-userAdmin/Donnees-personnelles.html">
+                    <a target="_self" href="../html-userAdmin/Donnees-personnelles.html">
                     Préférences
                     </a>
                 </li>
@@ -171,10 +209,10 @@
                 
                 <label class="LanguageLabel" id="LanguageLabel" for="LanguageSelect">Langues</label>
                 <select class="LanguageSelect" id="LanguageSelect" name="LanguageSelect">
-                        <option class="languageChoice" id="languageChoice" value="English">Choisir une langue</option>
-                        <option class="languageChoice" id="languageChoice" value="French">French</option>
-                        <option class="languageChoice" id="languageChoice" value="English">English</option>
-                        <option class="languageChoice" id="languageChoice" value="Deutch">Deutch</option>
+                        <option class="languageChoice0" id="languageChoice0" value="English">Choisir une langue</option>
+                        <option class="languageChoice1" id="languageChoice1" value="French">French</option>
+                        <option class="languageChoice2" id="languageChoice2" value="English">English</option>
+                        <option class="languageChoice3" id="languageChoice3" value="Deutch">Deutch</option>
                 </select>
                 <button class="footerButton" id="footerButton" 
                         type="button" aria-labelledby="Connexon">
@@ -183,3 +221,9 @@
             </div>
         </nav>
     </footer>
+
+    <script src="../js/mysteryWord.js" defer></script>
+    
+</body>
+
+</html>

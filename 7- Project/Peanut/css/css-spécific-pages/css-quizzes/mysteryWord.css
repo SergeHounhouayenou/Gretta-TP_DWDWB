@@ -1,0 +1,55 @@
+
+
+main {justify-items: center ;}
+
+h1 {font-size: 1.5rem;}
+
+
+fieldset 
+{
+    background-color: rgb(139, 177, 197);
+    width: 16rem;
+    margin: 2rem 0rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border: solid;
+    border-radius: 1rem;
+    justify-items: center;
+}
+
+main form fieldset button 
+{
+    margin: 1rem 4rem;
+}
+.userTrySpace
+{
+   display: flex; flex-direction: column; align-items: center;
+   justify-content: start; flex-wrap: nowrap; width: 100%;
+}
+input
+{
+    width: 18rem;
+    text-align: center;
+}
+fieldset div input:hover, fieldset div input:active
+{
+    background-color: aliceblue;
+}
+
+.microButton
+{
+    background-color: rgba(245, 16, 9, 0.5); border: solid; border-radius: 0.5rem;
+    width: 12rem;
+    height: 3rem;
+    text-align: left;
+    align-content: center;
+}
+
+.microButton:hover
+{
+    background-color: rgba(207, 65, 60, 0.5); border: solid; border-radius: 0.5rem;
+}
+
+.userTrySpace + div
+{
+    text-align: center;
+}

@@ -1,19 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() 
 {
-const movieSearch= document.getElementById('movieSearch');
-const movieResults = document.getElementById('movieResults');
-const apiKey = "d9797a92cd99a3a89d9fdc08d3fdd8fe";
-const voiceSearchBtn = document.getElementById('voiceSearchBtn');
+    const movieSearch= document.getElementById('movieSearch');
+    const movieResults = document.getElementById('movieResults');
+    const apiKey = "d9797a92cd99a3a89d9fdc08d3fdd8fe";
+    const voiceSearchBtn = document.getElementById('voiceSearchBtn');
 
-const loadChartBtn = document.getElementById('loadChart');
+    const loadChartBtn = document.getElementById('loadChart');
 
-loadChartBtn.addEventListener('click', ()=>
-{
-    window.location.href = 'chart.html' ;
-}    
-);
+    loadChartBtn.addEventListener('click', ()=>
+    {
+        window.location.href = 'chart.html' ;
+    }    
+    );
 
-function initializeVoiceSearch()
+    function initializeVoiceSearch()
     {
         //Vérifier si le avigateur prend en charge API Web Speach
         if (!('webkitSpeechRecognition' in window))
@@ -22,13 +22,13 @@ function initializeVoiceSearch()
             return;
         }
     
-    const recognition = new webkitSpeechRecognition() ;
-    recognition.lang = 'fr-FR' ;
-    recognition.interimResults = false ;
-    recognition.maxAlternatives = 1 ;
+        const recognition = new webkitSpeechRecognition() ;
+        recognition.lang = 'fr-FR' ;
+        recognition.interimResults = false ;
+        recognition.maxAlternatives = 1 ;
 
-    //Commence l'écoute lorsque le bouton est cliqué
-    voiceSearchBtn.addEventListener('click', () => 
+        //Commence l'écoute lorsque le bouton est cliqué
+        voiceSearchBtn.addEventListener('click', () => 
             {
                 recognition.start();
                 updateVoiceButtonState("listening") ;
@@ -81,7 +81,7 @@ function initializeVoiceSearch()
     
 
     //Fonction pour récupérer les films depuis API
-async function fetchMovies(query) 
+    async function fetchMovies(query) 
     {
         try
             {
