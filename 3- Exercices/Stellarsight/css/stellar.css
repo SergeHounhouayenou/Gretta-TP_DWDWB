@@ -1,0 +1,336 @@
+
+html {margin:0rem 0rem 0rem 0rem; background-color:  rgb(220, 229, 235); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+body {min-width: 326px ; margin: 0rem 0rem 0rem 0rem;}
+header {z-index: 10; background-color: rgb(59, 119, 168); max-width: 100%; position: static; margin: 0rem 0rem 0rem 0rem; padding: 1rem 1.5rem 1rem 1.5rem;}
+main {z-index: 5; margin: 1rem 0rem 0rem 0rem; padding-top: 0rem; justify-items: center;}
+a { color: rgb(248, 244, 244); text-decoration: none; font-size: 100%;}
+
+.headBannerNav{ max-width: 100%; display: flex; flex-direction: row; flex-wrap:nowrap; justify-content: space-between; align-items: center; gap: 1.5rem;} 
+
+.navBar {margin: 0rem 0rem 0rem 1rem; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: start; align-items: center; gap: 1.5rem;}
+.mainMenu-layout { display: flex; flex-direction: row ; flex-wrap: nowrap; justify-content: space-between; align-items: center; gap: 1.5rem;}
+main section :first-of-type div a  {color: black;}
+
+.mediaBar {max-width: 100%;}
+.pictoBar {margin-top: 0.7rem; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; gap:1.5rem ;}
+.pictoBarIcon {max-width: 70%; min-width: 2rem; transition-duration: 0.5s ;}
+.pictoBarIcon:hover{max-width: 65%; transform: rotateX(35deg);}
+
+.userProfil {max-width: 100%; margin-right: 2rem; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; gap:1rem;}
+
+.logoDiv {max-width: 8rem; transition-duration: 1s;}
+.logoDiv:hover {animation-duration: 2s; animation-name: logRotate;}
+@keyframes logRotate
+{
+    0% {transform:rotateZ(0deg);} 10% {transform:rotateZ(20deg);} 30% {transform:rotateZ(45deg);} 45% {transform:rotateZ(-80deg);}
+    60% {transform:rotateZ(20deg);} 70% {transform:rotateZ(-20deg);} 80% {transform:rotateZ(10deg);} 90% {transform:rotateZ(-10deg);}
+    95% {transform:rotateZ(-5deg);} 96% {transform:rotateZ(-4deg);} 97% {transform:rotateZ(-3deg);} 98% {transform:rotateZ(-2deg);}
+    99% {transform:rotateZ(-1deg);} 100% {transform:rotateZ(0deg);}
+}
+.logoImage
+{
+min-width: 3rem;
+max-width: 110%;
+}
+
+
+.headerButton {background-color:  rgb(59, 119, 168); max-width: 8rem; color:rgb(241, 234, 234); font-size: 1.2rem; font-weight: 100;
+text-align: center; border-radius: 0.75rem; border:none; transition-duration: 1s; transition-property: scale duration background-color;}
+.headerButton:hover {background-color:  rgb(59, 119, 168); color:rgb(253, 253, 253); transform: scale(1.1);}
+
+.mainMenu {line-height: 2rem; font-size: 1.2rem; transition-duration: 2s; transition-property: scale duration;}
+.mainMenu:hover {text-decoration: underline blanchedalmond;}
+.mainMenuLinkFormat {color: rgb(248, 244, 244); text-decoration: none;}
+
+.titleStyle {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+letter-spacing: 0.001rem; word-spacing: 0.001rem;}
+h1 {margin-top: 2rem; font-size: 1.75rem; font-weight: 650; text-align: start; color:  rgb(6, 65, 110);}
+h1 span {font-size: 1.5rem;}
+h2 {font-size: 1rem; font-weight: 650;}
+h3 {font-size: 0.9rem; font-weight: 600; color: rgb(16, 41, 112); text-align: center; margin-bottom: 0.5rem;}
+h4 {margin-top: 0rem; font-size: 0.85rem; font-weight:500; color: rgb(38, 7, 88);}
+.containerH4 {height: 1rem;}
+
+.content{max-width: 100%;}
+.specontent {width: 200%;}
+
+.grid1 {display: grid; grid-template-areas: 
+"identity identity identity identity identity identity identity identity identity identity identity identity"
+"div1 div1 div1 div20 div20 div20 div21 div21 div21 div3 div3 div3"
+"values values values values values values values values values values values values"
+"div4 div4 div4 div4 div4 div4 div5 div5 div5 div5 div5 div5"
+"div6 div6 div6 div6 div6 div6 div7 div7 div7 div7 div7 div7";
+grid-template-columns: repeat(12, 1fr); 
+grid-template-rows: 1fr 0fr 2fr 0fr 0fr; max-width: 100%; margin: -1rem 0rem 0rem 0rem; padding: 2rem 2rem 2rem 2rem; gap: 2rem; }
+
+.track1 {max-width: 100%; margin: 0rem 3rem 0rem 3rem; grid-area: identity; 
+display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center; gap: 1.75rem;}
+
+.track1Containers{background-color:  rgb(214, 224, 231);min-height: 9rem; border: solid; border-radius: 1rem; }
+.values {grid-area: values; max-width: 100%; margin: -2rem 0rem 0rem 0rem;
+display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem;}
+
+.div1 {grid-area: div1; width: 100%; height: 100%;}
+.div20 {grid-area: div20; width: 100%; height: 100%; padding: 0rem 1rem 0rem 1rem ;}
+.div21 {grid-area: div21; width: 100%; height: 100%; padding: 0rem 1rem 0rem 1rem ;}
+
+.div3{width: 100%; height: 100%; grid-area: div3; justify-items:center ; align-items: center;}
+.div4{grid-area: div4; width: 43vw;}
+.div5{grid-area: div5; width: 43vw;}
+.div6{grid-area: div6; width: 43vw;}
+.div7{grid-area: div7; width: 43vw;}
+
+.titlestyle1{text-align: start; margin-top: 0.5rem; padding-left: 1.5rem; color:  rgb(6, 65, 110); }
+.userSelect {min-width: 4rem; margin: 0rem 0.5rem 0rem 0.5rem; justify-self: center;}
+.userSelect p {margin-top: -0.5rem;}
+
+
+.subGrid1 {display: grid ; grid-template-areas:
+"cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer"
+"rubrique11 rubrique11 rubrique12 rubrique12 rubrique13 rubrique13"
+"rubrique2Container rubrique2Container rubrique2Container rubrique2Container rubrique2Container rubrique2Container"
+"rubrique21 rubrique21 rubrique22 rubrique22  rubrique23 rubrique23"
+"rubrique3Container rubrique3Container rubrique3Container rubrique3Container rubrique3Container rubrique3Container"
+"rubrique31 rubrique31 rubrique32 rubrique32 rubrique33 rubrique33"
+;
+grid-template-columns:  repeat(6, 1fr); 
+grid-template-rows:  repeat(6, 16%); 
+width: 1fr;
+}
+
+.ThemeContainer
+{
+background-color: rgb(217, 226, 233);
+min-width: 18rem; max-width: 100%;
+border: solid; border-radius: 1rem;
+padding-bottom: 0.75rem;
+align-items: center;
+}
+.descriptionContainer
+{
+    width: 100%;
+}
+.pictureContainer
+{
+   margin-top: 2rem; text-align: center;
+}
+
+.RubriqueContainer
+{
+width: 100%;
+}
+.RubriqueDiv 
+{background-color:  rgb(190, 203, 214); 
+width: 100%; padding: 0rem 0rem 0rem 0rem; 
+display: flex; flex-direction: row; justify-content: space-between; align-items: start;
+}
+.RubriqueContent {width: 100%; padding: 0.5rem 0.5rem 0rem 0.5rem;}
+.DataContent {margin-top: -1rem; color:  rgb(7, 88, 78);}
+
+.rubrique1Container{grid-area: cvLanguageContainer;}
+.rubrique11 {grid-area: rubrique11;}
+.rubrique12 {grid-area: rubrique12;}
+.rubrique13{grid-area: rubrique13;}
+
+.rubrique2Container {grid-area: rubrique2Container;}
+.rubrique21{grid-area: rubrique21;}
+.rubrique22{grid-area: rubrique22;}
+.rubrique23{grid-area: rubrique23;}
+
+.rubrique3Container{grid-area: rubrique3Container;}
+.rubrique31{grid-area: rubrique31;}
+.rubrique32{grid-area: rubrique32;}
+.rubrique33{grid-area: rubrique33;}
+
+.subGrid2 {display: grid ; grid-template-areas:
+"rubrique5Container rubrique5Container rubrique5Container rubrique5Container rubrique5Container rubrique5Container"
+"rubrique51 rubrique51 rubrique52 rubrique52 rubrique53 rubrique53"
+"rubrique6Container rubrique6Container rubrique6Container rubrique6Container rubrique6Container rubrique6Container"
+"rubrique61 rubrique61 rubrique62 rubrique62 rubrique63 rubrique63"
+"rubrique7Container rubrique7Container rubrique7Container rubrique7Container rubrique7Container rubrique7Container"
+"time time work work group group" 
+;
+grid-template-columns:  repeat(6, 1fr); 
+grid-template-rows:  repeat(6, 16%); 
+width: 1fr;
+}
+
+.rubrique5Container{grid-area: rubrique5Container;}
+.rubrique51{grid-area: rubrique51;}
+.rubrique52{grid-area: rubrique52;}
+.rubrique53{grid-area: rubrique53;}
+
+.rubrique6Container{grid-area: rubrique6Container;}
+.rubrique61{grid-area:  rubrique61;}
+.rubrique62{grid-area: rubrique62;}
+.rubrique63{grid-area: rubrique63;}
+
+.rubrique7Container{grid-area: rubrique7Container;}
+.rubrique71{grid-area: FaceToTime;}
+.rubrique72{grid-area: FaceToWork;}
+.rubrique73{grid-area: FaceToGroups;}
+
+
+.visitMySite {margin: -5rem 2rem 2rem 2rem; max-width: 100%;}
+.visitMySite button {background-color: rgba(178, 154, 194, 0.3); border-style: outset; border-width: 0.3rem;
+width: 12rem ; height: 2rem; color: rgb(37, 9, 63); font-size: 1rem; font-family: Arial, Helvetica, sans-serif;}
+.visitMySite button:hover { background-color: rgba(213, 155, 155, 0.458);}
+
+
+.footerLink{margin: 0rem 2rem 0rem 2rem ;}
+.titleVisit {font-size: 150%; color: rgb(122, 59, 59);}
+.titleVisit ~ p {font-size: 140%;}
+
+
+footer {max-width: 100%; padding: 1rem 4rem 1rem 4rem; 
+        background-color: rgb(41, 100, 148); color:rgb(66, 13, 55);
+        font-size: 1.3rem;}
+footer div {max-width: 100%; display:flex; 
+            flex-direction: row; flex-wrap: nowrap; justify-content: space-between; 
+            align-content: start;}
+
+
+@media (max-width : 1081px) 
+{
+    .headerButton {font-size: 95%;}
+    .mainMenuLinkFormat {font-size: 95%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.5rem;}
+    .titlestyle1 {padding-left: 1.5rem;}
+    .track1 {gap: 1.5rem;}
+}
+
+@media (max-width : 1025px) 
+{
+    .headerButton {font-size: 95%;}
+    .mainMenuLinkFormat {font-size: 95%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.5rem;}
+    .track1 {gap: 1.5rem;}
+}
+
+@media (max-width : 991px) 
+{
+    .headerButton {font-size: 95%;}
+    .mainMenuLinkFormat {font-size: 95%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.5rem;}
+    .titlestyle1 {padding-left: 1.5rem; padding-top: 0.1rem;}
+    .track1 {gap: 1.5rem;}
+}
+
+@media (max-width : 951px) 
+{
+    .headerButton {font-size: 95%;}
+    .mainMenuLinkFormat {font-size: 95%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.4rem;}
+    .titlestyle1 {padding-left: 1.5rem; padding-top: 0.1rem;}
+    .track1 {gap: 1.4rem;}
+}
+
+@media (max-width : 931px) 
+{
+    .headerButton {font-size: 95%;}
+    .mainMenuLinkFormat {font-size: 95%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.4rem;}
+    .titlestyle1 {padding-left: 1.5rem; padding-top: 0.1rem;}
+    .track1 {gap: 1.25rem;}
+}
+
+
+@media (max-width : 901px) 
+{
+    .headerButton {font-size: 95%;}
+    .mainMenuLinkFormat {font-size: 95%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 1.5rem;}
+    .titlestyle1 {padding-left: 1rem;}
+    .track1 {gap: 1.25rem;}
+}
+
+/*Ecran de moins de 768px  (mobiles) */
+
+@media (max-width : 871px) 
+{
+    .headerButton {font-size: 90%;}
+    .mainMenuLinkFormat {font-size: 90%;}
+    h1, h2 {font-size: 95%;}
+    .pictoBar {gap: 1.5rem;}
+    .titlestyle1 {padding-left: 1rem;}
+    .track1 {gap: 0.8rem;}
+}
+
+@media (max-width : 801px) 
+{
+    .headerButton {font-size: 85%;}
+    .mainMenuLinkFormat {font-size: 85%;}
+    h1, h2 {font-size: 90%;}
+    .pictoBar {gap: 1.5rem;}
+    .titlestyle1 {padding-left: 1rem;}
+    .track1 {gap: 1.25rem;}
+}
+
+@media (max-width : 769px) 
+{
+    header{position: fixed; margin-top: -1rem;}
+    main {padding-top: 6rem;}
+    .div4{width: 100vw; margin-top: 10.5rem;}
+    .div5{width: 100vw;}
+    .div6{width: 100vw; margin-top: 10.5rem;}
+    .div7{width: 100vw;}
+    .subGrid1 {width: auto; margin-left: 1rem; margin-right: 1rem;}
+    .subGrid2{width: auto; margin-left: 1rem; margin-right: 1rem;}
+    .RubriqueDiv{border-radius: 0.5rem;}
+   
+    .headerButton {font-size: 70%;}
+    .mainMenuLinkFormat {font-size: 70%;}
+    h2 {font-size: 80%;}
+    .pictoBar {max-width: 100%; gap: 1rem; margin-top: 0.2rem;}
+    .track1 {gap: 1.5rem;}
+    .titlestyle1 {padding-left: 2.5rem;}
+    .cvNnetworkLink {text-align: center; }
+    
+}
+
+@media (max-width : 588px) 
+{
+    .headerButton {font-size: 80%;}
+    h1, h2 {font-size: 100%;}
+    .pictoBar {gap: 0.25rem; margin-right: 0.5rem;}
+    .userProfil{display: none;} 
+    .track1 {gap: 1.5rem;}
+    .titlestyle1 {padding-left: 2.5rem;}
+    .div4{width: 100vw; margin-top: 13.5rem;}
+    .div5{width: 100vw;}
+    .div6{width: 100vw; margin-top: 13.5rem;}
+    .div7{width: 100vw;}
+}
+
+@media (max-width : 460px) 
+{
+    .headBannerNav{gap: 1rem;}
+    .mainMenu-layout {gap: 0.5rem;}
+    .mainMenuLinkFormat {font-size: 60%;}
+    h1, h2 {font-size: 100%;}
+    h3 {font-size: 100%;}
+    h4 {font-size: 80%;}
+    .pictoBar {gap: 0.25rem;}
+    .grid1 {margin: auto; padding: 2rem 0rem 2rem 0rem;}
+    .track1 {flex-direction: column-reverse; justify-content: space-between; align-items: center; margin: auto; width: 100vw; gap:3rem;}
+  
+    .div4{width: 95vw; margin: auto; margin-top: 1rem;}
+    .div5{width: 95vw; margin: auto; margin-top: 1rem;}
+    .div6{width: 95vw; margin: auto; margin-top: 1rem;}
+    .div7{width: 95vw; margin: auto; margin-top: 1rem;}
+}
+
+@media (max-width : 331px) 
+{
+    .mainMenuLinkFormat {font-size: 65%;} 
+}
+
+
+
+
