@@ -12,7 +12,7 @@ a { color: rgb(248, 244, 244); text-decoration: none; font-size: 100%;}
 main section :first-of-type div a  {color: black;}
 
 .mediaBar {max-width: 100%;}
-.pictoBar {margin-top: 0.7rem; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; gap:1.5rem ;}
+.pictoBar {display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; gap:1.5rem ;}
 .pictoBarIcon {max-width: 70%; min-width: 2rem; transition-duration: 0.5s ;}
 .pictoBarIcon:hover{max-width: 65%; transform: rotateX(35deg);}
 
@@ -80,9 +80,13 @@ display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; al
 .div6{grid-area: div6; width: 43vw;}
 .div7{grid-area: div7; width: 43vw;}
 
-.titlestyle1{text-align: start; margin-top: 0.5rem; padding-left: 1.5rem; color:  rgb(6, 65, 110); }
+.titleStyle1{text-align: center; margin-top: 0.5rem; font-weight: 600; color:  rgb(17, 33, 105); }
+.titreRubrique1 {font-size: 1.1rem; font-weight: 600; color: rgb(16, 41, 112); text-align: center; margin-bottom: 1rem;}
+.paragraphTitreRubrique1 {text-align: left; padding-left: 3.5rem;}
+.contentTitle {width:100% ;font-size: larger; text-align: center; }
 .userSelect {min-width: 4rem; margin: 0rem 0.5rem 0rem 0.5rem; justify-self: center;}
 .userSelect p {margin-top: -0.5rem;}
+.userSelect input {width: 12rem; height:2rem; font-size: larger; letter-spacing: 0.2rem; padding: 0rem 1rem 0rem 1rem; color: rgb(9, 83, 71);}
 
 
 .subGrid1 {display: grid ; grid-template-areas:
@@ -121,10 +125,11 @@ width: 100%;
 }
 .RubriqueDiv 
 {background-color:  rgb(190, 203, 214); 
-width: 100%; padding: 0rem 0rem 0rem 0rem; 
+width: 100%; padding: 0rem 0rem 2rem 0rem; 
 display: flex; flex-direction: row; justify-content: space-between; align-items: start;
 }
 .RubriqueContent {width: 100%; padding: 0.5rem 0.5rem 0rem 0.5rem;}
+.dataContainer {display: flex; flex-direction: column;}
 .DataContent {margin-top: -1rem; color:  rgb(7, 88, 78);}
 
 .rubrique1Container{grid-area: cvLanguageContainer;}
