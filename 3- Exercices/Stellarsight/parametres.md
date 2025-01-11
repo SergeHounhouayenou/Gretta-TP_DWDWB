@@ -14,11 +14,11 @@
 
        // Remplacez 'YOUR_API_KEY' par votre propre clé API obtenue sur le site de la NASA
 const apiKey = 'a2LefMM2JPogooIp7NRW5c23XJU3otcDqmWodvAo';
-const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`; 
+const url0 = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`; 
 
 
 // Fonction pour récupérer l'image du jour
-fetch(url)
+fetch(url0)
   .then(response => response.json())  // Convertir la réponse en JSON
   .then(data => {
     // Afficher les informations dans la console

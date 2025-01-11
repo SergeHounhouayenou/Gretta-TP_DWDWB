@@ -41,7 +41,7 @@
         <main class="a1">
 
             <section class="navBar2" id="a11">
-                <h1 class="" id="a111" >STELLARSIGHT - - - <span>l'Espace vue par la NASA</span></h1>
+                <h1 class="" id="a111" >STELLARSIGHT - - - <span>la planette Terre vue par la NASA</span></h1>
                 <div class="mainMenu-layout subMenu" id="a112"> 
                     <div class="mainMenu" id="a1121"><a class="mainMenuLinkFormat" href="index.html">Page d'Accueil</a></div>
                     <div class="mainMenu" id="a1122"><a class="mainMenuLinkFormat" href="terre.html"> La Planète Terre</a></div>
@@ -67,15 +67,14 @@
                         </div>
 
                         <div class="track1Containers div20"id="a12112">
-                            <h2 class="titleStyle titleStyle1" id="a121121"> Choisir la date des prises de vues </h2>
+                            <h2 class="titleStyle titleStyle1" id="S"> Choisir la date des prises de vues </h2>
                             <div class="userSelect" id="a121122">
-                                <input class="userDateSelector" id="a1211221 userDateSelector" type="date" 
+                                <input class="userDateSelector" id="hearthDateSelectedByUser" type="date" min="2024-10-01" max=" 2025-2-08" 
                                         name="userDateSelector" aria-label="Choisir la date des prises de vues">
                                
                                 </input>
-                                <p class="PunchLine" id="a1211222">
-
-                                </p>
+                                <button class="userDateSelection" type="button" id="userDateSelection" name="userDateSelection">valider ce choix</button>
+                                <p class="PunchLine" id="chosenDate"></p>
                             </div>
                         </div>
 
@@ -140,8 +139,8 @@
                                 
                                 
                             </section>
-                            <div class="pictureContainer" id="a12121">
-                                    image à venir
+                            <div class="pictureContainer" id="welPictPlace21">
+                                   
                             </div>
                         </div>
                     </article>
@@ -187,6 +186,6 @@
       </footer>
           
       <script src="./js/index.js" defer></script>
-     
+           
     </body>
 </html>

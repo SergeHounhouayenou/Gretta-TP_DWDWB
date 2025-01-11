@@ -52,55 +52,24 @@ h4 {margin-top: 0rem; font-size: 0.85rem; font-weight:500; color: rgb(38, 7, 88)
 .containerH4 {height: 1rem;}
 
 .content{max-width: 100%;}
-.specontent {width: 200%;}
+.specontent {width: 100%;}
 
-.grid1 {display: grid; grid-template-areas: 
-"identity identity identity identity identity identity identity identity identity identity identity identity"
-"div1 div1 div1 div20 div20 div20 div21 div21 div21 div3 div3 div3"
-"values values values values values values values values values values values values"
-"div4 div4 div4 div4 div4 div4 div5 div5 div5 div5 div5 div5"
-"div6 div6 div6 div6 div6 div6 div7 div7 div7 div7 div7 div7";
-grid-template-columns: repeat(12, 1fr); 
-grid-template-rows: 1fr 0fr 2fr 0fr 0fr; max-width: 100%; margin: -1rem 0rem 0rem 0rem; padding: 2rem 2rem 2rem 2rem; gap: 2rem; }
-
-.track1 {max-width: 100%; margin: 0rem 3rem 0rem 3rem; grid-area: identity; 
-display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center; gap: 1.75rem;}
+.track1 {width: 100%; height: 8rem; margin: 4rem 3rem 6rem 3rem; display: flex; flex-direction: row; 
+flex-wrap: wrap; justify-content: center; align-items: center; gap: 1.75rem;}
 
 .track1Containers{background-color:  rgb(214, 224, 231);min-height: 9rem; border: solid; border-radius: 1rem; }
-.values {grid-area: values; max-width: 100%; margin: -2rem 0rem 0rem 0rem;
+
+.values {width: 90%; margin: auto;
 display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem;}
 
-.div1 {grid-area: div1; width: 100%; height: 100%;}
-.div20 {grid-area: div20; width: 100%; height: 100%; padding: 0rem 1rem 0rem 1rem ;}
-.div21 {grid-area: div21; width: 100%; height: 100%; padding: 0rem 1rem 0rem 1rem ;}
 
-.div3{width: 100%; height: 100%; grid-area: div3; justify-items:center ; align-items: center;}
-.div4{grid-area: div4; width: 43vw;}
-.div5{grid-area: div5; width: 43vw;}
-.div6{grid-area: div6; width: 43vw;}
-.div7{grid-area: div7; width: 43vw;}
-
-.titleStyle1{text-align: center; margin-top: 0.5rem; font-weight: 600; color:  rgb(17, 33, 105); }
+.titleStyle1{text-align: center; padding: 0.5rem; font-weight: 600; color:  rgb(17, 33, 105); }
 .titreRubrique1 {font-size: 1.1rem; font-weight: 600; color: rgb(16, 41, 112); text-align: center; margin-bottom: 1rem;}
 .paragraphTitreRubrique1 {text-align: left; padding-left: 3.5rem;}
 .contentTitle {width:100% ;font-size: larger; text-align: center; }
 .userSelect {min-width: 4rem; margin: 0rem 0.5rem 0rem 0.5rem; justify-self: center;}
 .userSelect p {margin-top: -0.5rem;}
 .userSelect input {width: 12rem; height:2rem; font-size: larger; letter-spacing: 0.2rem; padding: 0rem 1rem 0rem 1rem; color: rgb(9, 83, 71);}
-
-
-.subGrid1 {display: grid ; grid-template-areas:
-"cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer cvLanguageContainer"
-"rubrique11 rubrique11 rubrique12 rubrique12 rubrique13 rubrique13"
-"rubrique2Container rubrique2Container rubrique2Container rubrique2Container rubrique2Container rubrique2Container"
-"rubrique21 rubrique21 rubrique22 rubrique22  rubrique23 rubrique23"
-"rubrique3Container rubrique3Container rubrique3Container rubrique3Container rubrique3Container rubrique3Container"
-"rubrique31 rubrique31 rubrique32 rubrique32 rubrique33 rubrique33"
-;
-grid-template-columns:  repeat(6, 1fr); 
-grid-template-rows:  repeat(6, 16%); 
-width: 1fr;
-}
 
 .ThemeContainer
 {
@@ -116,7 +85,7 @@ align-items: center;
 }
 .pictureContainer
 {
-   margin-top: 2rem; text-align: center;
+   margin-top: 2rem; text-align: center; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center;
 }
 
 .RubriqueContainer
@@ -132,51 +101,8 @@ display: flex; flex-direction: row; justify-content: space-between; align-items:
 .dataContainer {display: flex; flex-direction: column;}
 .DataContent {margin-top: -1rem; color:  rgb(7, 88, 78);}
 
-.rubrique1Container{grid-area: cvLanguageContainer;}
-.rubrique11 {grid-area: rubrique11;}
-.rubrique12 {grid-area: rubrique12;}
-.rubrique13{grid-area: rubrique13;}
 
-.rubrique2Container {grid-area: rubrique2Container;}
-.rubrique21{grid-area: rubrique21;}
-.rubrique22{grid-area: rubrique22;}
-.rubrique23{grid-area: rubrique23;}
-
-.rubrique3Container{grid-area: rubrique3Container;}
-.rubrique31{grid-area: rubrique31;}
-.rubrique32{grid-area: rubrique32;}
-.rubrique33{grid-area: rubrique33;}
-
-.subGrid2 {display: grid ; grid-template-areas:
-"rubrique5Container rubrique5Container rubrique5Container rubrique5Container rubrique5Container rubrique5Container"
-"rubrique51 rubrique51 rubrique52 rubrique52 rubrique53 rubrique53"
-"rubrique6Container rubrique6Container rubrique6Container rubrique6Container rubrique6Container rubrique6Container"
-"rubrique61 rubrique61 rubrique62 rubrique62 rubrique63 rubrique63"
-"rubrique7Container rubrique7Container rubrique7Container rubrique7Container rubrique7Container rubrique7Container"
-"time time work work group group" 
-;
-grid-template-columns:  repeat(6, 1fr); 
-grid-template-rows:  repeat(6, 16%); 
-width: 1fr;
-}
-
-.rubrique5Container{grid-area: rubrique5Container;}
-.rubrique51{grid-area: rubrique51;}
-.rubrique52{grid-area: rubrique52;}
-.rubrique53{grid-area: rubrique53;}
-
-.rubrique6Container{grid-area: rubrique6Container;}
-.rubrique61{grid-area:  rubrique61;}
-.rubrique62{grid-area: rubrique62;}
-.rubrique63{grid-area: rubrique63;}
-
-.rubrique7Container{grid-area: rubrique7Container;}
-.rubrique71{grid-area: FaceToTime;}
-.rubrique72{grid-area: FaceToWork;}
-.rubrique73{grid-area: FaceToGroups;}
-
-
-.visitMySite {margin: -5rem 2rem 2rem 2rem; max-width: 100%;}
+.visitMySite {margin: 0rem 2rem 2rem 2rem; max-width: 100%;}
 .visitMySite button {background-color: rgba(178, 154, 194, 0.3); border-style: outset; border-width: 0.3rem;
 width: 12rem ; height: 2rem; color: rgb(37, 9, 63); font-size: 1rem; font-family: Arial, Helvetica, sans-serif;}
 .visitMySite button:hover { background-color: rgba(213, 155, 155, 0.458);}
