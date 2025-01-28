@@ -45,8 +45,8 @@ text-align: center; border-radius: 0.75rem; border:none; transition-duration: 1s
 letter-spacing: 0.001rem; word-spacing: 0.001rem;}
 h1 {margin-top: 0.5rem; font-size: 1.1rem; font-weight: 650; text-align: start; color:  rgb(6, 65, 110);}
 h2 {font-size: 1rem; font-weight: 650;}
-h3 {font-size: 1rem; font-weight: 600; color: rgb(16, 41, 112); text-align: left;margin-left: 3rem; margin-bottom: 0.5rem;}
-h4 {margin-top: 0rem; font-size: 1rem; font-weight:500; color: rgb(38, 7, 88);}
+h3 {font-size: 0.9rem; font-weight: 600; color: rgb(16, 41, 112); text-align: center; margin-bottom: 0.5rem;}
+h4 {margin-top: 0rem; font-size: 0.85rem; font-weight:500; color: rgb(38, 7, 88);}
 .containerH4 {height: 1rem;}
 
 .cvContent{max-width: 100%;}
@@ -113,7 +113,7 @@ width: 100%; padding: 0rem 0rem 0rem 0rem;
 display: flex; flex-direction: row; justify-content: space-between; align-items: start;
 }
 .cvRubriqueContent {width: 100%; padding: 0.5rem 0.5rem 0rem 0.5rem;}
-.cvDataContent {margin-top: -1rem; font-size: 0.9rem; color:  rgb(7, 50, 74);}
+.cvDataContent {margin-top: -1rem; color:  rgb(7, 88, 78);}
 
 .cvLanguageContainer{grid-area: cvLanguageContainer;}
 .literaryLanguages {grid-area: literaryLanguages;}
@@ -162,10 +162,9 @@ width: 1fr;
 .visitMySite {margin: -2rem 2rem 2rem 2rem; max-width: 100%;}
 .cvNnetworkLink {padding: 2rem 0rem 3rem 0rem; margin-bottom: 4rem; border-bottom: solid;}
 .cvNnetworkLink2{margin: 0rem 2rem 0rem 2rem ;}
-.titleVisit {font-size: 150%; color: rgb(122, 59, 59);text-align: center;}
+.titleVisit {font-size: 150%; color: rgb(122, 59, 59);}
 .titleVisit ~ p {font-size: 140%;}
-.backToTopButton {margin-top: 1rem; margin-left: 0rem; display: flex; flex-direction: column-reverse; align-items: center;}
-.demoButton {margin-top: 0rem;}
+.backToTopButton {margin-top: 4rem; margin-left: 1rem; display: flex; flex-direction: column-reverse; align-items: center;}
 .smallArrows {width: 3rem; vertical-align:bottom ;}
 button {background-color: rgba(194, 139, 160, 0.474); border-style: outset; border-width: 0.3rem;
 width: 8rem ; height: 2rem; color: rgb(2, 23, 30); font-size: 1rem; font-family: Arial, Helvetica, sans-serif;}

@@ -6,7 +6,7 @@
     <meta name="author" content="Serge Hounhouayenou">
     <meta name="description" content="images de l'espace provenant de la NASA ">
     <meta name="keyword" content="images, image, Nasa, espace, Espace, Terre, Mars, astéroïdes, astéroïde, astre, astres">
-    <link rel="stylesheet" href="css/stellar.css">
+    <link rel="stylesheet" href="../css/stellar.css">
     <title>Stellarsight</title>
 </head>
 
@@ -15,21 +15,21 @@
             <nav class="headBannerNav" id="c01">
                     <section class="navBar" id="c011">
                         <div class="logoDiv" id="c0111">
-                            <img class="logoImage" id="c01111" src="pictures/big-logo-corpulence3.png" alt="Logo de Corpulence">
+                            <img class="logoImage" id="c01111" src="../pictures/big-logo-corpulence3.png" alt="Logo de Corpulence">
                         </div>
 
                         <div class="mainMenu-layout" id="c0112"> 
-                            <div class="mainMenu" id="c01121"><a class="mainMenuLinkFormat" href="">Mon Cv</a></div>
-                            <div class="mainMenu" id="c01122"><a class="mainMenuLinkFormat" href="">Une Démo </a></div>
+                            <div class="mainMenu" id="c01121"><a class="mainMenuLinkFormat" href="../CV/cv.html">Mon Cv</a></div>
+                            <div class="mainMenu" id="c01122"><a class="mainMenuLinkFormat" href="../index.html">Une Démo </a></div>
                         </div>
                     </section>
 
                     <section class="mediaBar" id="c012">
                         <div class="pictoBar" id="c0121">
-                            <a href="" class="pictoBarContainer" id="c01211"><img class="pictoBarIcon pictoBarIconAudio" src="pictures/logo-casque1.png" alt="Picto player audio"></a> 
-                            <a href="" class="pictoBarContainer" id="c01212"><img class="pictoBarIcon pictoBarIconVideo" src="pictures/logo-vidéo1.png" alt="Picto player video"></a>
-                            <a href="" class="pictoBarContainer" id="c01213"><img class="pictoBarIcon pictoBarIconSearch" src="pictures/big-logo-loupe1.png" alt="Picto du moteur de recherche de Corpulence"></a> 
-                            <a href="" class="pictoBarContainer" id="c01214"><img class="pictoBarIcon pictoBarIconMail" src="pictures/logo-mail1.png" alt="Picto de la boîte mail de Corpulence"></a>
+                            <a href="" class="pictoBarContainer" id="c01211"><img class="pictoBarIcon pictoBarIconAudio" src="../pictures/logo-casque1.png" alt="Picto player audio"></a> 
+                            <a href="" class="pictoBarContainer" id="c01212"><img class="pictoBarIcon pictoBarIconVideo" src="../pictures/logo-vidéo1.png" alt="Picto player video"></a>
+                            <a href="" class="pictoBarContainer" id="c01213"><img class="pictoBarIcon pictoBarIconSearch" src="../pictures/big-logo-loupe1.png" alt="Picto du moteur de recherche de Corpulence"></a> 
+                            <a href="" class="pictoBarContainer" id="c01214"><img class="pictoBarIcon pictoBarIconMail" src="../pictures/logo-mail1.png" alt="Picto de la boîte mail de Corpulence"></a>
                         </div>
                     </section>
                     <section class="userProfil" id="c013">
@@ -43,66 +43,53 @@
             <section class="navBar2" id="c11">
                 <h1 class="" id="c111" >STELLARSIGHT - - - <span>l'Espace vue par la NASA</span></h1>
                 <div class="mainMenu-layout subMenu" id="c112"> 
-                    <div class="mainMenu" id="c1121"><a class="mainMenuLinkFormat" href="index.html">Page d'Accueil</a></div>
-                    <div class="mainMenu" id="c1122"><a class="mainMenuLinkFormat" href="terre.html"> La Planète Terre</a></div>
-                    <div class="mainMenu" id="c1123"><a class="mainMenuLinkFormat" href="espace.html">l'Espace</a></div>
+                    <div class="mainMenu" id="c1121"><a class="mainMenuLinkFormat" href="../index.html">Page d'Accueil</a></div>
+                    <div class="mainMenu" id="c1122"><a class="mainMenuLinkFormat" href="../hearth/terre.html"> La Planète Terre</a></div>
+                    <div class="mainMenu" id="c1123"><a class="mainMenuLinkFormat" href="../espace/espace.html">l'Espace</a></div>
                     <div class="mainMenu" id="c1124"><a class="mainMenuLinkFormat" href="asteroide.html"> Astéroïdes</a></div>
-                    <div class="mainMenu" id="c1125"><a class="mainMenuLinkFormat" href="mars.html"> Planète Mars</a></div>
+                    <div class="mainMenu" id="c1125"><a class="mainMenuLinkFormat" href="../mars/mars.html"> Planète Mars</a></div>
                 </div>
             </section>
 
             <div class="content specontent" id="c12 topSpeContent">
                 <section class="grid1" id="c121 grid1">
-                    <article class="track1" id="c1211">
-                        <div class="track1Containers div1" id="c12111">
-                            <h2 class="titleStyle titleStyle1" id="c121111">Choisir l'objet des prises de vues</h2>
-                            <div class="userSelect" id="c121112">
-                                <p class="userSelectContent" id="c1211121">
-                               
-                                </p>
-                                <p class="PunchLine" id="c1211122">
-
-                                </p>
+                    <article class="track1" id="filters">
+                        <div class="track1Containers div1" id="">
+                            <h2 class="titleStyle titleStyle1" id="">1</h2>
+                            <div class="userSelect" id="">
+                                <label for="dateSelect">Sélectionnez une date :</label>
+                                <select id="dateSelect">
+                                    <option value="">--Choisissez une date--</option>
+                                </select>
                             </div>
                         </div>
 
                         <div class="track1Containers div20"id="c12112">
-                            <h2 class="titleStyle titleStyle1" id="c121121"> Choisir la date des prises de vues </h2>
-                            <div class="userSelect" id="c121122">
-                                <input class="userDateSelector" id="c1211221 neoDateSelectedByUser" type="date" 
-                                        name="" aria-label="Choisir la date des prises de vues">
-                               
-                                </input>
-                                <button class="userneoDateSelection" type="button" id="userneoDateSelection" name="userneoDateSelection">valider ce choix</button>
-
-                                <p class="PunchLine" id="c1211222">
-
-                                </p>
+                            <h2 class="titleStyle titleStyle1" id="c121121"> 2 </h2>
+                            <div class="userSelect" id="">
+                                <label for="proximitySelect">Sélectionnez un groupe de proximité :</label>
+                                <select id="proximitySelect" disabled>
+                                    <option value="">--Choisissez une proximité--</option>
+                                </select>
                             </div>
                         </div>
 
                         <div class="track1Containers div20 div21"id="c12113">
-                            <h2 class="titleStyle titleStyle1" id="c121131"> Choisir un premier thème spécifique  </h2>
-                            <div class="userSelect" id="c121132">
-                                <p class="userSelectContent" id="">
-                               
-                                </p>
-                                <p class="PunchLine" id="">
-
-                                </p>
+                            <h2 class="titleStyle titleStyle1" id="c121131"> 3 </h2>
+                            <div class="userSelect" id="">
+                                <label for="diameterSelect">Sélectionnez un groupe de diamètre :</label>
+                                <select id="diameterSelect" disabled>
+                                    <option value="">--Choisissez un diamètre--</option>
+                                </select>
                             </div>
                         </div>
 
                         <div class="track1Containers div3"id="c12114">
-                            <h2 class="titleStyle titleStyle1" id="c121141"> Voir si un 2d thème est disponible </h2>
-                            <div class="userSelect" id="c121142">
-                                <p class="userSelectContent" id="c1211421">
-                               
-                                </p>
-                                <p class="PunchLine" id="c1211422">
-
-                                </p>
-                            </div>
+                            <h2 class="titleStyle titleStyle1" id="c121141"> 4</h2>
+                            <label for="speedSelect">Sélectionnez un groupe de vitesse :</label>
+                            <select id="speedSelect" disabled>
+                                <option value="">--Choisissez une vitesse--</option>
+                            </select>
                         </div>
                     </article>
 
@@ -142,9 +129,10 @@
                                 
                                 
                             </section>
-                            <div class="pictureContainer" id="welPictPlace31">
-                                    image à venir 
-                                    <div id="neo-container"></div>
+                            <div class="pictureContainer" id="neoPicturesContainer">
+                                    <div id="results">
+
+                                    </div>
                             </div>
                         </div>
                     </article>
@@ -157,7 +145,9 @@
                     <p class="paragraphStyle textVisit" id="c1312"> 
                         Prenez une petite minute pour consulter mon CV. Je suis à la recherche d'un stage de 2 mois et demi allant du .... au ....   
                     </p>
-                    <button class="cvButton" id="c1313" type="button" aria-labelledby="consulter mon CV"> consulter mon CV </button>
+                    <a class="" id="" href="../CV/cv.html" aria-labelledby="consulter mon Cv">
+                    <button class="cvButton" id="" type="button" aria-labelledby="consulter mon CV"> consulter mon CV </button>
+                    </a>
                     <a class="" id="c1314" href="#top" aria-labelledby="Retour Haut de Page">
                         <button class="retourDebutBtn" id="c1314 retourDebutBtn" type="button" aria-labelledby="consulter le CV"> retour en Haut de Page 
                         </button>
@@ -171,15 +161,15 @@
                     <a class="footerLink1" id="c2111" 
                         href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dfr_FR" 
                         target="_blank" rel="noopener noreferrer"> 
-                        <img class="" id="c21111" src="./pictures/SMALL-Picto-Facebook.png" alt="logo facebook"> 
+                        <img class="" id="c21111" src="../pictures/SMALL-Picto-Facebook.png" alt="logo facebook"> 
                     </a>
                     <a class="footerLink2" id="c2112" href="https://x.com/?lang=fr" 
                         target="_blank" rel="noopener noreferrer"> 
-                        <img class="" id="c21121" src="./pictures/SMALL-Picto-Tweeter.png" alt="logo tweatet"> 
+                        <img class="" id="c21121" src="../pictures/SMALL-Picto-Tweeter.png" alt="logo tweatet"> 
                     </a>
                     <a class="footerLink3" id="c2113" href="https://fr.linkedin.com/" 
                     target="_blank" rel="noopener noreferrer"> 
-                    <img class="" id="c21131" src="./pictures/SMALL-Picto-Linkedin.png" alt="logo Linkedin"> 
+                    <img class="" id="c21131" src="../pictures/SMALL-Picto-Linkedin.png" alt="logo Linkedin"> 
                     </a>
                 </div>
 
@@ -189,7 +179,7 @@
             </div>
       </footer>
           
-      <script src="./js/index.js" defer></script>
+      <script src="../js/asteroides.js" defer></script>
      
     </body>
 </html>
