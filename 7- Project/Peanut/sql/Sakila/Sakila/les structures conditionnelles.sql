@@ -4,6 +4,10 @@
 -- Peuvent être utilisés dans les SELECT, UPDATE, ORDER BY, WHERE, GROUP BY, INSERT, HAVING.alter
 
 
+
+-- if(expression, valeur si vrai, valeur si faux)
+
+
 -- Exemple 1 : Catégoriser les films selon la durée
 SELECT title, length, 
 		CASE
