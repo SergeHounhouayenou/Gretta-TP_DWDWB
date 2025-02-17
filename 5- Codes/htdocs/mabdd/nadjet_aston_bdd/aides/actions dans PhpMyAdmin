@@ -1,0 +1,20 @@
+
+
+### Création de a colonne "deleted" pour les photos.
+--> Retrouver les requêtes sql relatives à cete gestion dans un des scripte de cet espace de travail.
+
+
+### Implémentation de l'historique de suppression et de modification
+CREATE TABLE owners_history (
+    id_history INT AUTO_INCREMENT PRIMARY KEY,
+    id_owners INT NOT NULL,
+    action ENUM('modification', 'suppression') NOT NULL,
+    old_data TEXT NOT NULL,
+    action_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_owners) REFERENCES owners(id_owners) ON DELETE CASCADE
+);
+
+!!! Vérifier si les clés primaires et les indexations permettent bien de créer 
+les nouvelles relations que l'on essaie de créer avec une nouvelle table. 
+
+### 
