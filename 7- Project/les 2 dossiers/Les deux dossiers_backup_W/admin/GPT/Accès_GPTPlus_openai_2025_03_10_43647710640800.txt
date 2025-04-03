@@ -1,0 +1,30 @@
+Conversation with OpenAI
+Started on March 10, 2025 at 08:00 AM America/Los_Angeles time PDT (GMT-0700)
+
+---
+
+08:00 AM | serge@corpulence.fr: Accounts and Data
+
+08:00 AM | Fin: For privacy and deletion requests, head over to privacy.openai.com (http://privacy.openai.com).
+
+08:00 AM | Fin: What would you like to do today?
+
+08:00 AM | serge@corpulence.fr: Privacy and data
+
+08:01 AM | Fin: How can we help?
+
+08:02 AM | serge@corpulence.fr: Je ne parviens pas à accéder à ma versions payante de chat gpt plus. Mon interface web ne me propose pas les bons modèles
+
+08:02 AM | Fin: Thanks for reaching out. We'll respond via email as soon as possible.
+
+08:02 AM | serge@corpulence.fr: ok
+
+08:03 AM | Fin: The team will reply as soon as they can.
+
+08:19 AM | serge@corpulence.fr: est-ce normal que je n'ai encore rien reçu ? Quels sont les délais auxquels je dois m'attendre ?
+
+08:21 AM | serge@corpulence.fr: est-ce normal que je n'ai encore rien reçu ? Quels sont les délais auxquels je dois m'attendre ?
+​
+
+---
+Exported from OpenAI on March 10, 2025 at 08:22 AM America/Los_Angeles time PDT (GMT-0700)
